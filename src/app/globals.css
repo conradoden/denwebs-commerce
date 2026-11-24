@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@theme {
+  /* Denwebs design tokens — deep ink + electric blue on cool graphite */
+  --color-paper: #f6f7f9;
+  --color-paper-dim: #eef0f4;
+  --color-ink: #0d1219;
+  --color-ink-soft: #151c26;
+  --color-accent: #5b8cff;
+  --color-accent-deep: #2f5fe0;
+  --color-muted: #5a6272;
+  --color-line: #dfe2e8;
+  --color-line-dark: #272f3d;
+
+  --font-display: var(--font-space-grotesk), ui-sans-serif, sans-serif;
+  --font-serif: var(--font-instrument), ui-serif, Georgia, serif;
+  --font-body: var(--font-archivo), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --animate-marquee: marquee 42s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+:root {
+  --denwebs-bg: var(--color-paper);
+  --denwebs-fg: var(--color-ink);
+  --denwebs-accent: var(--color-accent);
+  --denwebs-muted: var(--color-muted);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--denwebs-bg);
+  color: var(--denwebs-fg);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-deep);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Editorial serif accent — used sparingly inside grotesk headlines */
+.accent-serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Eyebrow label with rule — the site's section rhythm device */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-muted);
+}
+.eyebrow::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+}
+.eyebrow[data-dark="true"] {
+  color: var(--color-accent);
+}
+
+/* Scroll reveal — subtle, intentional */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-marquee {
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Hero atmosphere — textured commerce gradient, not flat color */
+.hero-atmosphere {
+  background:
+    radial-gradient(110% 80% at 88% 8%, rgba(91, 140, 255, 0.18) 0%, transparent 52%),
+    radial-gradient(80% 70% at 8% 95%, rgba(39, 47, 61, 0.55) 0%, transparent 60%),
+    linear-gradient(165deg, #141b26 0%, #0d1219 55%, #0a0e14 100%);
+}
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(247, 246, 242, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(247, 246, 242, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black 25%, transparent 96%);
+}
+
+/* Underline sweep for nav links */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link:hover::after,
+.nav-link[data-active="true"]::after {
+  transform: scaleX(1);
+}
+
+/* Arrow micro-interaction used by buttons and index rows */
+.arrow-slide {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .arrow-slide,
+a:hover > .arrow-slide {
+  transform: translateX(4px);
+}
+
+/* Mega-menu link hover */
+.mega-link {
+  transition:
+    color 0.2s ease,
+    padding-left 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.mega-link:hover {
+  color: var(--color-ink);
+  padding-left: 4px;
+}

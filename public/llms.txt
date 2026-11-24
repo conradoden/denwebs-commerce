@@ -1,0 +1,35 @@
+# Denwebs
+
+> Denwebs is a Shopify agency that plans, builds, and runs the full commerce
+> stack — strategy, design, development, catalogue/inventory/order operations,
+> and AI (AEO, agentic commerce, automation) — so brands sell more with a
+> system that stays coherent.
+
+## Services
+
+- [Commerce consulting](https://www.denwebs.com/services/consulting): Strategy, platform evaluation, roadmaps, fractional counsel.
+- [Shopify audits](https://www.denwebs.com/services/audits): UX/CRO, technical, integration, and AI visibility audits.
+- [UX / UI design](https://www.denwebs.com/services/design): Design systems for Shopify, PDP/collection/cart.
+- [Development](https://www.denwebs.com/services/development): Online Store 2.0 builds, custom sections, Functions, headless.
+- [Migrations](https://www.denwebs.com/services/migrations): Replatforming from Magento, SFCC, BigCommerce, WooCommerce with SEO preservation.
+- [Catalogue management](https://www.denwebs.com/services/catalogue): Product data models, enrichment, feed readiness.
+- [Inventory](https://www.denwebs.com/services/inventory): Multi-location, ERP sync, allocation rules.
+- [Order management](https://www.denwebs.com/services/order-management): OMS, routing, 3PL, returns, B2B flows.
+- [Integrations](https://www.denwebs.com/services/integrations): ERP / PIM / 3PL, middleware and custom connectors.
+- [CRO](https://www.denwebs.com/services/cro): Experimentation programs, landing pages, analytics.
+
+## AI practice
+
+- [AI for Shopify brands](https://www.denwebs.com/services/ai): Hub for AEO, agentic commerce, and ops AI.
+- [AI Search Optimization (AEO / GEO)](https://www.denwebs.com/services/ai/aeo): Visibility in ChatGPT, Perplexity, Gemini, AI Overviews.
+- [Agentic commerce readiness](https://www.denwebs.com/services/ai/agentic-commerce): Machine-readable catalogues for AI shopping agents.
+- [AI for store operations](https://www.denwebs.com/services/ai/operations): Supervised enrichment, forecasting assists, order triage.
+
+## Company
+
+- [Work / case studies](https://www.denwebs.com/work)
+- [Insights](https://www.denwebs.com/insights)
+- [About](https://www.denwebs.com/about)
+- [Partners](https://www.denwebs.com/partners)
+- [Free audit](https://www.denwebs.com/audit)
+- [Contact](https://www.denwebs.com/contact): hello@denwebs.com · replies within 1 business day.
