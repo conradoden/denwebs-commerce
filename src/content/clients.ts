@@ -6,8 +6,8 @@ export type ClientLogo = {
 };
 
 /**
- * Homepage marquee: only clear brand marks that read well on light paper.
- * Sourced from the live portfolio; skips favicons, photos, and washed-out marks.
+ * Homepage marquee: dark or full-color marks that stay visible on light paper.
+ * No white-on-transparent logos, icon sprites, or sponsorship lockups.
  */
 export const clientLogos: ClientLogo[] = [
   {
@@ -20,18 +20,6 @@ export const clientLogos: ClientLogo[] = [
     name: "Prime Cuts",
     href: "https://primecutsjerky.com",
     logo: "/images/clients/prime-cuts.png",
-    wide: true,
-  },
-  {
-    name: "Ceraudo",
-    href: "https://www.ceraudo.com",
-    logo: "/images/clients/ceraudo.png",
-    wide: true,
-  },
-  {
-    name: "Beauty Bakerie",
-    href: "https://www.beautybakerie.com",
-    logo: "/images/clients/beauty-bakerie.png",
     wide: true,
   },
   {
@@ -53,45 +41,20 @@ export const clientLogos: ClientLogo[] = [
     wide: true,
   },
   {
-    name: "Farm Rio",
-    href: "https://www.farmrio.com",
-    logo: "/images/clients/farm-rio.svg",
-    wide: true,
-  },
-  {
-    name: "Floraly",
-    href: "https://www.floraly.com.au",
-    logo: "/images/clients/floraly.png",
-    wide: true,
-  },
-  {
     name: "Buy Peak Performance",
     href: "https://buypeakperformance.com",
     logo: "/images/clients/buy-peak-performance.png",
+  },
+  {
+    name: "Bonobos",
+    href: "https://bonobos.com",
+    logo: "/images/clients/bonobos.svg",
     wide: true,
   },
   {
-    name: "MAC Cosmetics",
-    href: "https://www.maccosmetics.com",
-    logo: "/images/clients/maccosmetics.svg",
-    wide: true,
-  },
-  {
-    name: "Before You Speak Coffee",
-    href: "https://beforeyouspeakcoffee.com",
-    logo: "/images/clients/before-you-speak-coffee.svg",
-    wide: true,
-  },
-  {
-    name: "Pryme",
-    href: "https://prymesnacks.com.au",
-    logo: "/images/clients/pryme.png",
-    wide: true,
-  },
-  {
-    name: "Nice Rice",
-    href: "https://nicerice.com.au",
-    logo: "/images/clients/nice-rice.png",
+    name: "Sommer Swim",
+    href: "https://www.sommerswim.com",
+    logo: "/images/clients/sommer-swim.svg",
     wide: true,
   },
   {
@@ -101,21 +64,32 @@ export const clientLogos: ClientLogo[] = [
     wide: true,
   },
   {
-    name: "Alo Yoga",
-    href: "https://www.aloyoga.com",
-    logo: "/images/clients/alo-yoga.png",
-    wide: true,
-  },
-  {
-    name: "Hard Candy",
-    href: "https://hardcandy.com",
-    logo: "/images/clients/hard-candy.png",
-    wide: true,
-  },
-  {
     name: "Bali Body",
     href: "https://www.balibodyco.com",
     logo: "/images/clients/balibodyco.jpg",
+    wide: true,
+  },
+  {
+    name: "Ceraudo",
+    href: "https://www.ceraudo.com",
+    logo: "/images/clients/ceraudo.png",
+    wide: true,
+  },
+  {
+    name: "Beauty Bakerie",
+    href: "https://www.beautybakerie.com",
+    logo: "/images/clients/beauty-bakerie.png",
+    wide: true,
+  },
+  {
+    name: "Alo Yoga",
+    href: "https://www.aloyoga.com",
+    logo: "/images/clients/alo-yoga.png",
+  },
+  {
+    name: "Pryme",
+    href: "https://prymesnacks.com.au",
+    logo: "/images/clients/pryme.png",
     wide: true,
   },
 ];
