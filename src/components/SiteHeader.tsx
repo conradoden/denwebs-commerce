@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import { localize, type Locale } from "@/i18n/config";
 import type { Messages } from "@/i18n/dictionaries";
 import type { SiteContent } from "@/content";
-import LanguageSwitcher from "./LanguageSwitcher";
 import DenwebsLogo from "@/components/DenwebsLogo";
 
 export default function SiteHeader({
@@ -165,7 +164,6 @@ export default function SiteHeader({
         </nav>
 
         <div className="flex items-center gap-3">
-          <LanguageSwitcher lang={lang} />
           <Link
             href={localize("/contact", lang)}
             className="hidden rounded-[3px] bg-ink px-5 py-2.5 font-mono text-[12.5px] uppercase tracking-[0.08em] text-paper transition-colors hover:bg-ink-soft sm:inline-block"

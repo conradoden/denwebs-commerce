@@ -2,15 +2,6 @@ export const locales = ["en", "ja"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
-// Remembered across visits — set by middleware, honored on later root hits.
-export const LOCALE_COOKIE = "NEXT_LOCALE";
-export const LOCALE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
-
-export const localeNames: Record<Locale, string> = {
-  en: "English",
-  ja: "日本語",
-};
-
 export const htmlLocales: Record<Locale, string> = {
   en: "en",
   ja: "ja",
