@@ -1,7 +1,10 @@
-// TODO: Japanese translation needed — currently English source copy.
-// Translate string VALUES only. Do NOT translate slugs, keys, or field names
-// (slugs power URLs and must stay identical across locales).
-
+// ============================================
+// TODO: TRANSLATE - 日本語翻訳済み
+// ============================================
+// ⚠️ このファイルは日本語に翻訳済みです。
+// en/case-studies.ts と構造が一致していることを確認してください。
+// slug とクライアント名は変更しないでください。
+// ============================================
 import type { CaseStudy } from "@/lib/types";
 
 // Case studies drawn from real Shopify work history.
@@ -11,153 +14,153 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "marc-robinson-jewelers",
     client: "Marc Robinson Jewelers",
-    industry: "Jewelry",
-    tags: ["Jewelry", "AI", "Custom Apps"],
+    industry: "ジュエリー",
+    tags: ["ジュエリー", "AI", "カスタムアプリ"],
     title:
-      "A 4,000-product jewelry store built from scratch — with AI doing the data work",
-    services: ["Development", "Catalogue", "AI", "Integrations"],
+      "ゼロから構築した4,000商品のジュエリーストア――データ作業はAIが担当",
+    services: ["開発", "カタログ", "AI", "統合"],
     platform: "Shopify",
     url: "https://marcrobinsonjewelers.com",
     image: "/images/work/marc-robinson-watch.jpg",
-    imageAlt: "Pre-owned luxury watch from the Marc Robinson Jewelers catalogue",
+    imageAlt: "Marc Robinson Jewelersのカタログから中古高級時計",
     gallery: [
-      { src: "/images/work/marc-robinson-bracelet.jpg", alt: "Diamond bracelet product photography" },
+      { src: "/images/work/marc-robinson-bracelet.jpg", alt: "ダイヤモンドブレスレットの商品撮影" },
     ],
     heroMetric: "4,000+",
     metrics: [
-      { value: "4,000+", label: "products live at launch — fine jewelry to pre-owned luxury watches" },
-      { value: "AI", label: "product content & imagery pipeline across the full catalogue" },
-      { value: "Custom", label: "Ring Builder for semi-mount and custom ring orders" },
+      { value: "4,000+", label: "ローンチ時の商品数――ファインジュエリーから中古高級時計まで" },
+      { value: "AI", label: "全カタログをカバーする商品コンテンツ・画像パイプライン" },
+      { value: "カスタム", label: "セミマウント・カスタムリング向けリングビルダー" },
     ],
     challenge:
-      "A fine jeweler with thousands of SKUs — fine jewelry, pre-owned luxury watches, custom rings — needed a real online store, not a brochure site. Product data lived inside vendor systems, and hand-writing four thousand product pages wasn't an option.",
+      "数千SKU――ファインジュエリー、中古高級時計、カスタムリング――を扱うファインジュエラーには、パンフレットサイトではなく本物のオンラインストアが必要でした。商品データはベンダーシステム内にあり、4,000ページを手書きする選択肢はありませんでした。",
     approach:
-      "Built the Shopify store from scratch around the catalogue: a vendor-API product pipeline feeding live inventory, supervised AI drafting product content and imagery, and a custom Ring Builder for semi-mount and bespoke orders. Multi-location inventory and a store locator tied the physical business to the site.",
+      "カタログを中心にShopifyストアをゼロから構築：ライブ在庫を供給するベンダーAPI商品パイプライン、商品コンテンツと画像を生成する監視付きAI、セミマウント・オーダーメイド向けカスタムリングビルダー。マルチロケーション在庫とストアロケーターで実店舗とサイトを接続。",
     built: [
-      "Shopify storefront built from scratch (Online Store 2.0)",
-      "Vendor API integration with live inventory sync",
-      "Supervised AI product-content and imagery pipeline",
-      "Custom Ring Builder for semi-mount and custom rings",
-      "Collections architecture for fine jewelry + pre-owned watches",
-      "Multi-location store locator",
+      "ゼロから構築したShopifyストアフロント（Online Store 2.0）",
+      "ライブ在庫同期つきベンダーAPI統合",
+      "監視付きAI商品コンテンツ・画像パイプライン",
+      "セミマウント・カスタムリング向けリングビルダー",
+      "ファインジュエリー + 中古時計のコレクション設計",
+      "マルチロケーションストアロケーター",
     ],
     resultsNote:
-      "A catalogue that would have taken months to write went live feed-ready — and the Ring Builder turned custom-order inquiries into a self-serve flow.",
+      "数ヶ月かかったはずのカタログ作成がフィード対応状態でローンチ――リングビルダーはカスタムオーダー問い合わせをセルフサービスフローに変えました。",
     sample: false,
   },
   {
     slug: "thejewelleryroom",
     client: "TheJewelleryRoom",
-    industry: "Jewelry",
-    tags: ["Jewelry", "Custom Apps", "Operations"],
-    title: "A custom order-management app that replaced a $10k/month platform",
-    services: ["Order Management", "Development", "Integrations"],
-    platform: "Shopify + custom app (Laravel)",
+    industry: "ジュエリー",
+    tags: ["ジュエリー", "カスタムアプリ", "運営"],
+    title: "月$10kのプラットフォームを置き換えたカスタム注文管理アプリ",
+    services: ["注文管理", "開発", "統合"],
+    platform: "Shopify + カスタムアプリ（Laravel）",
     url: "https://thejewelleryroom.com",
     image: "/images/work/thejewelleryroom-flatlay.jpg",
-    imageAlt: "TheJewelleryRoom product photography — gift box with fine jewelry",
+    imageAlt: "TheJewelleryRoomの商品撮影――ファインジュエリーのギフトボックス",
     gallery: [
-      { src: "/images/work/thejewelleryroom-model.jpg", alt: "Editorial jewelry photography for TheJewelleryRoom" },
+      { src: "/images/work/thejewelleryroom-model.jpg", alt: "TheJewelleryRoomのエディトリアルジュエリー撮影" },
     ],
     heroMetric: "$10k",
     metrics: [
-      { value: "$10k/mo", label: "platform cost eliminated by replacing Jetti Onport" },
-      { value: "50+", label: "independent jewelry designers routed through one OMS" },
-      { value: "DKK M+", label: "in monthly revenue managed through the store" },
+      { value: "$10k/月", label: "Jetti Onport置き換えで削減したプラットフォーム費" },
+      { value: "50+", label: "1つのOMSで処理する独立系ジュエリーデザイナー数" },
+      { value: "DKK M+", label: "ストア経由で管理する月商規模" },
     ],
     challenge:
-      "TheJewelleryRoom ran a Copenhagen designer marketplace on Shopify — 50+ independent jewelry designers shipping through one storefront. Jetti Onport handled the dropship order routing at roughly $10k/month, and the fit was never right for how the marketplace actually operated.",
+      "TheJewelleryRoomはコペンハーゲンのデザイナーマーケットプレイスをShopifyで運営――50以上の独立系ジュエリーデザイナーが1つのストアフロントから出荷。Jetti Onportが月約$10kでドロップシップ注文をルーティングしていましたが、マーケットプレイスの実際の運営に合いませんでした。",
     approach:
-      "As lead developer, designed and built a custom order-management Shopify app — Laravel on Heroku — shaped exactly around the marketplace's dropship flows: order splitting, designer routing, and fulfillment status syncing back to Shopify. Replaced the third-party platform outright rather than bending the operation to fit it.",
+      "リード開発者として、マーケットプレイスのドロップシップフローに正確に合わせたカスタム注文管理Shopifyアプリ（Heroku上のLaravel）を設計・構築：注文分割、デザイナールーティング、Shopifyへのフルフィルメント状況同期。運営を曲げるのではなく、サードパーティプラットフォームを完全に置き換え。",
     built: [
-      "Custom embedded Shopify order-management app (Laravel / Heroku)",
-      "Dropship order routing across 50+ designer accounts",
-      "Fulfillment and order-status sync back into Shopify",
-      "Marketplace operations tooling replacing Jetti Onport",
+      "カスタム埋め込み型Shopify注文管理アプリ（Laravel / Heroku）",
+      "50以上のデザイナーアカウントへのドロップシップ注文ルーティング",
+      "Shopifyへのフルフィルメント・注文状況同期",
+      "Jetti Onportを置き換えたマーケットプレイス運営ツール",
     ],
     resultsNote:
-      "A five-figure monthly platform line went to zero, dropshipping operations got smoother, and the marketplace ran on tooling built for its actual flow — not the other way around.",
+      "月5桁のプラットフォーム費用がゼロになり、ドロップシップ運営はスムーズに。マーケットプレイスは実際のフロー専用のツールで動くようになりました――逆ではなく。",
     sample: false,
   },
   {
     slug: "m-robinson-fine-jewelers",
     client: "M Robinson Fine Jewelers",
-    industry: "Jewelry",
-    tags: ["Jewelry", "Luxury", "AI"],
-    title: "A ring builder that turns browsers into booked appointments",
-    services: ["Development", "AI", "CRO"],
+    industry: "ジュエリー",
+    tags: ["ジュエリー", "ラグジュアリー", "AI"],
+    title: "閲覧者を予約客に変えるリングビルダー",
+    services: ["開発", "AI", "CRO"],
     platform: "Shopify",
     url: "https://mrobinsonjewelers.com",
     image: "/images/work/m-robinson-watch.webp",
-    imageAlt: "High-complication luxury watch sold by M Robinson Fine Jewelers",
+    imageAlt: "M Robinson Fine Jewelersが販売する高級複雑時計",
     gallery: [
-      { src: "/images/work/m-robinson-storefront.jpg", alt: "M Robinson Fine Jewelers storefront in Austin, Texas" },
+      { src: "/images/work/m-robinson-storefront.jpg", alt: "テキサス州オースティンのM Robinson Fine Jewelers店舗" },
     ],
     heroMetric: "100%",
     metrics: [
-      { value: "100%", label: "of catalogue content drafted by supervised AI pipelines" },
-      { value: "Custom", label: "Ring Builder — semi-mount through fully bespoke" },
-      { value: "Lead", label: "capture + appointment flows built into the storefront" },
+      { value: "100%", label: "監視付きAIパイプラインが下書きしたカタログコンテンツ" },
+      { value: "カスタム", label: "リングビルダー――セミマウントから完全オーダーメイドまで" },
+      { value: "リード", label: "ストアフロントに組み込まれた獲得・予約フロー" },
     ],
     challenge:
-      "A boutique fine jeweler sells high-consideration products — engagement rings, timepieces, custom work — where the website's job is to earn the appointment, not just the click. The storefront needed luxury feel, a real ring-configuration tool, and a content pipeline the small team could sustain.",
+      "ブティックファインジュエラーが扱うのは熟考型商品――エンゲージリング、タイムピース、カスタムワーク――で、ウェブサイトの役割はクリックではなく予約の獲得。ストアフロントにはラグジュアリー感、実際に使えるリング構成ツール、小規模チームが維持できるコンテンツパイプラインが必要でした。",
     approach:
-      "Built a boutique Shopify storefront with a custom Ring Builder for semi-mount and bespoke configurations, a vendor + AI content pipeline keeping the catalogue fresh without headcount, Edge inventory sync, and appointment and lead-capture flows designed around how fine jewelry actually sells.",
+      "セミマウント・オーダーメイド構成のカスタムリングビルダー、人員なしでカタログを鮮度維持するベンダー+AIコンテンツパイプライン、Edge在庫同期、ファインジュエリーの実際の売り方に合わせた予約・リード獲得フローを備えたブティックShopifyストアフロントを構築。",
     built: [
-      "Boutique luxury Shopify storefront",
-      "Custom Ring Builder for semi-mount and bespoke rings",
-      "Vendor + AI product content pipeline",
-      "Edge inventory synchronization",
-      "Appointment booking and lead-capture flows",
+      "ブティックラグジュアリーShopifyストアフロント",
+      "セミマウント・オーダーメイドリング向けカスタムリングビルダー",
+      "ベンダー + AI商品コンテンツパイプライン",
+      "Edge在庫同期",
+      "予約・リード獲得フロー",
     ],
     resultsNote:
-      "The store does the work a showroom visit used to do first — customers configure, compare, and book, and the catalogue stays current without a content team.",
+      "ショールーム訪問が担っていた仕事をストアが先にこなす――顧客は構成し、比較し、予約する。コンテンツチームなしでカタログは最新のままです。",
     sample: false,
   },
   {
     slug: "treasures-jeweler",
     client: "Treasures Jeweler",
-    industry: "Jewelry",
-    tags: ["Jewelry", "AI", "Operations"],
-    title: "Mobile-first storefront with a vendor-API product pipeline",
-    services: ["Development", "Catalogue", "Integrations", "AI"],
+    industry: "ジュエリー",
+    tags: ["ジュエリー", "AI", "運営"],
+    title: "ベンダーAPI商品パイプラインつきモバイルファースト店頭",
+    services: ["開発", "カタログ", "統合", "AI"],
     platform: "Shopify",
     url: "https://treasuresjeweler.com",
     image: "/images/work/treasures-editorial.png",
-    imageAlt: "Treasures Jeweler editorial brand photography",
+    imageAlt: "Treasures Jewelerのエディトリアルブランド撮影",
     gallery: [
-      { src: "/images/work/treasures-chain.jpg", alt: "Gold chain product photography" },
+      { src: "/images/work/treasures-chain.jpg", alt: "ゴールドチェーンの商品撮影" },
     ],
     heroMetric: "3",
     metrics: [
-      { value: "3", label: "systems unified — storefront, vendor API, AI content pipeline" },
-      { value: "Live", label: "Edge inventory sync against vendor stock" },
-      { value: "Mobile", label: "-first storefront designed for how buyers actually browse" },
+      { value: "3", label: "統合されたシステム――店頭、ベンダーAPI、AIコンテンツパイプライン" },
+      { value: "ライブ", label: "ベンダー在庫とのEdge在庫同期" },
+      { value: "モバイル", label: "ファースト店頭――購入者の実際の閲覧方法に設計" },
     ],
     challenge:
-      "An Austin jeweler needed an online storefront where none existed — but the harder problem was operational: products arriving through a vendor API, inventory that changes daily, and no internal team to write or maintain product content.",
+      "オースティンのジュエラーには存在しなかったオンライン店頭が必要でしたが、より困難なのは運営面でした：ベンダーAPI経由の商品入荷、日々変動する在庫、商品コンテンツを書く・維持する社内チームの不在。",
     approach:
-      "Built a mobile-first Shopify store wired directly to the vendor's product API, with supervised AI generating product content and imagery at pipeline scale and Edge inventory sync keeping availability honest. The managed online funnel carried traffic through to inquiry and sale.",
+      "ベンダーの商品APIに直結したモバイルファーストShopifyストアを構築。監視付きAIが商品コンテンツと画像をパイプライン規模で生成し、Edge在庫同期が在庫状況を正直に保つ。管理型オンラインファネルがトラフィックを問い合わせ・販売へ導きます。",
     built: [
-      "Mobile-first Shopify storefront",
-      "Vendor API product pipeline (catalogue + media)",
-      "Supervised AI product content and imagery",
-      "Edge inventory synchronization",
-      "Managed online funnel — traffic to inquiry",
+      "モバイルファーストShopifyストアフロント",
+      "ベンダーAPI商品パイプライン（カタログ + メディア）",
+      "監視付きAI商品コンテンツ・画像",
+      "Edge在庫同期",
+      "管理型オンラインファネル――トラフィックから問い合わせへ",
     ],
     resultsNote:
-      "The store stays stocked, described, and accurate without manual catalogue labor — the pipeline does the work the team never had.",
+      "手動のカタログ作業なしで、ストアは品揃え・説明・正確性を維持――パイプラインがチームになかった仕事をこなします。",
     sample: false,
   },
 ];
 
 export const industryFilters = [
-  "All",
-  "Jewelry",
-  "Luxury",
+  "すべて",
+  "ジュエリー",
+  "ラグジュアリー",
   "AI",
-  "Custom Apps",
-  "Operations",
+  "カスタムアプリ",
+  "運営",
 ];
 
 // Maps service slugs to the case studies that best demonstrate them.

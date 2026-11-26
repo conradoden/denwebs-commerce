@@ -107,7 +107,7 @@ export default async function ServicesHub({
             <div key={group.name} className="grid gap-6 lg:grid-cols-[1fr_2.2fr]">
               <div>
                 <h3 className="font-display text-2xl font-bold tracking-[-0.01em]">
-                  {group.name}
+                  {t.servicePage.groupNames[group.name]}
                 </h3>
                 <p className="mt-2 max-w-xs text-[15px] leading-relaxed text-muted">
                   {group.blurb}

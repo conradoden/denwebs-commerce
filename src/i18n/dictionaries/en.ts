@@ -1,5 +1,7 @@
 // English UI strings — the source of truth for site copy.
 // Mirror this structure in ja.ts and translate the values.
+import type { ServiceGroup } from "@/lib/types";
+
 export const en = {
   meta: {
     titleDefault: "Denwebs — Shopify Agency for Commerce & AI",
@@ -438,6 +440,12 @@ export const en = {
   },
 
   servicePage: {
+    groupNames: {
+      "Strategy & Advisory": "Strategy & Advisory",
+      "Design & Build": "Design & Build",
+      "Commerce Operations": "Commerce Operations",
+      "Growth & AI": "Growth & AI",
+    } satisfies Record<ServiceGroup, string>,
     crumbServices: "Services",
     crumbAi: "AI",
     whoEyebrow: "Who it's for",

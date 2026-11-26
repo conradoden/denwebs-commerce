@@ -35,7 +35,7 @@ export default function ServicePage({
         <Breadcrumbs items={crumbs} lang={lang} />
         <div className="grid gap-10 pb-16 md:pb-20 lg:grid-cols-[1.6fr_1fr]">
           <div>
-            <p className="eyebrow">{service.group}</p>
+            <p className="eyebrow">{t.groupNames[service.group]}</p>
             <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
               {service.title}
             </h1>

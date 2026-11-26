@@ -1,16 +1,19 @@
-// TODO: Japanese translation needed — currently English source copy.
-// Translate string VALUES only. Do NOT translate slugs, keys, or field names
-// (slugs power URLs and must stay identical across locales).
-
+// ============================================
+// TODO: TRANSLATE - 日本語翻訳済み
+// ============================================
+// ⚠️ このファイルは日本語に翻訳済みです。
+// en/insights.ts と構造が一致していることを確認してください。
+// slug と date は変更しないでください。
+// ============================================
 import type { Insight } from "@/lib/types";
 
 export const insightCategories = [
   "Shopify",
-  "Migrations",
-  "Operations",
+  "移行",
+  "運営",
   "CRO",
   "AI / AEO",
-  "Unified commerce",
+  "ユニファイドコマース",
 ];
 
 // Starter articles — outlines expanded into working drafts. Replace or
@@ -18,100 +21,100 @@ export const insightCategories = [
 export const insights: Insight[] = [
   {
     slug: "aeo-shopify-products-ai-search",
-    title: "How to make your Shopify products visible in AI search",
+    title: "Shopify商品をAI検索で見えるようにする方法",
     category: "AI / AEO",
     excerpt:
-      "AI assistants are becoming a real discovery channel. Here's the structured-data, entity, and content work that gets Shopify products cited instead of skipped.",
+      "AIアシスタントは本物の発見チャネルになりつつあります。Shopify商品がスキップされず引用されるための、構造化データ・エンティティ・コンテンツ作業を解説。",
     date: "2026-11-10",
-    readTime: "8 min",
+    readTime: "8分",
     body: [
       {
-        text: "When a buyer asks ChatGPT or Perplexity for a product recommendation, the assistant doesn't crawl your homepage — it assembles an answer from sources it can parse and trust. Whether your products appear in that answer is decided by work that looks nothing like traditional keyword SEO.",
+        text: "購入者がChatGPTやPerplexityに商品推薦を求めるとき、アシスタントはあなたのホームページをクロールしません――解析・信頼できるソースから回答を組み立てます。その回答に商品が現れるかどうかは、従来のキーワードSEOとはまったく異なる作業で決まります。",
       },
       {
-        heading: "Machines read structure, not design",
-        text: "Your PDP may convert beautifully for humans while being nearly opaque to AI. Product schema, complete attributes, clean taxonomy, and policies written in plain language are what assistants use to understand — and recommend — what you sell.",
+        heading: "機械はデザインではなく構造を読む",
+        text: "人間には美しくコンバージョンするPDPも、AIにはほぼ不透明かもしれません。商品スキーマ、完全な属性、清潔な分類、平易な言葉のポリシーこそが、アシスタントがあなたの商品を理解し推薦するために使うものです。",
       },
       {
-        heading: "Entities before keywords",
-        text: "AI assistants reason about entities: your brand, your products, the categories you compete in. Organization schema, consistent naming across the web, and unambiguous product data build the entity clarity that gets you cited rather than confused with someone else.",
+        heading: "キーワードより先にエンティティ",
+        text: "AIアシスタントはエンティティについて推論します：あなたのブランド、商品、競合するカテゴリー。Organizationスキーマ、ウェブ全体での一貫した命名、曖昧さのない商品データが、他社と混同されず引用されるためのエンティティ明確性を築きます。",
       },
       {
-        heading: "Answer-first content wins citations",
-        text: "Content that directly answers the questions buyers ask AI — comparisons, use-case fit, compatibility — earns citations. Thin collection descriptions and marketing-speak don't. A small library of genuinely useful answer content outperforms a large blog of filler.",
+        heading: "回答先行型コンテンツが引用を獲得",
+        text: "購入者がAIに実際に尋ねる質問――比較、用途適合、互換性――に直接答えるコンテンツが引用を獲得します。薄いコレクション説明やマーケティング用語では獲得できません。本当に有用な回答コンテンツの小さなライブラリは、フィラーだらけの大きなブログに勝ります。",
       },
       {
-        heading: "Measure visibility like a channel",
-        text: "Track a fixed set of category and product queries across ChatGPT, Perplexity, Gemini, and AI Overviews on a recurring basis. Record who gets cited and which sources are referenced. Without a baseline you're guessing — with one, AEO becomes a manageable program.",
+        heading: "可視性をチャネルとして測定",
+        text: "固定のカテゴリー・商品クエリセットをChatGPT、Perplexity、Gemini、AI Overviewsで定期的に追跡。誰が引用され、どのソースが参照されるかを記録。ベースラインなしでは推測、あればAEOは管理可能なプログラムになります。",
       },
       {
-        text: "This is the foundation of our AI Search Optimization work at Denwebs. If you want to know how your brand currently surfaces, the AI visibility audit is the fastest way to find out.",
+        text: "これがDenwebsのAI検索最適化業務の基盤です。ブランドが現在どう表示されているか知りたければ、AI可視性診断が最速の確認方法です。",
       },
     ],
   },
   {
     slug: "shopify-migration-seo-checklist",
-    title: "The Shopify migration SEO checklist nobody gives you",
-    category: "Migrations",
+    title: "誰も教えてくれないShopify移行SEOチェックリスト",
+    category: "移行",
     excerpt:
-      "Most migrations lose rankings because the SEO work starts at redirect time instead of at inventory time. A field checklist from the unglamorous parts of replatforming.",
+      "多くの移行がランキングを失うのは、SEO作業が棚卸し時ではなくリダイレクト時に始まるから。リプラットフォームの地味な部分からの実践チェックリスト。",
     date: "2026-10-21",
-    readTime: "10 min",
+    readTime: "10分",
     body: [
       {
-        text: "Every migration guide mentions 301 redirects. Almost none mention that redirects are the last 10% of SEO preservation — the first 90% is knowing exactly what exists on your current platform before anything moves.",
+        text: "すべての移行ガイドが301リダイレクトに言及します。しかしリダイレクトがSEO維持の最後の10%であり、最初の90%は何かが動く前に現行プラットフォームに何が存在するか正確に把握することだと、ほとんど誰も言いません。",
       },
       {
-        heading: "Inventory every URL — including the ones you forgot",
-        text: "Crawl the current site, export platform URL reports, and merge with analytics landing pages and Search Console data. Legacy PDFs, old collection paths, paginated URLs, and app-generated routes all need a decision: redirect, canonicalize, or deliberately drop.",
+        heading: "すべてのURLを棚卸し――忘れたものも含めて",
+        text: "現行サイトをクロールし、プラットフォームのURLレポートをエクスポートし、分析のランディングページとSearch Consoleデータと統合。レガシーPDF、古いコレクションパス、ページネーションURL、アプリ生成ルート――すべてに決断が必要です：リダイレクト、正規化、または意図的な削除。",
       },
       {
-        heading: "Preserve what search engines actually see",
-        text: "Metadata, structured data, heading structure, internal linking patterns, and content depth all carry ranking weight. Migrating to a prettier theme that guts your content depth is a rankings regression dressed as a redesign.",
+        heading: "検索エンジンが実際に見るものを保持",
+        text: "メタデータ、構造化データ、見出し構造、内部リンクパターン、コンテンツ深度――すべてがランキングの重みを持ちます。コンテンツ深度を削るきれいなテーマへの移行は、リデザインに扮したランキング後退です。",
       },
       {
-        heading: "Rehearse the cutover",
-        text: "Dry-run redirects against a staging store. Validate a statistically meaningful sample — not ten URLs, hundreds. The cutover runbook should assign every check an owner and every failure a rollback trigger.",
+        heading: "切り替えをリハーサル",
+        text: "ステージングストアでリダイレクトをドライラン。10件ではなく数百件の統計的に意味のあるサンプルを検証。切り替えランブックは全チェックに担当者を、全失敗にロールバックトリガーを割り当てます。",
       },
       {
-        heading: "Watch rankings like a launch metric",
-        text: "For the first four weeks post-migration, monitor priority queries daily and Search Console coverage continuously. Small redirect bugs found in week one are cheap. Found in month two, they've already cost you a season.",
+        heading: "ランキングをローンチ指標として監視",
+        text: "移行後最初の4週間、優先クエリを毎日監視しSearch Consoleカバレッジを継続確認。1週目に見つかる小さなリダイレクトバグは安価。2ヶ月目に見つかれば、すでにシーズンを失っています。",
       },
       {
-        text: "Done this way, most migrations stabilize within weeks — and the performance gains from a modern Shopify build often lift rankings beyond their old baseline. This is how we run migrations at Denwebs: like operations, not events.",
+        text: "この方法なら、多くの移行は数週間で安定します――そしてモダンなShopify構築のパフォーマンス向上が、旧ベースラインを超えるランキング改善をもたらすことも。これがDenwebsの移行の進め方です：イベントではなく運営として。",
       },
     ],
   },
   {
     slug: "catalogue-operations-shopify-scale",
-    title: "Catalogue operations: the Shopify work nobody posts about",
-    category: "Operations",
+    title: "カタログ運営：誰も投稿しないShopifyの仕事",
+    category: "運営",
     excerpt:
-      "Design shops get the case-study glory, but catalogue hygiene is where revenue quietly leaks. What a real product-data operating model looks like on Shopify.",
+      "デザイン会社が事例の栄光を得ますが、売上が静かに漏れるのはカタログ衛生です。Shopifyでの本物の商品データ運営モデルとは。",
     date: "2026-09-30",
-    readTime: "7 min",
+    readTime: "7分",
     body: [
       {
-        text: "Nobody writes case studies about metafield governance. Yet for any brand past a few hundred SKUs, catalogue quality determines whether feeds get accepted, whether AI assistants can recommend you, and whether your team spends Fridays fixing CSVs.",
+        text: "メタフィールドガバナンスの事例を書く人はいません。しかし数百SKUを超えるブランドなら、カタログ品質がフィード承認、AIアシスタントの推薦、チームが金曜日にCSVを直すかどうかを決めます。",
       },
       {
-        heading: "Design the model before touching the data",
-        text: "Taxonomy, attributes, variant logic, and metafields should be designed around how customers shop your category — not around whatever shape the data arrived in. The model is the asset; the data is an instance of it.",
+        heading: "データに触れる前にモデルを設計",
+        text: "分類、属性、バリアントロジック、メタフィールドは、顧客がカテゴリーでどう買い物するかを中心に設計すべきです――データがたまたま持つ形状ではなく。モデルが資産であり、データはその実例にすぎません。",
       },
       {
-        heading: "Enrichment is a pipeline, not a project",
-        text: "One-time cleanup decays the day it finishes. Sustainable catalogues run enrichment as a recurring workflow — new products onboarded to spec, seasonal attributes refreshed, gaps flagged automatically.",
+        heading: "エンリッチメントはプロジェクトではなくパイプライン",
+        text: "一度きりのクリーンアップは終了した日から劣化します。持続可能なカタログはエンリッチメントを定期ワークフローとして運用します――新商品を仕様通りに登録、季節属性を更新、ギャップを自動検知。",
       },
       {
-        heading: "AI belongs in the pipeline — supervised",
-        text: "LLMs are genuinely good at drafting attributes, normalizing values, and writing first-pass copy at catalogue scale. They're not good unsupervised. The pattern that works: machines draft, merchandisers approve, audit logs stay permanent.",
+        heading: "AIはパイプラインに属する――監視付きで",
+        text: "LLMは属性の下書き、値の正規化、カタログ規模での一次コピー作成に本当に優れています。監視なしでは優れません。機能するパターン：機械が下書き、マーチャンダイザーが承認、監査ログは永続。",
       },
       {
-        heading: "One catalogue, every channel",
-        text: "Google Shopping, Meta, marketplaces, retail partners, and AI shopping agents all consume the same product truth. When that truth lives in one governed model instead of six spreadsheets, channel expansion stops being a data project every time.",
+        heading: "1つのカタログ、すべてのチャネル",
+        text: "Googleショッピング、Meta、マーケットプレイス、リテールパートナー、AIショッピングエージェントはすべて同じ商品の真実を消費します。その真実が6つのスプレッドシートではなく1つの統制されたモデルにあれば、チャネル拡大は毎回のデータプロジェクトではなくなります。",
       },
       {
-        text: "This is the operational layer most agencies skip and where Denwebs lives. If your catalogue has outgrown your spreadsheets, it's fixable — and the fix compounds.",
+        text: "これがほとんどの代理店がスキップし、Denwebsが生きる運営レイヤーです。カタログがスプレッドシートを超えたなら、修正可能です――そして修正は複利で効きます。",
       },
     ],
   },

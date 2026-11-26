@@ -1,6 +1,7 @@
-import type { Service } from "@/lib/types";
+import type { Service, ServiceGroup } from "@/lib/types";
 
-export const serviceGroups = [
+// `name` is a stable grouping key — localized labels live in the dictionary.
+export const serviceGroups: { name: ServiceGroup; blurb: string; slugs: string[] }[] = [
   {
     name: "Strategy & Advisory",
     blurb: "Decide the right move before you spend on the wrong one.",
@@ -21,7 +22,7 @@ export const serviceGroups = [
     blurb: "Convert more of the traffic you have — and get found by AI.",
     slugs: ["cro", "ai"],
   },
-] as const;
+];
 
 export const services: Service[] = [
   {

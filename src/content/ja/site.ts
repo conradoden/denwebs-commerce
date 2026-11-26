@@ -1,119 +1,122 @@
-// TODO: Japanese translation needed — currently English source copy.
-// Translate string VALUES only. Do NOT translate slugs, keys, or field names
-// (slugs power URLs and must stay identical across locales).
-
+// ============================================
+// TODO: TRANSLATE - 日本語翻訳済み
+// ============================================
+// ⚠️ このファイルは日本語に翻訳済みです。
+// en/site.ts と構造が一致していることを確認してください。
+// href と slug は変更しないでください。
+// ============================================
 export const site = {
   name: "Denwebs",
   url: "https://www.denwebs.com",
   email: "hello@denwebs.com",
   phone: "", // TBD — hidden until real number is confirmed
   description:
-    "Strategy, design, development, catalogue, inventory, OMS, and AI optimization for ambitious Shopify brands.",
+    "野心的なShopifyブランドのための戦略、デザイン、開発、カタログ、在庫、OMS、AI最適化。",
 };
 
 // Mega-menu structure — every link must resolve to a real route.
 export const megaMenu = [
   {
-    title: "Strategy & Advisory",
+    title: "戦略 & アドバイザリー",
     links: [
-      { label: "Commerce consulting", href: "/services/consulting", desc: "Platform calls & roadmaps" },
-      { label: "Shopify audits", href: "/services/audits", desc: "Forensic, prioritized findings" },
+      { label: "コマースコンサルティング", href: "/services/consulting", desc: "プラットフォーム判断とロードマップ" },
+      { label: "Shopify診断", href: "/services/audits", desc: "優先順位づけした詳細な発見" },
     ],
   },
   {
-    title: "Design & Build",
+    title: "デザイン & 開発",
     links: [
-      { label: "UX / UI design", href: "/services/design", desc: "Design systems for Shopify" },
-      { label: "Theme & custom development", href: "/services/development", desc: "OS 2.0, sections, Functions" },
-      { label: "Migrations to Shopify", href: "/services/migrations", desc: "Replatform without the losses" },
+      { label: "UX / UIデザイン", href: "/services/design", desc: "Shopify向けデザインシステム" },
+      { label: "テーマ・カスタム開発", href: "/services/development", desc: "OS 2.0、セクション、Functions" },
+      { label: "Shopifyへの移行", href: "/services/migrations", desc: "損失なしのリプラットフォーム" },
     ],
   },
   {
-    title: "Commerce Operations",
+    title: "コマース運営",
     links: [
-      { label: "Catalogue management", href: "/services/catalogue", desc: "Product data, feed-ready" },
-      { label: "Inventory systems", href: "/services/inventory", desc: "One stock truth" },
-      { label: "Order management (OMS)", href: "/services/order-management", desc: "Routing, 3PL, returns" },
-      { label: "Integrations (ERP / PIM / 3PL)", href: "/services/integrations", desc: "Connectors + custom" },
+      { label: "カタログ管理", href: "/services/catalogue", desc: "フィード対応の商品データ" },
+      { label: "在庫システム", href: "/services/inventory", desc: "在庫の唯一の正しいソース" },
+      { label: "注文管理（OMS）", href: "/services/order-management", desc: "ルーティング、3PL、返品" },
+      { label: "統合（ERP / PIM / 3PL）", href: "/services/integrations", desc: "コネクタ + カスタム" },
     ],
   },
   {
-    title: "Growth & AI",
+    title: "成長 & AI",
     links: [
-      { label: "CRO & performance", href: "/services/cro", desc: "Experiments that compound" },
-      { label: "AI services overview", href: "/services/ai", desc: "AEO · agentic · ops AI" },
-      { label: "AI Search Optimization (AEO)", href: "/services/ai/aeo", desc: "Get cited by AI assistants" },
-      { label: "Agentic commerce readiness", href: "/services/ai/agentic-commerce", desc: "Machine-sellable catalogue" },
-      { label: "AI for store operations", href: "/services/ai/operations", desc: "Supervised automation" },
+      { label: "CRO・パフォーマンス", href: "/services/cro", desc: "積み上がる実験" },
+      { label: "AIサービス概要", href: "/services/ai", desc: "AEO · エージェント · 運営AI" },
+      { label: "AI検索最適化（AEO）", href: "/services/ai/aeo", desc: "AIアシスタントに引用される" },
+      { label: "エージェンティックコマース準備", href: "/services/ai/agentic-commerce", desc: "機械販売可能なカタログ" },
+      { label: "店舗運営へのAI適用", href: "/services/ai/operations", desc: "監視付き自動化" },
     ],
   },
 ];
 
 export const footerNav = [
   {
-    title: "Company",
+    title: "会社情報",
     links: [
-      { label: "About", href: "/about" },
-      { label: "Careers", href: "/careers" },
-      { label: "Partners", href: "/partners" },
-      { label: "Contact", href: "/contact" },
+      { label: "会社について", href: "/about" },
+      { label: "採用情報", href: "/careers" },
+      { label: "パートナー", href: "/partners" },
+      { label: "お問い合わせ", href: "/contact" },
     ],
   },
   {
-    title: "Services",
+    title: "サービス",
     links: [
-      { label: "All services", href: "/services" },
-      { label: "Migrations", href: "/services/migrations" },
-      { label: "Catalogue & ops", href: "/services/catalogue" },
+      { label: "全サービス", href: "/services" },
+      { label: "移行", href: "/services/migrations" },
+      { label: "カタログ・運営", href: "/services/catalogue" },
       { label: "AI / AEO", href: "/services/ai" },
     ],
   },
   {
-    title: "Work",
+    title: "実績",
     links: [
-      { label: "Case studies", href: "/work" },
-      { label: "Insights", href: "/insights" },
-      { label: "Free Shopify audit", href: "/audit" },
+      { label: "事例紹介", href: "/work" },
+      { label: "インサイト", href: "/insights" },
+      { label: "無料Shopify診断", href: "/audit" },
     ],
   },
   {
-    title: "Legal",
+    title: "法務",
     links: [
-      { label: "Privacy", href: "/privacy" },
-      { label: "Terms", href: "/terms" },
+      { label: "プライバシー", href: "/privacy" },
+      { label: "利用規約", href: "/terms" },
     ],
   },
 ];
 
 export const projectTypes = [
-  "Consulting",
-  "Audit",
-  "Redesign",
-  "New build",
-  "Migration",
-  "Catalogue / Inventory / OMS",
-  "Integrations",
+  "コンサルティング",
+  "診断",
+  "リデザイン",
+  "新規構築",
+  "移行",
+  "カタログ / 在庫 / OMS",
+  "統合",
   "AI / AEO",
   "CRO",
-  "Retainer",
-  "Other",
+  "リテイナー",
+  "その他",
 ];
 
 export const revenueRanges = [
-  "Under $50k / month",
-  "$50k–250k / month",
-  "$250k–1M / month",
-  "$1M+ / month",
-  "Prefer not to say",
+  "月商 $50k未満",
+  "月商 $50k–250k",
+  "月商 $250k–1M",
+  "月商 $1M以上",
+  "回答しない",
 ];
 
-export const timelines = ["ASAP", "1–3 months", "3–6 months", "Exploring"];
+export const timelines = ["最優先", "1〜3ヶ月", "3〜6ヶ月", "検討中"];
 
 export const hearAbout = [
-  "Search",
-  "AI (ChatGPT, etc.)",
-  "Social",
-  "Referral",
-  "Event",
-  "Other",
+  "検索",
+  "AI（ChatGPT等）",
+  "SNS",
+  "紹介",
+  "イベント",
+  "その他",
 ];

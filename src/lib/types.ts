@@ -1,11 +1,17 @@
 export type FAQ = { q: string; a: string };
 
+export type ServiceGroup =
+  | "Strategy & Advisory"
+  | "Design & Build"
+  | "Commerce Operations"
+  | "Growth & AI";
+
 export type Service = {
   slug: string;
   title: string;
   shortTitle?: string;
   promise: string;
-  group: "Strategy & Advisory" | "Design & Build" | "Commerce Operations" | "Growth & AI";
+  group: ServiceGroup;
   whoItsFor: string[];
   deliverables: string[];
   process: { title: string; body: string }[];
