@@ -14,6 +14,7 @@ export default function ContactPanel({ auditMode = false }: { auditMode?: boolea
   const [tab, setTab] = useState<Tab>(
     intent && intent !== "discovery" ? "message" : "book",
   );
+  const [calendarLoaded, setCalendarLoaded] = useState(false);
 
   useEffect(() => {
     if (intent === "discovery" || !intent) setTab("book");
@@ -41,7 +42,10 @@ export default function ContactPanel({ auditMode = false }: { auditMode?: boolea
           type="button"
           role="tab"
           aria-selected={tab === "book"}
-          onClick={() => setTab("book")}
+          onClick={() => {
+            setCalendarLoaded(false);
+            setTab("book");
+          }}
           className={`flex-1 rounded-[2px] px-4 py-2.5 font-mono text-[11.5px] uppercase tracking-[0.1em] transition-colors ${
             tab === "book" ? "bg-ink text-paper" : "text-muted hover:text-ink"
           }`}
@@ -82,12 +86,26 @@ export default function ContactPanel({ auditMode = false }: { auditMode?: boolea
               →
             </span>
           </a>
-          <div className="overflow-hidden rounded-[3px] border border-line bg-paper">
+          <div className="relative overflow-hidden rounded-[3px] border border-line bg-paper">
+            {!calendarLoaded && (
+              <div
+                className="absolute inset-0 z-10 flex items-center justify-center bg-paper"
+                aria-live="polite"
+                aria-busy="true"
+              >
+                <span className="sr-only">Loading calendar</span>
+                <span
+                  className="h-9 w-9 animate-spin rounded-full border-2 border-line border-t-ink"
+                  aria-hidden="true"
+                />
+              </div>
+            )}
             <iframe
               src={`${site.bookingUrl}?embed=true`}
               title="Book a 30-minute discovery call"
               className="h-[720px] w-full border-0"
-              loading="lazy"
+              loading="eager"
+              onLoad={() => setCalendarLoaded(true)}
             />
           </div>
         </div>
