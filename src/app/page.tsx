@@ -118,7 +118,7 @@ export default function Home() {
               <p className="eyebrow" data-dark="true">
                 Shopify ecommerce consultants
               </p>
-              <h1 className="mt-6 max-w-3xl font-display text-[3rem] font-bold leading-[1.02] tracking-[-0.03em] sm:text-5xl md:text-6xl lg:text-[4.75rem]">
+              <h1 className="mt-6 max-w-3xl font-display text-[3.25rem] font-bold leading-[1.02] tracking-[-0.03em] sm:text-6xl md:text-7xl lg:text-[5rem]">
                 The Shopify partner that connects{" "}
                 <span className="accent-serif font-normal">strategy</span>, build,{" "}
                 <span className="text-accent">and growth</span>.
@@ -286,7 +286,7 @@ export default function Home() {
               <p className="eyebrow" data-dark="true">
                 05. AI practice
               </p>
-              <h2 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-5xl">
+              <h2 className="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
                 Be the brand AI <span className="accent-serif font-normal">recommends</span>, and the
                 store AI can sell.
               </h2>
