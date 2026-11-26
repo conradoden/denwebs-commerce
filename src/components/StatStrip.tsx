@@ -1,7 +1,7 @@
 // Figures from documented work history (CV project records).
 const stats = [
-  { value: "80+", label: "Shopify projects delivered" },
-  { value: "30+", label: "CMS builds alongside" },
+  { value: "100+", label: "Shopify storefronts in the record" },
+  { value: "12", label: "featured case studies with live URLs" },
   { value: "$10k/mo", label: "platform cost eliminated for one client" },
   { value: "2017", label: "in commerce engineering since" },
 ];

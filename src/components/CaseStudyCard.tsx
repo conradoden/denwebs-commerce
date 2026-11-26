@@ -8,6 +8,9 @@ const industryAccent: Record<string, string> = {
   Outdoor: "#8fb98a",
   Beauty: "#d8a7c3",
   "CPG / Food": "#e0b878",
+  "Food & Beverage": "#e0b878",
+  "Health & Wellness": "#7ec8a3",
+  "Health & Medical": "#8ec9c2",
   Fashion: "#9fb6d8",
   B2B: "#8ec9c2",
 };

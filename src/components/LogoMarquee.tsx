@@ -1,10 +1,18 @@
-// Confirmed client storefronts from documented engagements.
+// Confirmed client storefronts from documented engagements + portfolio.
 const clients = [
   "Marc Robinson Jewelers",
   "TheJewelleryRoom",
-  "M Robinson Fine Jewelers",
+  "Tropeaka",
+  "Sixthreezero",
+  "Wonderful Dental",
+  "Origin Tea",
+  "Pryme",
+  "Sip Coco",
+  "Nice Rice",
+  "Prime Cuts Jerky",
   "Treasures Jeweler",
-  "…and 80+ more Shopify projects via agency work",
+  "M Robinson Fine Jewelers",
+  "…and 100+ more Shopify projects",
 ];
 
 export default function LogoMarquee({ label = "Selected client storefronts" }: { label?: string }) {

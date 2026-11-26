@@ -215,8 +215,8 @@ export default function Home() {
             All work <span className="arrow-slide">→</span>
           </Link>
         </div>
-        <div className="mt-14 grid gap-7 md:grid-cols-3">
-          {caseStudies.map((s, i) => (
+        <div className="mt-14 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+          {caseStudies.slice(0, 6).map((s, i) => (
             <Reveal key={s.slug} delay={i * 90} className="h-full">
               <CaseStudyCard study={s} />
             </Reveal>

@@ -34,6 +34,21 @@ export type CaseStudy = {
   sample: boolean;
 };
 
+/** Lighter portfolio entry for the full work grid (CSV + portfolio inventory). */
+export type PortfolioProject = {
+  slug: string;
+  client: string;
+  url: string;
+  industry: string;
+  categories: string[];
+  capabilities: string[];
+  summary: string;
+  image?: string;
+  featured?: boolean;
+  caseStudySlug?: string;
+  source?: string;
+};
+
 export type Insight = {
   slug: string;
   title: string;
