@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ServicePage from "@/components/ServicePage";
 import { aiServices } from "@/content/services";
 import { caseStudies, relatedWorkByService } from "@/content/case-studies";
+import { getPortfolioForService } from "@/content/portfolio";
 
 export function generateStaticParams() {
   return aiServices.map((s) => ({ slug: s.slug }));
@@ -34,7 +35,8 @@ export default async function Page({
   const relatedSlugs = relatedWorkByService[slug] ?? [];
   const related = relatedSlugs.length
     ? caseStudies.filter((c) => relatedSlugs.includes(c.slug))
-    : caseStudies.slice(0, 2);
+    : caseStudies.slice(0, 3);
+  const relatedPortfolio = getPortfolioForService(slug);
 
   return (
     <ServicePage
@@ -45,6 +47,7 @@ export default async function Page({
         { label: service.title },
       ]}
       relatedStudies={related}
+      relatedPortfolio={relatedPortfolio}
     />
   );
 }

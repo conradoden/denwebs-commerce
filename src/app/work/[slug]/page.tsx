@@ -151,7 +151,7 @@ export default async function CaseStudyPage({
             </p>
           ) : (
             <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
-              Real engagement, metrics as documented in project records.
+              Real engagement with live storefronts and measurable outcomes.
             </p>
           )}
         </Reveal>
