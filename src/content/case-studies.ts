@@ -182,7 +182,7 @@ export const caseStudies: CaseStudy[] = [
     client: "Wonderful Dental",
     industry: "Health & Medical",
     tags: ["B2B", "Performance", "Motion"],
-    title: "GSAP motion on a B2B dental-supply storefront without killing speed",
+    title: "GSAP motion for B2B dental commerce without killing speed",
     services: ["Design", "Development", "Performance"],
     platform: "Shopify 2.0",
     url: "https://wonderfuldental.com",

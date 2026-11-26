@@ -71,7 +71,7 @@ export default function About() {
       </section>
 
       <section className="mx-auto max-w-[88rem] px-5 py-16 md:py-24 lg:px-8">
-        <SectionHeading index="02" eyebrow="The numbers" title="Denwebs at a glance." copy="100+ Shopify storefronts in the portfolio we shipped, agency and client-side, since 2017." />
+        <SectionHeading index="02" eyebrow="The numbers" title="Denwebs at a glance." copy="100+ Shopify projects in the portfolio we shipped, agency and client-side, since 2017." />
         <div className="mt-12">
           <StatStrip />
         </div>

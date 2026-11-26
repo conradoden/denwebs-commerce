@@ -47,7 +47,7 @@ export default function PortfolioGrid({
       </div>
 
       <p className="mt-6 font-mono text-[12px] uppercase tracking-[0.1em] text-muted">
-        Showing {visible.length} of {projects.length} storefronts
+        Showing {visible.length} of {projects.length} projects
       </p>
 
       <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

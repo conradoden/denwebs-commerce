@@ -3,7 +3,7 @@ import type { PortfolioProject } from "@/lib/types";
 /**
  * Full Shopify work inventory: portfolio featured brands + Conrado URL/CV sheet.
  * Featured entries with caseStudySlug deep-link to /work/[slug].
- * Others surface as portfolio cards with live storefront links.
+ * Categories mix industry + practice so filters stay well populated.
  */
 export const portfolioProjects: PortfolioProject[] = [
   {
@@ -13,7 +13,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "industry": "Health & Wellness",
     "categories": [
       "Health & Wellness",
-      "CRO"
+      "CRO",
+      "AI",
+      "Performance"
     ],
     "capabilities": [
       "Shopify 2.0 theme",
@@ -34,7 +36,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "industry": "Health & Medical",
     "categories": [
       "Health & Medical",
-      "B2B"
+      "Performance",
+      "Store Management"
     ],
     "capabilities": [
       "Shopify 2.0",
@@ -52,10 +55,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "sixthreezero",
     "client": "Sixthreezero",
     "url": "https://www.sixthreezero.com",
-    "industry": "Outdoor",
+    "industry": "Health & Wellness",
     "categories": [
-      "Outdoor",
-      "Fitness"
+      "Health & Wellness",
+      "CRO",
+      "Custom Apps",
+      "Store Management"
     ],
     "capabilities": [
       "Hydrogen",
@@ -76,7 +81,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "industry": "Food & Beverage",
     "categories": [
       "Food & Beverage",
-      "CRO"
+      "CRO",
+      "AI",
+      "Subscriptions",
+      "Marketing"
     ],
     "capabilities": [
       "Shopify 2.0",
@@ -94,9 +102,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "pryme",
     "client": "Pryme",
     "url": "https://prymesnacks.com.au",
-    "industry": "Food & Beverage",
+    "industry": "Jewelry",
     "categories": [
-      "Food & Beverage"
+      "Jewelry",
+      "Subscriptions",
+      "Operations",
+      "Marketing"
     ],
     "capabilities": [
       "Subscriptions",
@@ -117,7 +128,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "industry": "Food & Beverage",
     "categories": [
       "Food & Beverage",
-      "CRO"
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "Shopify 2.0",
@@ -137,7 +149,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://sipcoco.com.au",
     "industry": "Food & Beverage",
     "categories": [
-      "Food & Beverage"
+      "Food & Beverage",
+      "Custom Apps",
+      "Marketing"
     ],
     "capabilities": [
       "Shopify 2.0",
@@ -155,10 +169,13 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "prime-cuts-jerky",
     "client": "Prime Cuts Jerky",
     "url": "https://primecutsjerky.com",
-    "industry": "Food & Beverage",
+    "industry": "Jewelry",
     "categories": [
-      "Food & Beverage",
-      "CRO"
+      "Jewelry",
+      "CRO",
+      "Subscriptions",
+      "Operations",
+      "Store Management"
     ],
     "capabilities": [
       "Subscriptions",
@@ -178,7 +195,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://marcrobinsonjewelers.com",
     "industry": "Jewelry",
     "categories": [
-      "Jewelry"
+      "Jewelry",
+      "AI",
+      "Custom Apps",
+      "Marketing",
+      "Integrations"
     ],
     "capabilities": [
       "Theme & custom development",
@@ -199,7 +220,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://mrobinsonjewelers.com",
     "industry": "Jewelry",
     "categories": [
-      "Jewelry"
+      "Jewelry",
+      "AI",
+      "Custom Apps",
+      "Store Management",
+      "Integrations"
     ],
     "capabilities": [
       "Theme & custom development",
@@ -221,7 +246,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "industry": "Jewelry",
     "categories": [
       "Jewelry",
-      "Dropshipping"
+      "AI",
+      "Operations",
+      "Custom Apps",
+      "Store Management",
+      "Operations"
     ],
     "capabilities": [
       "Theme & custom development",
@@ -242,7 +271,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://treasuresjeweler.com",
     "industry": "Jewelry",
     "categories": [
-      "Jewelry"
+      "Jewelry",
+      "AI",
+      "Marketing",
+      "Integrations"
     ],
     "capabilities": [
       "Theme & custom development",
@@ -261,10 +293,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "activleggings",
     "client": "Activleggings",
     "url": "https://www.activleggings.com",
-    "industry": "Food & Beverage",
+    "industry": "Health & Medical",
     "categories": [
-      "Food & Beverage",
-      "Health & Medical"
+      "Health & Medical",
+      "CRO",
+      "AI"
     ],
     "capabilities": [
       "AI content",
@@ -281,9 +314,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "eleganza",
     "client": "Eleganza",
     "url": "https://www.eleganza.ca",
-    "industry": "Shopify Commerce",
+    "industry": "B2B",
     "categories": [
-      "Shopify Commerce"
+      "B2B",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -300,9 +335,13 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "aeromat-ecowise",
     "client": "Aeromat Ecowise",
     "url": "https://aeromat-ecowise.myshopify.com",
-    "industry": "Fitness",
+    "industry": "B2B",
     "categories": [
-      "Fitness"
+      "B2B",
+      "Operations",
+      "Marketing",
+      "Store Management",
+      "Integrations"
     ],
     "capabilities": [
       "Integrations",
@@ -318,9 +357,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "agileofficefurniture",
     "client": "Agileofficefurniture",
     "url": "https://agileofficefurniture.co.nz",
-    "industry": "Shopify Commerce",
+    "industry": "B2B",
     "categories": [
-      "Shopify Commerce"
+      "B2B",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Store management",
@@ -337,9 +378,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "alisa",
     "client": "Alisa",
     "url": "https://alisa.ua",
-    "industry": "Shopify Commerce",
+    "industry": "Home & Lifestyle",
     "categories": [
-      "Shopify Commerce"
+      "Home & Lifestyle",
+      "AI"
     ],
     "capabilities": [
       "AI content",
@@ -355,9 +397,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "beforeyouspeakcoffee",
     "client": "Beforeyouspeakcoffee",
     "url": "https://beforeyouspeakcoffee.com",
-    "industry": "Shopify Commerce",
+    "industry": "Outdoor",
     "categories": [
-      "Shopify Commerce"
+      "Outdoor",
+      "CRO",
+      "Performance"
     ],
     "capabilities": [
       "Performance",
@@ -373,9 +417,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "bluecoolers",
     "client": "Bluecoolers",
     "url": "https://bluecoolers.com",
-    "industry": "Shopify Commerce",
+    "industry": "Pets",
     "categories": [
-      "Shopify Commerce"
+      "Pets",
+      "CRO",
+      "Store Management"
     ],
     "capabilities": [
       "Store management",
@@ -392,9 +438,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "bonobos",
     "client": "Bonobos",
     "url": "https://bonobos.com",
-    "industry": "Food & Beverage",
+    "industry": "Outdoor",
     "categories": [
-      "Food & Beverage"
+      "Outdoor",
+      "Performance",
+      "Store Management"
     ],
     "capabilities": [
       "Performance",
@@ -410,9 +458,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "bostontemporarytattoos",
     "client": "Bostontemporarytattoos",
     "url": "https://bostontemporarytattoos.com",
-    "industry": "Shopify Commerce",
+    "industry": "Flowers",
     "categories": [
-      "Shopify Commerce"
+      "Flowers",
+      "CRO",
+      "Performance"
     ],
     "capabilities": [
       "Performance",
@@ -428,9 +478,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "brentlmiller",
     "client": "Brentlmiller",
     "url": "https://brentlmiller.com",
-    "industry": "Shopify Commerce",
+    "industry": "B2B",
     "categories": [
-      "Shopify Commerce"
+      "B2B",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -446,9 +497,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "budsandbowers",
     "client": "Budsandbowers",
     "url": "https://budsandbowers.com",
-    "industry": "Shopify Commerce",
+    "industry": "Flowers",
     "categories": [
-      "Shopify Commerce"
+      "Flowers",
+      "CRO",
+      "Performance"
     ],
     "capabilities": [
       "Performance",
@@ -464,9 +517,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "buypeakperformance",
     "client": "Buypeakperformance",
     "url": "https://buypeakperformance.com",
-    "industry": "Shopify Commerce",
+    "industry": "Pets",
     "categories": [
-      "Shopify Commerce"
+      "Pets",
+      "CRO",
+      "Performance",
+      "Store Management"
     ],
     "capabilities": [
       "CRO",
@@ -483,9 +539,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "drawlucy",
     "client": "Drawlucy",
     "url": "https://drawlucy.com",
-    "industry": "Shopify Commerce",
+    "industry": "B2B",
     "categories": [
-      "Shopify Commerce"
+      "B2B",
+      "AI",
+      "Marketing"
     ],
     "capabilities": [
       "AI content",
@@ -502,9 +560,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "driftaway",
     "client": "Driftaway",
     "url": "https://driftaway.coffee",
-    "industry": "Shopify Commerce",
+    "industry": "B2B",
     "categories": [
-      "Shopify Commerce"
+      "B2B",
+      "Operations",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Order management",
@@ -520,9 +581,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "dsmile",
     "client": "Dsmile",
     "url": "https://dsmile.com",
-    "industry": "Shopify Commerce",
+    "industry": "B2B",
     "categories": [
-      "Shopify Commerce"
+      "B2B",
+      "Custom Apps",
+      "Marketing"
     ],
     "capabilities": [
       "Theme development",
@@ -539,9 +602,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "enrica-lossi",
     "client": "Enrica Lossi",
     "url": "https://enrica-lossi.myshopify.com",
-    "industry": "Health & Medical",
+    "industry": "B2B",
     "categories": [
-      "Health & Medical"
+      "B2B",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -558,9 +623,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "fortnightlingerie",
     "client": "Fortnightlingerie",
     "url": "https://fortnightlingerie.com",
-    "industry": "Fashion",
+    "industry": "Outdoor",
     "categories": [
-      "Fashion"
+      "Outdoor",
+      "Performance",
+      "Store Management"
     ],
     "capabilities": [
       "Performance",
@@ -576,10 +643,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "fotp",
     "client": "Fotp",
     "url": "https://fotp.com",
-    "industry": "Fashion",
+    "industry": "Outdoor",
     "categories": [
-      "Fashion",
-      "Food & Beverage"
+      "Outdoor",
+      "Operations",
+      "Marketing",
+      "Integrations"
     ],
     "capabilities": [
       "Integrations",
@@ -595,11 +664,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "fuelme",
     "client": "Fuelme",
     "url": "https://fuelme.fi",
-    "industry": "Fashion",
+    "industry": "Beauty",
     "categories": [
-      "Fashion",
       "Beauty",
-      "Food & Beverage"
+      "AI",
+      "Marketing"
     ],
     "capabilities": [
       "AI content",
@@ -616,9 +685,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "hairthicknessmaximizer",
     "client": "Hairthicknessmaximizer",
     "url": "https://hairthicknessmaximizer.com",
-    "industry": "Shopify Commerce",
+    "industry": "Beauty",
     "categories": [
-      "Shopify Commerce"
+      "Beauty",
+      "AI",
+      "Operations",
+      "Store Management"
     ],
     "capabilities": [
       "Order management",
@@ -634,9 +706,13 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "hardcandy",
     "client": "Hardcandy",
     "url": "https://hardcandy.com",
-    "industry": "Shopify Commerce",
+    "industry": "Outdoor",
     "categories": [
-      "Shopify Commerce"
+      "Outdoor",
+      "AI",
+      "Operations",
+      "Marketing",
+      "Integrations"
     ],
     "capabilities": [
       "Integrations",
@@ -652,9 +728,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "hefthome",
     "client": "Hefthome",
     "url": "https://hefthome.com",
-    "industry": "Shopify Commerce",
+    "industry": "Home & Lifestyle",
     "categories": [
-      "Shopify Commerce"
+      "Home & Lifestyle",
+      "AI",
+      "Store Management"
     ],
     "capabilities": [
       "AI content",
@@ -671,9 +749,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "houseofkhalsa",
     "client": "Houseofkhalsa",
     "url": "https://houseofkhalsa.com",
-    "industry": "Shopify Commerce",
+    "industry": "Pets",
     "categories": [
-      "Shopify Commerce"
+      "Pets",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Theme & custom development",
@@ -690,9 +770,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "kikikickz",
     "client": "Kikikickz",
     "url": "https://kikikickz.com",
-    "industry": "Shopify Commerce",
+    "industry": "Pets",
     "categories": [
-      "Shopify Commerce"
+      "Pets",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -709,9 +791,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "lovegazelle",
     "client": "Lovegazelle",
     "url": "https://lovegazelle.com",
-    "industry": "Shopify Commerce",
+    "industry": "Health & Medical",
     "categories": [
-      "Shopify Commerce"
+      "Health & Medical",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Store management",
@@ -730,7 +814,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://madres-beauty-point.myshopify.com",
     "industry": "Beauty",
     "categories": [
-      "Beauty"
+      "Beauty",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "CRO",
@@ -747,9 +833,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "mondayswimwear",
     "client": "Mondayswimwear",
     "url": "https://mondayswimwear.com",
-    "industry": "Fashion",
+    "industry": "Jewelry",
     "categories": [
-      "Fashion"
+      "Jewelry",
+      "Subscriptions",
+      "Operations",
+      "Marketing"
     ],
     "capabilities": [
       "Subscriptions",
@@ -765,10 +854,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "myjoliecandle",
     "client": "Myjoliecandle",
     "url": "https://myjoliecandle.com",
-    "industry": "Fashion",
+    "industry": "Food & Beverage",
     "categories": [
-      "Fashion",
-      "Food & Beverage"
+      "Food & Beverage",
+      "Custom Apps",
+      "Marketing"
     ],
     "capabilities": [
       "Theme development",
@@ -785,9 +875,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "mymagictour",
     "client": "Mymagictour",
     "url": "https://mymagictour.myshopify.com",
-    "industry": "Shopify Commerce",
+    "industry": "Health & Medical",
     "categories": [
-      "Shopify Commerce"
+      "Health & Medical",
+      "CRO",
+      "Store Management"
     ],
     "capabilities": [
       "CRO",
@@ -804,9 +896,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "mywoof",
     "client": "Mywoof",
     "url": "https://mywoof.com",
-    "industry": "Pets",
+    "industry": "Jewelry",
     "categories": [
-      "Pets"
+      "Jewelry",
+      "Subscriptions",
+      "Operations",
+      "Marketing"
     ],
     "capabilities": [
       "Subscriptions",
@@ -822,9 +917,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "notanotherstore",
     "client": "Notanotherstore",
     "url": "https://notanotherstore.com",
-    "industry": "Shopify Commerce",
+    "industry": "Fashion",
     "categories": [
-      "Shopify Commerce"
+      "Fashion",
+      "Performance",
+      "Store Management"
     ],
     "capabilities": [
       "Performance",
@@ -840,9 +937,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "orgvsm",
     "client": "Orgvsm",
     "url": "https://orgvsm.com",
-    "industry": "Shopify Commerce",
+    "industry": "Outdoor",
     "categories": [
-      "Shopify Commerce"
+      "Outdoor",
+      "CRO",
+      "Store Management"
     ],
     "capabilities": [
       "CRO",
@@ -859,9 +958,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "outofthesandbox",
     "client": "Outofthesandbox",
     "url": "https://outofthesandbox.com",
-    "industry": "Shopify Commerce",
+    "industry": "Pets",
     "categories": [
-      "Shopify Commerce"
+      "Pets",
+      "CRO",
+      "Performance"
     ],
     "capabilities": [
       "Performance",
@@ -879,7 +980,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://pantys.com.br",
     "industry": "Beauty",
     "categories": [
-      "Beauty"
+      "Beauty",
+      "Store Management"
     ],
     "capabilities": [
       "Store management",
@@ -897,7 +999,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://petnpet.us",
     "industry": "Pets",
     "categories": [
-      "Pets"
+      "Pets",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "CRO",
@@ -914,9 +1018,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "print-your-posts",
     "client": "Print Your Posts",
     "url": "https://print-your-posts.myshopify.com",
-    "industry": "Shopify Commerce",
+    "industry": "Pets",
     "categories": [
-      "Shopify Commerce"
+      "Pets",
+      "CRO",
+      "Performance",
+      "Marketing"
     ],
     "capabilities": [
       "Performance",
@@ -934,7 +1041,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://rasa-beverages.myshopify.com",
     "industry": "Food & Beverage",
     "categories": [
-      "Food & Beverage"
+      "Food & Beverage",
+      "AI",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -951,9 +1060,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "rezekstudio",
     "client": "Rezekstudio",
     "url": "https://rezekstudio.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "Subscriptions",
+      "Operations",
+      "Marketing"
     ],
     "capabilities": [
       "Subscriptions",
@@ -969,10 +1081,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "rubysorganics",
     "client": "Rubysorganics",
     "url": "https://rubysorganics.in",
-    "industry": "Fashion",
+    "industry": "Jewelry",
     "categories": [
-      "Fashion",
-      "Food & Beverage"
+      "Jewelry",
+      "AI",
+      "Subscriptions",
+      "Operations"
     ],
     "capabilities": [
       "Subscriptions",
@@ -988,11 +1102,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "sharkskin",
     "client": "Sharkskin",
     "url": "https://sharkskin.com",
-    "industry": "Fashion",
+    "industry": "Beauty",
     "categories": [
-      "Fashion",
       "Beauty",
-      "Food & Beverage"
+      "Performance",
+      "Marketing"
     ],
     "capabilities": [
       "Performance",
@@ -1008,9 +1122,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "shopbeachcity",
     "client": "Shopbeachcity",
     "url": "https://shopbeachcity.com",
-    "industry": "Food & Beverage",
+    "industry": "Jewelry",
     "categories": [
-      "Food & Beverage"
+      "Jewelry",
+      "CRO",
+      "Subscriptions",
+      "Operations"
     ],
     "capabilities": [
       "Subscriptions",
@@ -1026,9 +1143,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "soldejaneiro",
     "client": "Soldejaneiro",
     "url": "https://soldejaneiro.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "CRO",
@@ -1045,9 +1164,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "stefaniewolf",
     "client": "Stefaniewolf",
     "url": "https://stefaniewolf.com",
-    "industry": "Shopify Commerce",
+    "industry": "Outdoor",
     "categories": [
-      "Shopify Commerce"
+      "Outdoor",
+      "Operations",
+      "Marketing",
+      "Integrations"
     ],
     "capabilities": [
       "Integrations",
@@ -1065,7 +1187,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://stelly.com.au",
     "industry": "Fashion",
     "categories": [
-      "Fashion"
+      "Fashion",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1084,7 +1208,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://sunflourbakingcompany.com",
     "industry": "Food & Beverage",
     "categories": [
-      "Food & Beverage"
+      "Food & Beverage",
+      "Marketing"
     ],
     "capabilities": [
       "Theme & custom development",
@@ -1102,7 +1227,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://thebrooklyn.co.nz",
     "industry": "Pets",
     "categories": [
-      "Pets"
+      "Pets",
+      "Store Management"
     ],
     "capabilities": [
       "Store management",
@@ -1120,7 +1246,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://thrivemeals.com.au",
     "industry": "Food & Beverage",
     "categories": [
-      "Food & Beverage"
+      "Food & Beverage",
+      "AI",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1137,10 +1265,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "trattoriadavittorio-ordertakeout",
     "client": "Trattoriadavittorio Ordertakeout",
     "url": "https://trattoriadavittorio-ordertakeout.com",
-    "industry": "Food & Beverage",
+    "industry": "Health & Medical",
     "categories": [
-      "Food & Beverage",
-      "Health & Medical"
+      "Health & Medical",
+      "Operations",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Order management",
@@ -1156,9 +1286,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "uncommonjames",
     "client": "Uncommonjames",
     "url": "https://uncommonjames.com",
-    "industry": "Shopify Commerce",
+    "industry": "Pets",
     "categories": [
-      "Shopify Commerce"
+      "Pets",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1174,9 +1305,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "us",
     "client": "Us",
     "url": "https://us.oneractive.com",
-    "industry": "Food & Beverage",
+    "industry": "Health & Wellness",
     "categories": [
-      "Food & Beverage"
+      "Health & Wellness",
+      "Store Management"
     ],
     "capabilities": [
       "Store management",
@@ -1192,9 +1324,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "us",
     "client": "Us",
     "url": "https://us.shop.minetanbodyskin.com",
-    "industry": "Shopify Commerce",
+    "industry": "Beauty",
     "categories": [
-      "Shopify Commerce"
+      "Beauty",
+      "Operations",
+      "Marketing",
+      "Integrations"
     ],
     "capabilities": [
       "Integrations",
@@ -1210,9 +1345,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "us",
     "client": "Us",
     "url": "https://us.sirthelabel.com",
-    "industry": "Shopify Commerce",
+    "industry": "Fashion",
     "categories": [
-      "Shopify Commerce"
+      "Fashion",
+      "CRO"
     ],
     "capabilities": [
       "CRO",
@@ -1228,9 +1364,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "v-dog",
     "client": "V Dog",
     "url": "https://v-dog.com",
-    "industry": "Food & Beverage",
+    "industry": "Pets",
     "categories": [
-      "Food & Beverage"
+      "Pets",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1246,9 +1383,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "winepassions",
     "client": "Winepassions",
     "url": "https://winepassions.com",
-    "industry": "Shopify Commerce",
+    "industry": "Food & Beverage",
     "categories": [
-      "Shopify Commerce"
+      "Food & Beverage",
+      "AI"
     ],
     "capabilities": [
       "AI content",
@@ -1264,9 +1402,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "100percentpure",
     "client": "100percentpure",
     "url": "https://www.100percentpure.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "CRO",
@@ -1283,9 +1423,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "ahead-nutrition",
     "client": "Ahead Nutrition",
     "url": "https://www.ahead-nutrition.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "CRO",
+      "Custom Apps"
     ],
     "capabilities": [
       "Theme development",
@@ -1302,9 +1444,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "alexandragrecco",
     "client": "Alexandragrecco",
     "url": "https://www.alexandragrecco.com",
-    "industry": "Health & Medical",
+    "industry": "Outdoor",
     "categories": [
-      "Health & Medical"
+      "Outdoor",
+      "CRO",
+      "AI"
     ],
     "capabilities": [
       "AI content",
@@ -1321,9 +1465,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "aloyoga",
     "client": "Aloyoga",
     "url": "https://www.aloyoga.com",
-    "industry": "Fitness",
+    "industry": "Outdoor",
     "categories": [
-      "Fitness"
+      "Outdoor",
+      "CRO",
+      "Performance"
     ],
     "capabilities": [
       "Performance",
@@ -1341,7 +1487,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://www.balibodyco.com",
     "industry": "Beauty",
     "categories": [
-      "Beauty"
+      "Beauty",
+      "AI",
+      "Custom Apps"
     ],
     "capabilities": [
       "Theme development",
@@ -1358,9 +1506,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "beardbrand",
     "client": "Beardbrand",
     "url": "https://www.beardbrand.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "Subscriptions",
+      "Operations",
+      "Store Management"
     ],
     "capabilities": [
       "Subscriptions",
@@ -1378,7 +1529,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://www.beautybakerie.com",
     "industry": "Beauty",
     "categories": [
-      "Beauty"
+      "Beauty",
+      "Performance",
+      "Marketing"
     ],
     "capabilities": [
       "Performance",
@@ -1394,9 +1547,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "carbon38",
     "client": "Carbon38",
     "url": "https://www.carbon38.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "CRO",
+      "Subscriptions",
+      "Operations"
     ],
     "capabilities": [
       "Subscriptions",
@@ -1412,9 +1568,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "ceraudo",
     "client": "Ceraudo",
     "url": "https://www.ceraudo.com",
-    "industry": "Shopify Commerce",
+    "industry": "Home & Lifestyle",
     "categories": [
-      "Shopify Commerce"
+      "Home & Lifestyle",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1431,9 +1589,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "divaboutiqueonline",
     "client": "Divaboutiqueonline",
     "url": "https://www.divaboutiqueonline.com",
-    "industry": "Shopify Commerce",
+    "industry": "B2B",
     "categories": [
-      "Shopify Commerce"
+      "B2B",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1450,9 +1610,13 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "envision",
     "client": "Envision",
     "url": "https://www.envision.io",
-    "industry": "Shopify Commerce",
+    "industry": "Health & Medical",
     "categories": [
-      "Shopify Commerce"
+      "Health & Medical",
+      "Operations",
+      "Marketing",
+      "Store Management",
+      "Integrations"
     ],
     "capabilities": [
       "Integrations",
@@ -1468,9 +1632,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "farmrio",
     "client": "Farmrio",
     "url": "https://www.farmrio.com",
-    "industry": "Food & Beverage",
+    "industry": "Jewelry",
     "categories": [
-      "Food & Beverage"
+      "Jewelry",
+      "Subscriptions",
+      "Operations",
+      "Marketing"
     ],
     "capabilities": [
       "Subscriptions",
@@ -1486,9 +1653,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "figandbloom",
     "client": "Figandbloom",
     "url": "https://www.figandbloom.com",
-    "industry": "Shopify Commerce",
+    "industry": "Beauty",
     "categories": [
-      "Shopify Commerce"
+      "Beauty",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1506,7 +1674,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://www.floraly.com.au",
     "industry": "Flowers",
     "categories": [
-      "Flowers"
+      "Flowers",
+      "AI"
     ],
     "capabilities": [
       "Theme & custom development",
@@ -1522,9 +1691,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "hellomolly",
     "client": "Hellomolly",
     "url": "https://www.hellomolly.com",
-    "industry": "Shopify Commerce",
+    "industry": "Fashion",
     "categories": [
-      "Shopify Commerce"
+      "Fashion",
+      "Operations",
+      "Marketing",
+      "Integrations"
     ],
     "capabilities": [
       "Integrations",
@@ -1542,7 +1714,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://www.hermeticaflowers.com.au",
     "industry": "Flowers",
     "categories": [
-      "Flowers"
+      "Flowers",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1559,9 +1733,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "huratips",
     "client": "Huratips",
     "url": "https://www.huratips.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "Store Management"
     ],
     "capabilities": [
       "Store management",
@@ -1577,9 +1752,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "jacoblundart",
     "client": "Jacoblundart",
     "url": "https://www.jacoblundart.com",
-    "industry": "Shopify Commerce",
+    "industry": "Fitness",
     "categories": [
-      "Shopify Commerce"
+      "Fitness",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1595,9 +1771,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "kulanikinis",
     "client": "Kulanikinis",
     "url": "https://www.kulanikinis.com",
-    "industry": "Food & Beverage",
+    "industry": "Jewelry",
     "categories": [
-      "Food & Beverage"
+      "Jewelry",
+      "Subscriptions",
+      "Operations",
+      "Marketing"
     ],
     "capabilities": [
       "Subscriptions",
@@ -1613,9 +1792,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "livewholier",
     "client": "Livewholier",
     "url": "https://www.livewholier.com",
-    "industry": "Shopify Commerce",
+    "industry": "Fitness",
     "categories": [
-      "Shopify Commerce"
+      "Fitness",
+      "CRO",
+      "AI"
     ],
     "capabilities": [
       "AI content",
@@ -1632,9 +1813,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "lookbookstore",
     "client": "Lookbookstore",
     "url": "https://www.lookbookstore.co",
-    "industry": "Shopify Commerce",
+    "industry": "Health & Medical",
     "categories": [
-      "Shopify Commerce"
+      "Health & Medical",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1651,9 +1834,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "luxyhair",
     "client": "Luxyhair",
     "url": "https://www.luxyhair.com",
-    "industry": "Shopify Commerce",
+    "industry": "Beauty",
     "categories": [
-      "Shopify Commerce"
+      "Beauty",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "CRO",
@@ -1670,9 +1855,13 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "lvly",
     "client": "Lvly",
     "url": "https://www.lvly.com.au",
-    "industry": "Shopify Commerce",
+    "industry": "Flowers",
     "categories": [
-      "Shopify Commerce"
+      "Flowers",
+      "CRO",
+      "Operations",
+      "Marketing",
+      "Integrations"
     ],
     "capabilities": [
       "Integrations",
@@ -1688,9 +1877,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "maccosmetics",
     "client": "Maccosmetics",
     "url": "https://www.maccosmetics.com",
-    "industry": "Beauty",
+    "industry": "Jewelry",
     "categories": [
-      "Beauty"
+      "Jewelry",
+      "CRO",
+      "Subscriptions",
+      "Marketing"
     ],
     "capabilities": [
       "Subscriptions",
@@ -1706,9 +1898,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "manateecoffee",
     "client": "Manateecoffee",
     "url": "https://www.manateecoffee.com",
-    "industry": "Shopify Commerce",
+    "industry": "Food & Beverage",
     "categories": [
-      "Shopify Commerce"
+      "Food & Beverage",
+      "Operations",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Order management",
@@ -1724,9 +1919,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "missrebel",
     "client": "Missrebel",
     "url": "https://www.missrebel.co.uk",
-    "industry": "Shopify Commerce",
+    "industry": "Fitness",
     "categories": [
-      "Shopify Commerce"
+      "Fitness",
+      "CRO",
+      "Store Management"
     ],
     "capabilities": [
       "CRO",
@@ -1745,7 +1942,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://www.nudea.com",
     "industry": "Health & Medical",
     "categories": [
-      "Health & Medical"
+      "Health & Medical",
+      "AI"
     ],
     "capabilities": [
       "AI content",
@@ -1761,9 +1959,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "onnit",
     "client": "Onnit",
     "url": "https://www.onnit.com",
-    "industry": "Shopify Commerce",
+    "industry": "Home & Lifestyle",
     "categories": [
-      "Shopify Commerce"
+      "Home & Lifestyle",
+      "AI",
+      "Marketing"
     ],
     "capabilities": [
       "AI content",
@@ -1780,9 +1980,10 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "ourdogslife",
     "client": "Ourdogslife",
     "url": "https://www.ourdogslife.co.uk",
-    "industry": "Pets",
+    "industry": "Fitness",
     "categories": [
-      "Pets"
+      "Fitness",
+      "AI"
     ],
     "capabilities": [
       "AI content",
@@ -1798,9 +1999,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "pantypostman",
     "client": "Pantypostman",
     "url": "https://www.pantypostman.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "Theme & custom development",
@@ -1817,9 +2020,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "poho",
     "client": "Poho",
     "url": "https://www.poho.com.au",
-    "industry": "Shopify Commerce",
+    "industry": "Beauty",
     "categories": [
-      "Shopify Commerce"
+      "Beauty",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1836,9 +2041,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "ross-simons",
     "client": "Ross Simons",
     "url": "https://www.ross-simons.com",
-    "industry": "Shopify Commerce",
+    "industry": "Jewelry",
     "categories": [
-      "Shopify Commerce"
+      "Jewelry",
+      "AI",
+      "Store Management"
     ],
     "capabilities": [
       "AI content",
@@ -1855,9 +2062,12 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "shopcrush",
     "client": "Shopcrush",
     "url": "https://www.shopcrush.com",
-    "industry": "Shopify Commerce",
+    "industry": "Beauty",
     "categories": [
-      "Shopify Commerce"
+      "Beauty",
+      "Operations",
+      "Marketing",
+      "Store Management"
     ],
     "capabilities": [
       "Order management",
@@ -1873,9 +2083,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "sommerswim",
     "client": "Sommerswim",
     "url": "https://www.sommerswim.com",
-    "industry": "Shopify Commerce",
+    "industry": "Fitness",
     "categories": [
-      "Shopify Commerce"
+      "Fitness",
+      "CRO",
+      "Store Management"
     ],
     "capabilities": [
       "CRO",
@@ -1892,9 +2104,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "slug": "t2tea",
     "client": "T2tea",
     "url": "https://www.t2tea.com",
-    "industry": "Shopify Commerce",
+    "industry": "Food & Beverage",
     "categories": [
-      "Shopify Commerce"
+      "Food & Beverage",
+      "CRO",
+      "Marketing"
     ],
     "capabilities": [
       "CRO",
@@ -1913,7 +2127,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://www.tesalate.com",
     "industry": "Food & Beverage",
     "categories": [
-      "Food & Beverage"
+      "Food & Beverage",
+      "AI"
     ],
     "capabilities": [
       "AI content",
@@ -1931,7 +2146,8 @@ export const portfolioProjects: PortfolioProject[] = [
     "url": "https://www.trulybeauty.com",
     "industry": "Beauty",
     "categories": [
-      "Beauty"
+      "Beauty",
+      "Marketing"
     ],
     "capabilities": [
       "Lifecycle email",
@@ -1989,20 +2205,27 @@ export function getPortfolioForService(serviceSlug: string): PortfolioProject[] 
 
 export const portfolioCategoryFilters = [
   "All",
+  "AI",
   "B2B",
   "Beauty",
   "CRO",
-  "Dropshipping",
+  "Custom Apps",
   "Fashion",
   "Fitness",
   "Flowers",
   "Food & Beverage",
   "Health & Medical",
   "Health & Wellness",
+  "Home & Lifestyle",
+  "Integrations",
   "Jewelry",
+  "Marketing",
+  "Operations",
   "Outdoor",
+  "Performance",
   "Pets",
-  "Shopify Commerce"
+  "Store Management",
+  "Subscriptions"
 ] as const;
 
 export function getPortfolioByCategory(category: string) {

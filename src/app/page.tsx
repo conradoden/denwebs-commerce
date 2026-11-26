@@ -87,7 +87,7 @@ const process = [
 ];
 
 const heroProof = [
-  { value: "100+", label: "Shopify storefronts shipped" },
+  { value: "100+", label: "Shopify projects shipped" },
   { value: "CRO + AI", label: "growth practices in-house" },
   { value: "$10k/mo", label: "OMS cost cut for one client" },
   { value: "Senior", label: "operators on every engagement" },

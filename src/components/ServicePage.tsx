@@ -102,7 +102,7 @@ export default function ServicePage({
               index={relatedStudies.length > 0 ? "04" : "03"}
               eyebrow="Portfolio"
               title="Stores we shipped in this practice."
-              copy={`${relatedPortfolio.length} storefronts from the portfolio mapped to this service.`}
+              copy={`${relatedPortfolio.length} projects from the portfolio mapped to this service.`}
             />
             <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {relatedPortfolio.map((p) => (
