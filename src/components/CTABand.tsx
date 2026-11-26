@@ -27,7 +27,7 @@ export default function CTABand({
               <Button href="/contact" variant="accent" arrow>
                 Get a quote
               </Button>
-              <Button href="/contact?intent=discovery" variant="outlineLight" arrow>
+              <Button href="/contact?intent=discovery#book" variant="outlineLight" arrow>
                 Book a discovery call
               </Button>
             </div>

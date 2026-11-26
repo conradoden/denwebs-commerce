@@ -37,7 +37,7 @@ export default function ServicePage({
               <Button href="/contact" variant="dark" arrow>
                 Get a quote
               </Button>
-              <Button href="/contact?intent=discovery" variant="outlineDark" arrow>
+              <Button href="/contact?intent=discovery#book" variant="outlineDark" arrow>
                 Talk to an expert
               </Button>
             </div>

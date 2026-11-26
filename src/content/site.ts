@@ -5,6 +5,9 @@ export const site = {
   phone: "", // TBD, hidden until real number is confirmed
   description:
     "Strategy, design, development, catalogue, inventory, OMS, and AI optimization for ambitious Shopify brands.",
+  /** Cal.com username/event for discovery calls (no leading slash). */
+  calLink: "conrado-tanglao-kuc26d/30min",
+  bookingUrl: "https://cal.com/conrado-tanglao-kuc26d/30min",
 };
 
 // Mega-menu structure, every link must resolve to a real route.

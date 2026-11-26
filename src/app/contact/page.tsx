@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import ContactForm from "@/components/ContactForm";
+import ContactPanel from "@/components/ContactPanel";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Get a Quote",
   description:
-    "Tell us about your Shopify project. We reply within one business day.",
+    "Tell us about your Shopify project, or book a 30-minute discovery call. We reply within one business day.",
 };
 
 export default function Contact() {
@@ -19,8 +19,8 @@ export default function Contact() {
             Tell us what <span className="accent-serif font-normal">needs to change</span>.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted">
-            Migration, rebuild, operations, or AI. A few sentences is enough to
-            start. A senior person reads every submission.
+            Migration, rebuild, operations, or AI. Send a message, or book a
+            30-minute discovery call and pick a slot that works.
           </p>
           <div className="mt-10 space-y-6 border-t border-line pt-8">
             <div>
@@ -30,6 +30,15 @@ export default function Contact() {
                 className="mt-2 inline-block font-medium underline decoration-accent decoration-2 underline-offset-[6px]"
               >
                 {site.email}
+              </a>
+            </div>
+            <div>
+              <p className="eyebrow">Book a call</p>
+              <a
+                href="#book"
+                className="mt-2 inline-block font-medium underline decoration-accent decoration-2 underline-offset-[6px]"
+              >
+                30-minute discovery →
               </a>
             </div>
             <div>
@@ -47,11 +56,9 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="rounded-[5px] border border-line bg-paper-dim p-6 md:p-10">
-          <Suspense fallback={<p className="text-muted">Loading form…</p>}>
-            <ContactForm />
-          </Suspense>
-        </div>
+        <Suspense fallback={<p className="text-muted">Loading…</p>}>
+          <ContactPanel />
+        </Suspense>
       </div>
     </section>
   );
