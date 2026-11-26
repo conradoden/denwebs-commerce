@@ -10,11 +10,14 @@ const industryAccent: Record<string, string> = {
   Outdoor: "#8fb98a",
   Beauty: "#d8a7c3",
   "CPG / Food": "#e0b878",
+  "Food & Beverage": "#e0b878",
+  "Health & Wellness": "#7ec8a3",
+  "Health & Medical": "#8ec9c2",
   Fashion: "#9fb6d8",
   B2B: "#8ec9c2",
 };
 
-// Composed storefront mock — abstract browser UI, not a fake screenshot.
+// Composed storefront mock, abstract browser UI, not a fake screenshot.
 function StorefrontMock({ accent, label }: { accent: string; label: string }) {
   return (
     <div className="absolute inset-0 flex flex-col bg-ink p-4 transition-transform duration-500 group-hover:scale-[1.02]">

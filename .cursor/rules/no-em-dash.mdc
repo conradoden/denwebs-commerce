@@ -1,0 +1,24 @@
+---
+description: Never use em dashes in Denwebs commerce site copy or UI
+alwaysApply: true
+---
+
+# No em dashes
+
+Do not use the em dash character (`—`) or the pattern ` — ` anywhere in this project: UI copy, content modules, metadata titles, comments that surface in docs, or generated text.
+
+## Prefer instead
+
+- Comma or period for asides: `Migration, rebuild, operations.`
+- Colon for labels: `Email: hello@denwebs.com`
+- Section indexes with a period: `01. Work` (never `01 — Work`)
+- Title separators with a pipe: `Audits | Denwebs` (never `Audits — Denwebs`)
+- Hyphen or en dash only for numeric ranges if needed: `1-3 months`, `$50k-250k`
+
+## Also avoid
+
+- HTML entities `&mdash;` / `&#8212;`
+- Fake em dashes made of double hyphens (` -- `) in user-facing copy
+- Eyebrow/`::before` ornaments that look like a dash before labels (no `— Contact` look)
+
+When editing existing strings that still contain `—`, rewrite them to one of the forms above.

@@ -28,7 +28,7 @@ export default async function Privacy({
   return (
     <article className="mx-auto max-w-3xl px-5 py-16 md:py-20 lg:px-8">
       <p className="font-mono text-[13px] uppercase tracking-widest text-muted">{t.privacy.legal}</p>
-      <h1 className="mt-4 font-display text-4xl font-bold tracking-tight md:text-5xl">
+      <h1 className="mt-4 font-display text-5xl font-bold tracking-tight md:text-6xl">
         {t.privacy.title}
       </h1>
       <p className="mt-3 font-mono text-[12px] uppercase tracking-wide text-muted">

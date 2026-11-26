@@ -27,7 +27,7 @@ export async function generateMetadata({
   const study = getContent(locale).getCaseStudy(slug);
   if (!study) return {};
   return {
-    title: `${study.client} — ${study.title}`,
+    title: `${study.client}, ${study.title}`,
     description: fmt(t.caseStudy.metaDesc, {
       title: study.title,
       industry: study.industry,
@@ -76,7 +76,7 @@ export default async function CaseStudyPage({
               </span>
             )}
           </div>
-          <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
+          <h1 className="mt-5 max-w-4xl font-display text-5xl font-bold leading-[1.03] tracking-[-0.03em] md:text-7xl">
             {study.title}
           </h1>
           {study.url && (

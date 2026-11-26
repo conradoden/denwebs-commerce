@@ -79,7 +79,7 @@ export default function ContactForm({
 
   return (
     <form onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2" noValidate={false}>
-      {/* Honeypot — hidden from humans */}
+      {/* Honeypot, hidden from humans */}
       <div className="hidden" aria-hidden="true">
         <label>
           {form.honeypot}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ServicePage from "@/components/ServicePage";
 import { getContent } from "@/content";
+import { getPortfolioForService } from "@/content/portfolio";
 import { getMessages } from "@/i18n/dictionaries";
 import { langAlternates, locales, resolveLocale } from "@/i18n/config";
 
@@ -21,7 +22,7 @@ export async function generateMetadata({
   const service = getContent(locale).getService(slug);
   if (!service) return {};
   return {
-    title: `${service.title} — ${getMessages(locale).servicePage.crumbServices}`,
+    title: `${service.title} | ${getMessages(locale).servicePage.crumbServices}`,
     description: service.promise,
     alternates: langAlternates(locale, `/services/${slug}`),
   };
@@ -42,7 +43,8 @@ export default async function Page({
   const relatedSlugs = c.relatedWorkByService[slug] ?? [];
   const related = relatedSlugs.length
     ? c.caseStudies.filter((cs) => relatedSlugs.includes(cs.slug))
-    : c.caseStudies.slice(0, 2);
+    : c.caseStudies.slice(0, 3);
+  const relatedPortfolio = getPortfolioForService(slug);
 
   return (
     <ServicePage
@@ -56,6 +58,7 @@ export default async function Page({
         { label: service.title },
       ]}
       relatedStudies={related}
+      relatedPortfolio={relatedPortfolio}
     />
   );
 }

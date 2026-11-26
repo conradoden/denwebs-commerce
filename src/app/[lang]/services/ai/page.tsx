@@ -56,7 +56,7 @@ export default async function AIHub({
           <p className="eyebrow mt-6" data-dark="true">
             {t.aiHub.eyebrow}
           </p>
-          <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
+          <h1 className="mt-5 max-w-4xl font-display text-5xl font-bold leading-[1.02] tracking-[-0.03em] md:text-7xl">
             {t.aiHub.h1a} <span className="accent-serif font-normal">{t.aiHub.h1b}</span>{" "}
             {t.aiHub.h1c} <span className="text-accent">{t.aiHub.h1d}</span>.
           </h1>

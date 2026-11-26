@@ -35,7 +35,7 @@ export default async function Audit({
       <section className="mx-auto max-w-[88rem] px-5 py-16 md:py-24 lg:px-8">
         <div className="max-w-3xl">
           <p className="eyebrow">{t.audit.eyebrow}</p>
-          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
+          <h1 className="mt-5 font-display text-5xl font-bold leading-[1.03] tracking-[-0.03em] md:text-7xl">
             {t.audit.h1a} <span className="accent-serif font-normal">{t.audit.h1b}</span>{" "}
             {t.audit.h1c}
           </h1>

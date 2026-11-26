@@ -4,8 +4,8 @@ import type { ServiceGroup } from "@/lib/types";
 
 export const en = {
   meta: {
-    titleDefault: "Denwebs — Shopify Agency for Commerce & AI",
-    titleTemplate: "%s — Denwebs",
+    titleDefault: "Denwebs | Shopify Agency for Commerce & AI",
+    titleTemplate: "%s | Denwebs",
   },
 
   nav: {
@@ -71,53 +71,54 @@ export const en = {
 
   stats: {
     items: [
-      { value: "80+", label: "Shopify projects delivered" },
-      { value: "30+", label: "CMS builds alongside" },
+      { value: "100+", label: "Shopify projects in the portfolio" },
+      { value: "12", label: "featured case studies with live URLs" },
       { value: "$10k/mo", label: "platform cost eliminated for one client" },
       { value: "2017", label: "in commerce engineering since" },
     ],
   },
 
   home: {
-    eyebrow: "Denwebs — Shopify agency",
-    h1a: "Shopify commerce that works",
-    h1b: "as a",
-    h1c: "system",
-    sub: "Strategy, design, development, catalogue & operations, and AI — connected so your store sells and scales.",
-    ops: {
-      title: "denwebs / commerce-ops",
-      live: "live",
-      synced: "Synced",
-      storefront: "Storefront",
-      trailing: "trailing 30d revenue",
-      operations: "Operations",
-      aiLayer: "AI layer",
-      opsRows: [
-        ["Catalogue", "12,408 SKUs · clean"],
-        ["Inventory", "11 locations · synced"],
-        ["Orders", "routing · 3PL live"],
+    eyebrow: "Shopify ecommerce consultants",
+    h1a: "The Shopify partner that connects",
+    h1b: "strategy",
+    h1c: "build,",
+    h1d: "and growth.",
+    sub: "Senior operators for audits, theme builds, catalogue ops, CRO, lifecycle, and AI visibility, so your store sells more and runs cleaner after launch day.",
+    heroServices: [
+      "Strategy & audits",
+      "Theme & custom apps",
+      "Catalogue & inventory",
+      "OMS & integrations",
+      "CRO & lifecycle",
+      "AI / AEO",
+    ],
+    snapshot: {
+      title: "Engagement snapshot",
+      proof: [
+        { value: "100+", label: "Shopify projects shipped" },
+        { value: "CRO + AI", label: "growth practices in-house" },
+        { value: "$10k/mo", label: "OMS cost cut for one client" },
+        { value: "Senior", label: "operators on every engagement" },
       ],
-      aiRows: [
-        ["AEO citations", "+38% q/q"],
-        ["Agentic feeds", "4 surfaces live"],
-        ["Ops automation", "human-approved"],
-      ],
+      footnote:
+        "Built like a commerce consultancy: diagnose first, ship what compounds, stay for the operational layer.",
     },
     work: {
       index: "01",
       eyebrow: "Work",
       title: "Proof, not adjectives.",
-      copy: "Every engagement judged by metrics that matter — rankings kept, hours returned, systems that hold under load.",
+      copy: "Every engagement judged by metrics that matter, rankings kept, hours returned, systems that hold under load.",
     },
     pillarsSection: {
       index: "02",
       eyebrow: "What we do",
-      title: "The full commerce stack — one agency.",
-      copy: "Most agencies design and leave. We plan, build, and run the whole system — including the operational layer pure design shops can't touch.",
+      title: "The full commerce stack, one agency.",
+      copy: "Most agencies design and leave. We plan, build, and run the whole system, including the operational layer pure design shops can't touch.",
       pillars: [
         {
           title: "Consulting & audits",
-          copy: "Honest diagnosis before dollars — strategy, platform calls, and prioritized fix lists.",
+          copy: "Honest diagnosis before dollars, strategy, platform calls, and prioritized fix lists.",
           href: "/services/consulting",
         },
         {
@@ -127,7 +128,7 @@ export const en = {
         },
         {
           title: "Catalogue & inventory",
-          copy: "Product data and stock engineered like infrastructure — clean, unified, feed-ready.",
+          copy: "Product data and stock engineered like infrastructure, clean, unified, feed-ready.",
           href: "/services/catalogue",
         },
         {
@@ -137,11 +138,11 @@ export const en = {
         },
         {
           title: "Growth / CRO",
-          copy: "Disciplined experimentation that compounds — not random app installs.",
+          copy: "Disciplined experimentation that compounds, not random app installs.",
           href: "/services/cro",
         },
         {
-          title: "AI — AEO, agentic, ops",
+          title: "AI, AEO, agentic, ops",
           copy: "Be the brand AI recommends, the store AI can sell, and the operation AI assists.",
           href: "/services/ai",
         },
@@ -151,11 +152,11 @@ export const en = {
       index: "03",
       eyebrow: "Why Denwebs",
       title: "Where commerce comes together.",
-      copy: "Consultant, auditor, builder, and operator — one team accountable for the whole system, with AI as a core practice rather than a footnote.",
+      copy: "Consultant, auditor, builder, and operator. One team accountable for the whole system, with AI as a core practice rather than a footnote.",
       points: [
         {
           title: "Human-led",
-          body: "Senior operators on every engagement. You talk to the people doing the work — not an account layer.",
+          body: "Senior operators on every engagement. You talk to the people doing the work, not an account layer.",
         },
         {
           title: "Tech-backed",
@@ -163,7 +164,7 @@ export const en = {
         },
         {
           title: "Operator mindset",
-          body: "We've run catalogues, inventory, and order flows — so we design for the Monday after launch, not just launch day.",
+          body: "We've run catalogues, inventory, and order flows, so we design for the Monday after launch, not just launch day.",
         },
         {
           title: "Proven process",
@@ -177,9 +178,9 @@ export const en = {
       title: "Mapped. Built. Run.",
       steps: [
         { title: "Audit", body: "We map your stack, catalogue, data flows, and AI visibility to find where revenue leaks." },
-        { title: "Plan", body: "A sequenced roadmap — effort, impact, dependencies — agreed before any build starts." },
+        { title: "Plan", body: "A sequenced roadmap, effort, impact, dependencies, agreed before any build starts." },
         { title: "Build", body: "Design, development, migrations, and integrations executed with staging previews throughout." },
-        { title: "Operate & optimize", body: "Retainers for catalogue, inventory, OMS, CRO, and AI visibility — the work that compounds." },
+        { title: "Operate & optimize", body: "Retainers for catalogue, inventory, OMS, CRO, and AI visibility, the work that compounds." },
       ],
     },
     ai: {
@@ -187,14 +188,14 @@ export const en = {
       eyebrow: "AI practice",
       h2a: "Be the brand AI",
       h2b: "recommends",
-      h2c: "— and the store AI can sell.",
-      copy: "AI assistants already shape how buyers discover products. We make your catalogue machine-readable, your content citable, and your operations AI-assisted — supervised, always.",
+      h2c: ", and the store AI can sell.",
+      copy: "AI assistants already shape how buyers discover products. We make your catalogue machine-readable, your content citable, and your operations AI-assisted, supervised, always.",
       ctaExplore: "Explore AI services",
       ctaAudit: "AI visibility audit",
       items: [
         {
           t: "AI Search Optimization (AEO / GEO)",
-          d: "Visibility inside ChatGPT, Perplexity, Gemini, and AI Overviews — measured, not guessed.",
+          d: "Visibility inside ChatGPT, Perplexity, Gemini, and AI Overviews. Measured, not guessed.",
           href: "/services/ai/aeo",
         },
         {
@@ -204,7 +205,7 @@ export const en = {
         },
         {
           t: "AI for store operations",
-          d: "Enrichment pipelines, forecasting assists, order triage — machines draft, humans approve.",
+          d: "Enrichment pipelines, forecasting assists, order triage, machines draft, humans approve.",
           href: "/services/ai/operations",
         },
       ],
@@ -219,38 +220,19 @@ export const en = {
 
   work: {
     metaTitle: "Our Work",
-    metaDesc: "Case studies across migrations, redesigns, operations, and AI-driven commerce.",
+    metaDesc: "Case studies and a live portfolio across CRO, marketing, consulting, AI, CRM, and operations.",
     eyebrow: "Work",
-    h1a: "Case studies with",
-    h1b: "metrics",
-    h1c: ", not mood boards.",
-    copy: "Stores built from scratch, platforms replaced with custom apps, and catalogues run by AI pipelines — real engagements with live storefronts to show for it.",
-    filterAria: "Filter case studies",
-    empty: "No case studies in this category yet.",
-    beyond: {
-      eyebrow: "Beyond the case studies",
-      title: "Four studies on the page. 80+ in the record.",
-      copy: "The featured work above is what we can show end-to-end. Behind it sits a longer trail — 80+ Shopify projects and 30+ CMS builds delivered through agency and client-side engagements: theme work, migrations, custom apps, performance fixes, and ops support across categories like these.",
-    },
-    categories: {
-      eyebrow: "Categories shipped",
-      items: [
-        "Jewelry & watches",
-        "Fashion & apparel",
-        "Beauty & cosmetics",
-        "Food & beverage",
-        "Health & medical",
-        "Fitness & activewear",
-        "Pets",
-        "Home & furniture",
-        "B2B & wholesale",
-        "Dropshipping",
-      ],
-      note: "Since 2017 · Agency + client-side · Shopify & Plus",
-    },
+    h1a: "The portfolio we",
+    h1b: "built and shipped",
+    h1c: ".",
+    copy: "{count} live projects across CRO, marketing, consulting, AI, CRM, and operations. Filter by service to see solid depth in each practice, not only theme builds.",
+    filterAria: "Filter case studies and portfolio projects",
+    empty: "Nothing in this category yet.",
+    caseStudiesLabel: "Case studies ({count})",
+    portfolioLabel: "Portfolio ({visible} of {total})",
     cta: {
       title: "Start a project.",
-      copy: "Migration, rebuild, operations, or AI — tell us what needs to change and we'll tell you honestly what it takes.",
+      copy: "Migration, rebuild, operations, or AI, tell us what needs to change and we'll tell you honestly what it takes.",
     },
   },
 
@@ -452,6 +434,11 @@ export const en = {
     deliverables: { index: "01", eyebrow: "What's included", title: "Deliverables." },
     process: { index: "02", eyebrow: "Process", title: "How it runs." },
     related: { index: "03", eyebrow: "Related work", title: "It in practice." },
+    portfolio: {
+      eyebrow: "Portfolio",
+      title: "Stores we shipped in this practice.",
+      copy: "{count} projects from the portfolio mapped to this service.",
+    },
     faq: { index: "04", eyebrow: "FAQ", title: "Common questions." },
   },
 
@@ -603,16 +590,29 @@ export const en = {
 
   contact: {
     metaTitle: "Get a Quote",
-    metaDesc: "Tell us about your Shopify project. We reply within one business day.",
+    metaDesc: "Tell us about your Shopify project, or book a 30-minute discovery call. We reply within one business day.",
     eyebrow: "Contact",
     h1a: "Tell us what",
     h1b: "needs to change",
-    copy: "Migration, rebuild, operations, AI — a few sentences is enough to start. A senior person reads every submission.",
+    copy: "Migration, rebuild, operations, or AI. Send a message, or book a 30-minute discovery call and pick a slot that works.",
     emailEyebrow: "Email",
+    bookEyebrow: "Book a call",
+    bookLink: "30-minute discovery",
     responseEyebrow: "Response time",
     responseValue: "We reply within 1 business day",
     lighterEyebrow: "Prefer a lighter start?",
     lighterLink: "Request a free audit instead",
+  },
+
+  contactPanel: {
+    tabAria: "Contact method",
+    tabBook: "Book a call",
+    tabMessage: "Send a message",
+    bookingCopy:
+      "Book a 30-minute discovery call. Pick a slot on the calendar page; it syncs to Google Calendar for {email}.",
+    openCalendar: "Open calendar booking",
+    loadingCalendar: "Loading calendar",
+    iframeTitle: "Book a 30-minute discovery call",
   },
 
   form: {

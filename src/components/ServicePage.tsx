@@ -1,19 +1,21 @@
-import type { CaseStudy, Service } from "@/lib/types";
+import type { CaseStudy, PortfolioProject, Service } from "@/lib/types";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProcessSteps from "@/components/ProcessSteps";
 import FAQAccordion from "@/components/FAQAccordion";
 import CaseStudyCard from "@/components/CaseStudyCard";
+import PortfolioCard from "@/components/PortfolioCard";
 import CTABand from "@/components/CTABand";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
-import type { Locale } from "@/i18n/config";
+import { fmt, type Locale } from "@/i18n/config";
 import type { Messages } from "@/i18n/dictionaries";
 
 export default function ServicePage({
   service,
   crumbs,
-  relatedStudies,
+  relatedStudies = [],
+  relatedPortfolio = [],
   lang,
   t,
   common,
@@ -22,13 +24,12 @@ export default function ServicePage({
   service: Service;
   crumbs: { label: string; href?: string }[];
   relatedStudies?: CaseStudy[];
+  relatedPortfolio?: PortfolioProject[];
   lang: Locale;
   t: Messages["servicePage"];
   common: Messages["common"];
   cta: Messages["cta"];
 }) {
-  const related = relatedStudies ?? [];
-
   return (
     <>
       <section className="mx-auto max-w-[88rem] px-5 pt-12 md:pt-16 lg:px-8">
@@ -36,7 +37,7 @@ export default function ServicePage({
         <div className="grid gap-10 pb-16 md:pb-20 lg:grid-cols-[1.6fr_1fr]">
           <div>
             <p className="eyebrow">{t.groupNames[service.group]}</p>
-            <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
+            <h1 className="mt-5 font-display text-5xl font-bold leading-[1.03] tracking-[-0.03em] md:text-7xl">
               {service.title}
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
@@ -46,12 +47,11 @@ export default function ServicePage({
               <Button href="/contact" lang={lang} variant="dark" arrow>
                 {common.getQuote}
               </Button>
-              <Button href="/contact?intent=discovery" lang={lang} variant="outlineDark" arrow>
+              <Button href="/contact?intent=discovery#book" lang={lang} variant="outlineDark" arrow>
                 {common.talkToExpert}
               </Button>
             </div>
           </div>
-          {/* Who it's for — sticky meta card */}
           <div className="h-fit rounded-[5px] border border-line bg-paper-dim p-7 lg:sticky lg:top-24">
             <p className="eyebrow">{t.whoEyebrow}</p>
             <ul className="mt-5 space-y-3.5">
@@ -66,7 +66,6 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* Deliverables */}
       <section className="border-y border-line bg-paper-dim py-16 md:py-20">
         <div className="mx-auto max-w-[88rem] px-5 lg:px-8">
           <SectionHeading index={t.deliverables.index} eyebrow={t.deliverables.eyebrow} title={t.deliverables.title} />
@@ -86,7 +85,6 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* Process */}
       <section className="mx-auto max-w-[88rem] px-5 py-16 md:py-20 lg:px-8">
         <SectionHeading index={t.process.index} eyebrow={t.process.eyebrow} title={t.process.title} />
         <div className="mt-12">
@@ -94,12 +92,11 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* Related work */}
-      {related.length > 0 && (
+      {relatedStudies.length > 0 && (
         <section className="mx-auto max-w-[88rem] px-5 pb-16 md:pb-20 lg:px-8">
-          <SectionHeading index={t.related.index} eyebrow={t.related.eyebrow} title={t.related.title} />
+          <SectionHeading index="03" eyebrow={t.related.eyebrow} title={t.related.title} />
           <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-            {related.map((s, i) => (
+            {relatedStudies.map((s, i) => (
               <Reveal key={s.slug} delay={i * 90} className="h-full">
                 <CaseStudyCard study={s} lang={lang} common={common} />
               </Reveal>
@@ -108,9 +105,30 @@ export default function ServicePage({
         </section>
       )}
 
-      {/* FAQ */}
-      <section className="mx-auto max-w-4xl px-5 pb-20 md:pb-24 lg:px-8">
-        <SectionHeading index={t.faq.index} eyebrow={t.faq.eyebrow} title={t.faq.title} />
+      {relatedPortfolio.length > 0 && (
+        <section className="border-t border-line bg-paper-dim py-16 md:py-20">
+          <div className="mx-auto max-w-[88rem] px-5 lg:px-8">
+            <SectionHeading
+              index={relatedStudies.length > 0 ? "04" : "03"}
+              eyebrow={t.portfolio.eyebrow}
+              title={t.portfolio.title}
+              copy={fmt(t.portfolio.copy, { count: relatedPortfolio.length })}
+            />
+            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {relatedPortfolio.map((p) => (
+                <PortfolioCard key={`${p.slug}-${p.url}`} project={p} lang={lang} common={common} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className="mx-auto max-w-4xl px-5 py-16 md:py-20 lg:px-8">
+        <SectionHeading
+          index={relatedPortfolio.length > 0 ? "05" : relatedStudies.length > 0 ? "04" : "03"}
+          eyebrow={t.faq.eyebrow}
+          title={t.faq.title}
+        />
         <div className="mt-12">
           <FAQAccordion faqs={service.faqs} />
         </div>

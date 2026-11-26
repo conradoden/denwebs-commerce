@@ -26,7 +26,7 @@ export default function CTABand({
               <p className="eyebrow" data-dark="true">
                 {t.eyebrow}
               </p>
-              <h2 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-5xl">
+              <h2 className="mt-5 font-display text-5xl font-bold leading-[1.04] tracking-[-0.02em] md:text-6xl lg:text-7xl">
                 {title ?? t.title}
               </h2>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-paper/65">{copy ?? t.copy}</p>
@@ -35,7 +35,7 @@ export default function CTABand({
               <Button href="/contact" lang={lang} variant="accent" arrow>
                 {quoteLabel}
               </Button>
-              <Button href="/contact?intent=discovery" lang={lang} variant="outlineLight" arrow>
+              <Button href="/contact?intent=discovery#book" lang={lang} variant="outlineLight" arrow>
                 {t.discovery}
               </Button>
             </div>

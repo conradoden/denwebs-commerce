@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import CTABand from "@/components/CTABand";
 import WorkFilter from "@/components/WorkFilter";
+import { portfolioProjects, portfolioCategoryFilters } from "@/content/portfolio";
+import { fmt } from "@/i18n/config";
 import { getContent } from "@/content";
 import { getMessages } from "@/i18n/dictionaries";
 import { langAlternates, resolveLocale } from "@/i18n/config";
@@ -34,55 +36,29 @@ export default async function WorkIndex({
     <>
       <section className="mx-auto max-w-[88rem] px-5 pb-16 pt-16 md:pt-24 lg:px-8">
         <p className="eyebrow">{t.work.eyebrow}</p>
-        <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
+        <h1 className="mt-5 max-w-4xl font-display text-5xl font-bold leading-[1.02] tracking-[-0.03em] md:text-7xl">
           {t.work.h1a} <span className="accent-serif font-normal">{t.work.h1b}</span>
           {t.work.h1c}
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-          {t.work.copy}
+          {fmt(t.work.copy, { count: portfolioProjects.length })}
         </p>
 
         <WorkFilter
           studies={c.caseStudies}
-          filters={c.industryFilters}
+          portfolio={portfolioProjects}
+          filters={[...portfolioCategoryFilters]}
           lang={locale}
           common={t.common}
-          labels={{ empty: t.work.empty, aria: t.work.filterAria }}
+          labels={{
+            empty: t.work.empty,
+            aria: t.work.filterAria,
+            caseStudies: t.work.caseStudiesLabel,
+            portfolio: t.work.portfolioLabel,
+          }}
         />
       </section>
 
-      {/* Beyond the featured studies — the broader record */}
-      <section className="border-t border-line bg-paper-dim py-16 md:py-20">
-        <div className="mx-auto max-w-[88rem] px-5 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
-            <div>
-              <p className="eyebrow">{t.work.beyond.eyebrow}</p>
-              <h2 className="mt-5 font-display text-3xl font-bold tracking-[-0.02em] md:text-4xl">
-                {t.work.beyond.title}
-              </h2>
-              <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-                {t.work.beyond.copy}
-              </p>
-            </div>
-            <div>
-              <p className="eyebrow">{t.work.categories.eyebrow}</p>
-              <ul className="mt-5 flex flex-wrap gap-2">
-                {t.work.categories.items.map((cat) => (
-                  <li
-                    key={cat}
-                    className="rounded-[3px] border border-line bg-paper px-3.5 py-1.5 font-mono text-[11.5px] uppercase tracking-[0.08em] text-ink/70"
-                  >
-                    {cat}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 font-mono text-[12px] uppercase tracking-[0.1em] text-muted">
-                {t.work.categories.note}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <CTABand
         lang={locale}

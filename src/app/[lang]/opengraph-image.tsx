@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { locales } from "@/i18n/config";
 
-export const alt = "Denwebs — Shopify agency for commerce & AI";
+export const alt = "Denwebs | Shopify agency for commerce & AI";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

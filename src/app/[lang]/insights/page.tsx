@@ -35,7 +35,7 @@ export default async function InsightsIndex({
     <>
       <section className="mx-auto max-w-[88rem] px-5 pb-20 pt-16 md:pt-24 lg:px-8">
         <p className="eyebrow">{t.insights.eyebrow}</p>
-        <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
+        <h1 className="mt-5 max-w-4xl font-display text-5xl font-bold leading-[1.02] tracking-[-0.03em] md:text-7xl">
           {t.insights.h1a} <span className="accent-serif font-normal">{t.insights.h1b}</span>.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">

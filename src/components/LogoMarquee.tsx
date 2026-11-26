@@ -1,47 +1,51 @@
-// Confirmed client storefronts from documented engagements.
-const clients = [
-  "Marc Robinson Jewelers",
-  "TheJewelleryRoom",
-  "M Robinson Fine Jewelers",
-  "Treasures Jeweler",
-];
+import Image from "next/image";
+import { clientLogos } from "@/content/clients";
 
 export default function LogoMarquee({
   label,
-  moreClients,
   ariaLabel,
 }: {
   label: string;
-  moreClients: string;
   ariaLabel: string;
 }) {
-  const row = [...clients, moreClients, ...clients, moreClients];
-  const cycle = clients.length + 1;
+  const logos = clientLogos.filter((c) => Boolean(c.logo));
+  if (!logos.length) return null;
+  const row = [...logos, ...logos];
+
   return (
-    <section aria-label={ariaLabel} className="border-b border-line bg-paper py-9">
-      <p className="mb-6 text-center font-mono text-[10.5px] uppercase tracking-[0.2em] text-muted">
+    <section aria-label={ariaLabel} className="border-b border-line bg-paper py-14 md:py-16">
+      <p className="mb-10 text-center font-mono text-xs uppercase tracking-[0.18em] text-muted md:text-sm">
         {label}
       </p>
       <div
         className="overflow-hidden"
         style={{
-          maskImage: "linear-gradient(90deg, transparent, black 12%, black 88%, transparent)",
-          WebkitMaskImage: "linear-gradient(90deg, transparent, black 12%, black 88%, transparent)",
+          maskImage: "linear-gradient(90deg, transparent, black 4%, black 96%, transparent)",
+          WebkitMaskImage:
+            "linear-gradient(90deg, transparent, black 4%, black 96%, transparent)",
         }}
       >
-        <div className="flex w-max animate-marquee items-center gap-16 px-8">
-          {row.map((name, i) => (
-            <span
-              key={`${name}-${i}`}
-              className={`whitespace-nowrap font-display text-xl font-semibold tracking-[-0.01em] transition-colors ${
-                i % cycle === clients.length
-                  ? "font-mono text-base font-normal text-accent-deep"
-                  : "text-ink/40 hover:text-ink/70"
-              }`}
-              aria-hidden={i >= cycle}
+        <div className="flex w-max animate-marquee items-center gap-12 px-8 md:gap-16">
+          {row.map((client, i) => (
+            <a
+              key={`${client.name}-${i}`}
+              href={client.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex h-12 shrink-0 items-center justify-center md:h-14"
+              aria-label={client.name}
+              aria-hidden={i >= logos.length}
+              tabIndex={i >= logos.length ? -1 : undefined}
             >
-              {name}
-            </span>
+              <Image
+                src={client.logo}
+                alt={client.name}
+                width={client.wide ? 160 : 64}
+                height={56}
+                className="h-10 w-auto max-w-[160px] object-contain object-center md:h-12 md:max-w-[180px]"
+                unoptimized={client.logo.endsWith(".svg")}
+              />
+            </a>
           ))}
         </div>
       </div>

@@ -7,6 +7,7 @@ import { localize, type Locale } from "@/i18n/config";
 import type { Messages } from "@/i18n/dictionaries";
 import type { SiteContent } from "@/content";
 import LanguageSwitcher from "./LanguageSwitcher";
+import DenwebsLogo from "@/components/DenwebsLogo";
 
 export default function SiteHeader({
   lang,
@@ -78,13 +79,7 @@ export default function SiteHeader({
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-md">
       <div className="mx-auto flex h-[4.25rem] max-w-[88rem] items-center justify-between gap-6 px-5 lg:px-8">
-        <Link
-          href={localize("/", lang)}
-          className="font-display text-[1.35rem] font-bold tracking-[-0.03em]"
-          aria-label={nav.homeLabel}
-        >
-          Denwebs<span className="text-accent-deep">.</span>
-        </Link>
+        <DenwebsLogo href={localize("/", lang)} />
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-8 lg:flex" aria-label={nav.primaryAria}>

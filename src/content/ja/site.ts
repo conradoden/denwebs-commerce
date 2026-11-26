@@ -7,11 +7,14 @@
 // ============================================
 export const site = {
   name: "Denwebs",
-  url: "https://www.denwebs.com",
-  email: "hello@denwebs.com",
+  url: "https://ecommerce.denwebs.com",
+  email: "ct@denwebs.com",
   phone: "", // TBD — hidden until real number is confirmed
   description:
     "野心的なShopifyブランドのための戦略、デザイン、開発、カタログ、在庫、OMS、AI最適化。",
+  /** Cal.com username/event for discovery calls (no leading slash). */
+  calLink: "conrado-tanglao-kuc26d/30min",
+  bookingUrl: "https://cal.com/conrado-tanglao-kuc26d/30min",
 };
 
 // Mega-menu structure — every link must resolve to a real route.

@@ -39,7 +39,7 @@ export default async function ServicesHub({
     <>
       <section className="mx-auto max-w-[88rem] px-5 pb-16 pt-16 md:pt-24 lg:px-8">
         <p className="eyebrow">{t.servicesHub.eyebrow}</p>
-        <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
+        <h1 className="mt-5 max-w-4xl font-display text-5xl font-bold leading-[1.02] tracking-[-0.03em] md:text-7xl">
           {t.servicesHub.h1a}{" "}
           <span className="accent-serif font-normal">{t.servicesHub.h1b}</span>.
         </h1>

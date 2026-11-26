@@ -32,7 +32,7 @@ export default async function Careers({
     <>
       <section className="mx-auto max-w-4xl px-5 py-16 md:py-24 lg:px-8">
         <p className="eyebrow">{t.careers.eyebrow}</p>
-        <h1 className="mt-5 font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
+        <h1 className="mt-5 font-display text-5xl font-bold leading-[1.02] tracking-[-0.03em] md:text-7xl">
           {t.careers.h1a} <span className="accent-serif font-normal">{t.careers.h1b}</span>.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">

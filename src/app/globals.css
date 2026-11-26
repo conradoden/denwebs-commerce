@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Denwebs design tokens — deep ink + electric blue on cool graphite */
+  /* Denwebs design tokens, deep ink + electric blue on cool graphite */
   --color-paper: #f6f7f9;
   --color-paper-dim: #eef0f4;
   --color-ink: #0d1219;
@@ -65,7 +65,7 @@ body {
   border-radius: 2px;
 }
 
-/* Editorial serif accent — used sparingly inside grotesk headlines */
+/* Editorial serif accent, used sparingly inside grotesk headlines */
 .accent-serif {
   font-family: var(--font-serif);
   font-style: italic;
@@ -73,29 +73,19 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* Eyebrow label with rule — the site's section rhythm device */
+/* Eyebrow label - section rhythm without dash ornament */
 .eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
   font-family: var(--font-mono);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: var(--color-muted);
 }
-.eyebrow::before {
-  content: "";
-  width: 2rem;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.5;
-}
 .eyebrow[data-dark="true"] {
   color: var(--color-accent);
 }
 
-/* Scroll reveal — subtle, intentional */
+/* Scroll reveal, subtle, intentional */
 .reveal {
   opacity: 0;
   transform: translateY(22px);
@@ -108,12 +98,12 @@ body {
   transform: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
+.reveal {
     opacity: 1;
     transform: none;
     transition: none;
   }
-  .animate-marquee {
+.animate-marquee {
     animation: none !important;
   }
   html {
@@ -121,7 +111,7 @@ body {
   }
 }
 
-/* Hero atmosphere — textured commerce gradient, not flat color */
+/* Hero atmosphere, textured commerce gradient, not flat color */
 .hero-atmosphere {
   background:
     radial-gradient(110% 80% at 88% 8%, rgba(91, 140, 255, 0.18) 0%, transparent 52%),
@@ -162,8 +152,8 @@ body {
   display: inline-block;
   transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.group:hover .arrow-slide,
-a:hover > .arrow-slide {
+.group:hover.arrow-slide,
+a:hover >.arrow-slide {
   transform: translateX(4px);
 }
 

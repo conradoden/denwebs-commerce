@@ -13,7 +13,7 @@ export default function SectionHeading({
   dark?: boolean;
   className?: string;
 }) {
-  const label = index ? `${index} — ${eyebrow ?? ""}` : eyebrow;
+  const label = index ? `${index}. ${eyebrow ?? ""}` : eyebrow;
   return (
     <div className={`max-w-3xl ${className}`}>
       {label && (
@@ -22,7 +22,7 @@ export default function SectionHeading({
         </p>
       )}
       <h2
-        className={`mt-5 font-display text-3xl font-bold leading-[1.08] tracking-[-0.02em] md:text-[2.75rem] ${
+        className={`mt-5 font-display text-5xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl lg:text-[3.75rem] ${
           dark ? "text-paper" : "text-ink"
         }`}
       >

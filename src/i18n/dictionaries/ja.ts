@@ -5,8 +5,8 @@ import type { ServiceGroup } from "@/lib/types";
 
 export const ja: Messages = {
   meta: {
-    titleDefault: "Denwebs — コマース & AI のShopifyエージェンシー",
-    titleTemplate: "%s — Denwebs",
+    titleDefault: "Denwebs | コマース & AI のShopifyエージェンシー",
+    titleTemplate: "%s | Denwebs",
   },
 
   nav: {
@@ -72,37 +72,38 @@ export const ja: Messages = {
 
   stats: {
     items: [
-      { value: "80+", label: "Shopifyプロジェクトの納入実績" },
-      { value: "30+", label: "CMS構築実績" },
+      { value: "100+", label: "ポートフォリオのShopifyプロジェクト" },
+      { value: "12", label: "公開URL付きの注目事例" },
       { value: "$10k/月", label: "あるクライアントで削減したプラットフォーム費" },
       { value: "2017", label: "年からコマースエンジニアリングに従事" },
     ],
   },
 
   home: {
-    eyebrow: "Denwebs — Shopifyエージェンシー",
-    h1a: "システムとして",
-    h1b: "機能する",
-    h1c: "Shopifyコマース",
-    sub: "戦略、デザイン、開発、カタログ・運営、AI――すべてをつなげて、売れてスケールするストアへ。",
-    ops: {
-      title: "denwebs / commerce-ops",
-      live: "live",
-      synced: "同期済み",
-      storefront: "ストアフロント",
-      trailing: "直近30日間の売上",
-      operations: "運営",
-      aiLayer: "AIレイヤー",
-      opsRows: [
-        ["カタログ", "12,408 SKU · 正常"],
-        ["在庫", "11拠点 · 同期済み"],
-        ["注文", "ルーティング · 3PL稼働中"],
+    eyebrow: "Shopify Eコマースコンサルタント",
+    h1a: "戦略・構築・",
+    h1b: "成長",
+    h1c: "をつなぐ",
+    h1d: "Shopifyパートナー。",
+    sub: "診断、テーマ構築、カタログ運営、CRO、ライフサイクル、AI可視性を担うシニア実務者。ローンチ後も売上が伸び、運営がきれいに回るストアへ。",
+    heroServices: [
+      "戦略 & 診断",
+      "テーマ & カスタムアプリ",
+      "カタログ & 在庫",
+      "OMS & 統合",
+      "CRO & ライフサイクル",
+      "AI / AEO",
+    ],
+    snapshot: {
+      title: "エンゲージメントスナップショット",
+      proof: [
+        { value: "100+", label: "Shopifyプロジェクト納品" },
+        { value: "CRO + AI", label: "社内グロースプラクティス" },
+        { value: "$10k/月", label: "あるクライアントで削減したOMS費" },
+        { value: "シニア", label: "すべての案件にシニア実務者" },
       ],
-      aiRows: [
-        ["AEO引用数", "前期比 +38%"],
-        ["エージェントフィード", "4サーフェス稼働中"],
-        ["運営自動化", "人が承認"],
-      ],
+      footnote:
+        "コマースコンサルタンシーのように構築：まず診断し、積み上がるものを出荷し、運営レイヤーに寄り添う。",
     },
     work: {
       index: "01",
@@ -220,35 +221,16 @@ export const ja: Messages = {
 
   work: {
     metaTitle: "実績",
-    metaDesc: "移行、リデザイン、運営、AI主導コマースにわたる事例紹介。",
+    metaDesc: "CRO、マーケティング、コンサルティング、AI、CRM、運営にわたる事例と公開ポートフォリオ。",
     eyebrow: "実績",
-    h1a: "ムードボードではなく",
-    h1b: "数値",
-    h1c: "で語る事例。",
-    copy: "ゼロから構築したストア、カスタムアプリに置き換えたプラットフォーム、AIパイプラインが運営するカタログ――稼働中の店頭がある実案件。",
-    filterAria: "事例を絞り込む",
-    empty: "このカテゴリーの事例はまだありません。",
-    beyond: {
-      eyebrow: "事例の先にあるもの",
-      title: "ページ上の4件。その記録には80件以上。",
-      copy: "上の注目実績はエンドツーエンドで公開できるもの。その背後にはさらに長い実績があります――代理店・クライアント側を通じた80以上のShopifyプロジェクトと30以上のCMS構築：テーマ開発、移行、カスタムアプリ、パフォーマンス改善、以下のようなカテゴリーでの運営支援。",
-    },
-    categories: {
-      eyebrow: "対応カテゴリー",
-      items: [
-        "ジュエリー & 時計",
-        "ファッション & アパレル",
-        "ビューティー & コスメ",
-        "食品 & 飲料",
-        "ヘルス & メディカル",
-        "フィットネス & アクティブウェア",
-        "ペット",
-        "ホーム & 家具",
-        "B2B & 卸売",
-        "ドロップシッピング",
-      ],
-      note: "2017年から · 代理店 + クライアント側 · Shopify & Plus",
-    },
+    h1a: "私たちが構築し",
+    h1b: "出荷した",
+    h1c: "ポートフォリオ。",
+    copy: "CRO、マーケティング、コンサルティング、AI、CRM、運営にわたる{count}件の公開プロジェクト。サービスで絞り込むと、テーマ構築だけでない各プラクティスの深さが見えます。",
+    filterAria: "事例とポートフォリオを絞り込む",
+    empty: "このカテゴリーにはまだ何もありません。",
+    caseStudiesLabel: "事例（{count}件）",
+    portfolioLabel: "ポートフォリオ（{total}件中{visible}件）",
     cta: {
       title: "プロジェクトを始めましょう。",
       copy: "移行、再構築、運営、AI――変えるべきことをお聞かせください。何が必要か、正直にお答えします。",
@@ -453,6 +435,11 @@ export const ja: Messages = {
     deliverables: { index: "01", eyebrow: "提供内容", title: "成果物。" },
     process: { index: "02", eyebrow: "プロセス", title: "進め方。" },
     related: { index: "03", eyebrow: "関連する実績", title: "実践例。" },
+    portfolio: {
+      eyebrow: "ポートフォリオ",
+      title: "このプラクティスで出荷したストア。",
+      copy: "このサービスに紐づくポートフォリオ{count}件。",
+    },
     faq: { index: "04", eyebrow: "FAQ", title: "よくある質問。" },
   },
 
@@ -604,16 +591,29 @@ export const ja: Messages = {
 
   contact: {
     metaTitle: "お見積もり",
-    metaDesc: "Shopifyプロジェクトについてお聞かせください。1営業日以内に返信します。",
+    metaDesc: "Shopifyプロジェクトについてお聞かせください。または30分の無料相談をご予約ください。1営業日以内に返信します。",
     eyebrow: "お問い合わせ",
     h1a: "変えるべきことを",
     h1b: "聞かせてください",
-    copy: "移行、再構築、運営、AI――始めるには数文で十分です。シニアな担当者がすべての送信を読みます。",
+    copy: "移行、再構築、運営、AI。メッセージを送るか、30分の無料相談で都合の良い時間をお選びください。",
     emailEyebrow: "メール",
+    bookEyebrow: "電話を予約",
+    bookLink: "30分の無料相談",
     responseEyebrow: "返信時間",
     responseValue: "1営業日以内に返信します",
     lighterEyebrow: "もっと気軽に始めたい？",
     lighterLink: "無料診断をリクエスト",
+  },
+
+  contactPanel: {
+    tabAria: "お問い合わせ方法",
+    tabBook: "電話を予約",
+    tabMessage: "メッセージを送る",
+    bookingCopy:
+      "30分の無料相談をご予約ください。カレンダーページで枠を選べます。{email} のGoogleカレンダーと同期されます。",
+    openCalendar: "予約カレンダーを開く",
+    loadingCalendar: "カレンダーを読み込み中",
+    iframeTitle: "30分の無料相談を予約",
   },
 
   form: {

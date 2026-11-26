@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<defs><linearGradient id="p" x1="10" y1="4" x2="90" y2="96" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff7a95"/><stop offset="0.5" stop-color="#ff2e63"/><stop offset="1" stop-color="#e0144c"/></linearGradient></defs>
+<circle cx="50" cy="50" r="46.5" fill="none" stroke="url(#p)" stroke-width="3.4"/>
+<path d="M52.94,33.70L62.64,39.30M65.59,44.40L65.59,55.60M62.64,60.70L52.94,66.30M47.06,66.30L37.36,60.70M34.41,55.60L34.41,44.40M37.36,39.30L47.06,33.70" fill="none" stroke="url(#p)" stroke-width="2.4" stroke-linecap="round"/>
+<polygon points="50.00,42.00 56.93,46.00 56.93,54.00 50.00,58.00 43.07,54.00 43.07,46.00" fill="none" stroke="url(#p)" stroke-width="2.4" stroke-linejoin="round"/>
+<polygon points="50.00,42.00 52.60,32.00 50.00,6.50 47.40,32.00" fill="url(#p)"/><polygon points="56.93,46.00 66.89,43.25 87.67,28.25 64.29,38.75" fill="url(#p)"/><polygon points="56.93,54.00 64.29,61.25 87.67,71.75 66.89,56.75" fill="url(#p)"/><polygon points="50.00,58.00 47.40,68.00 50.00,93.50 52.60,68.00" fill="url(#p)"/><polygon points="43.07,54.00 33.11,56.75 12.33,71.75 35.71,61.25" fill="url(#p)"/><polygon points="43.07,46.00 35.71,38.75 12.33,28.25 33.11,43.25" fill="url(#p)"/>
+</svg>

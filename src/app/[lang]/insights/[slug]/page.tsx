@@ -79,7 +79,7 @@ export default async function Article({
           })}{" "}
           · {fmt(t.common.readTime, { time: post.readTime })}
         </p>
-        <h1 className="mt-5 font-display text-4xl font-bold leading-[1.08] tracking-[-0.02em] md:text-5xl">
+        <h1 className="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl lg:text-7xl">
           {post.title}
         </h1>
         <div className="mt-12 space-y-9">
