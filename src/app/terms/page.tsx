@@ -43,7 +43,7 @@ export default function Terms() {
         </section>
         <section>
           <h2 className="mb-2 font-display text-xl font-bold">Contact</h2>
-          <p>Questions about these terms: hello@denwebs.com.</p>
+          <p>Questions about these terms: ct@denwebs.com.</p>
         </section>
       </div>
     </article>

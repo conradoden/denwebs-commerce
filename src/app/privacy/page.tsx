@@ -37,13 +37,13 @@ export default function Privacy() {
           <p>
             We keep inquiry data as long as needed to serve the conversation and
             legitimate business records. You may request access, correction, or
-            deletion of your data at any time via hello@denwebs.com.
+            deletion of your data at any time via ct@denwebs.com.
           </p>
         </section>
         <section>
           <h2 className="mb-2 font-display text-xl font-bold">Contact</h2>
           <p>
-            Privacy questions: hello@denwebs.com. This placeholder policy must
+            Privacy questions: ct@denwebs.com. This placeholder policy must
             be reviewed against applicable law (GDPR, CCPA, etc.) before launch.
           </p>
         </section>

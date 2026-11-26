@@ -51,8 +51,8 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
         </h3>
         <p className="mx-auto mt-3 max-w-md text-muted">
           We reply within one business day. If it&apos;s urgent, email{" "}
-          <a href="mailto:hello@denwebs.com" className="text-ink underline decoration-accent decoration-2 underline-offset-4">
-            hello@denwebs.com
+          <a href="mailto:ct@denwebs.com" className="text-ink underline decoration-accent decoration-2 underline-offset-4">
+            ct@denwebs.com
           </a>
           .
         </p>
@@ -221,7 +221,7 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
         </button>
         {status === "error" && (
           <p className="mt-3 text-sm text-red-700" role="alert">
-            {errorMsg} You can also email hello@denwebs.com.
+            {errorMsg} You can also email ct@denwebs.com.
           </p>
         )}
         <p className="mt-3 text-[13px] text-muted">

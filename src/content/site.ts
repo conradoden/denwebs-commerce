@@ -1,7 +1,7 @@
 export const site = {
   name: "Denwebs",
   url: "https://ecommerce.denwebs.com",
-  email: "hello@denwebs.com",
+  email: "ct@denwebs.com",
   phone: "", // TBD, hidden until real number is confirmed
   description:
     "Strategy, design, development, catalogue, inventory, OMS, and AI optimization for ambitious Shopify brands.",
