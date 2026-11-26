@@ -20,7 +20,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "CRO",
       "Performance"
     ],
-    "summary": "Custom Shopify 2.0 theme built from Figma into a conversion-focused health brand storefront, documented at 6%+ conversion.",
+    "summary": "Custom Shopify 2.0 theme built from Figma into a conversion-focused health brand storefront at 6%+ conversion.",
     "image": "/images/work/tropeaka.jpg",
     "featured": true,
     "caseStudySlug": "tropeaka"
@@ -245,7 +245,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Activleggings: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "Activleggings: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -260,7 +260,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Eleganza: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Eleganza: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -275,7 +275,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Aeromat Ecowise: Shopify commerce engagement spanning shopify storefront across a fitness storefront.",
+    "summary": "Aeromat Ecowise: Shopify storefront build and merchandising work for a fitness brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -290,7 +290,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Agileofficefurniture: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Agileofficefurniture: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -305,7 +305,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Alisa: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Alisa: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -320,7 +320,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Beforeyouspeakcoffee: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Beforeyouspeakcoffee: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -335,7 +335,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Bluecoolers: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Bluecoolers: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -350,7 +350,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Bonobos: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "Bonobos: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -365,7 +365,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Performance"
     ],
-    "summary": "Bostontemporarytattoos: Shopify commerce engagement spanning performance across a shopify commerce storefront.",
+    "summary": "Bostontemporarytattoos: Shopify work covering performance for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -380,7 +380,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Brentlmiller: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Brentlmiller: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -395,7 +395,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Budsandbowers: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Budsandbowers: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -410,7 +410,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Buypeakperformance: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Buypeakperformance: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -425,7 +425,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Drawlucy: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Drawlucy: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -440,7 +440,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Driftaway: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Driftaway: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -455,7 +455,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Dsmile: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Dsmile: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -470,7 +470,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Enrica Lossi: Shopify commerce engagement spanning shopify storefront across a health & medical storefront.",
+    "summary": "Enrica Lossi: Shopify storefront build and merchandising work for a health & medical brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -485,7 +485,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Performance"
     ],
-    "summary": "Fortnightlingerie: Shopify commerce engagement spanning performance across a fashion storefront.",
+    "summary": "Fortnightlingerie: Shopify work covering performance for a fashion brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -501,7 +501,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Fotp: Shopify commerce engagement spanning shopify storefront across a fashion storefront.",
+    "summary": "Fotp: Shopify storefront build and merchandising work for a fashion brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -518,7 +518,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Fuelme: Shopify commerce engagement spanning shopify storefront across a fashion storefront.",
+    "summary": "Fuelme: Shopify storefront build and merchandising work for a fashion brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -533,7 +533,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Hairthicknessmaximizer: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Hairthicknessmaximizer: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -548,7 +548,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Hardcandy: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Hardcandy: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -563,7 +563,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Hefthome: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Hefthome: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -578,7 +578,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Theme & custom development"
     ],
-    "summary": "Houseofkhalsa: Shopify commerce engagement spanning theme & custom development across a shopify commerce storefront.",
+    "summary": "Houseofkhalsa: Shopify work covering theme & custom development for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -593,7 +593,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Kikikickz: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Kikikickz: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -608,7 +608,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Lovegazelle: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Lovegazelle: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -623,7 +623,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Madres Beauty Point: Shopify commerce engagement spanning shopify storefront across a beauty storefront.",
+    "summary": "Madres Beauty Point: Shopify storefront build and merchandising work for a beauty brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -638,7 +638,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Mondayswimwear: Shopify commerce engagement spanning shopify storefront across a fashion storefront.",
+    "summary": "Mondayswimwear: Shopify storefront build and merchandising work for a fashion brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -654,7 +654,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Myjoliecandle: Shopify commerce engagement spanning shopify storefront across a fashion storefront.",
+    "summary": "Myjoliecandle: Shopify storefront build and merchandising work for a fashion brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -669,7 +669,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Mymagictour: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Mymagictour: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -684,7 +684,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Mywoof: Shopify commerce engagement spanning shopify storefront across a pets storefront.",
+    "summary": "Mywoof: Shopify storefront build and merchandising work for a pets brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -699,7 +699,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Performance"
     ],
-    "summary": "Notanotherstore: Shopify commerce engagement spanning performance across a shopify commerce storefront.",
+    "summary": "Notanotherstore: Shopify work covering performance for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -714,7 +714,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Orgvsm: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Orgvsm: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -729,7 +729,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Outofthesandbox: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Outofthesandbox: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -744,7 +744,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Pantys: Shopify commerce engagement spanning shopify storefront across a beauty storefront.",
+    "summary": "Pantys: Shopify storefront build and merchandising work for a beauty brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -759,7 +759,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Petnpet: Shopify commerce engagement spanning shopify storefront across a pets storefront.",
+    "summary": "Petnpet: Shopify storefront build and merchandising work for a pets brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -774,7 +774,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Performance"
     ],
-    "summary": "Print Your Posts: Shopify commerce engagement spanning performance across a shopify commerce storefront.",
+    "summary": "Print Your Posts: Shopify work covering performance for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -789,7 +789,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Rasa Beverages: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "Rasa Beverages: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -804,7 +804,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Rezekstudio: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Rezekstudio: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -820,7 +820,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Rubysorganics: Shopify commerce engagement spanning shopify storefront across a fashion storefront.",
+    "summary": "Rubysorganics: Shopify storefront build and merchandising work for a fashion brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -837,7 +837,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Sharkskin: Shopify commerce engagement spanning shopify storefront across a fashion storefront.",
+    "summary": "Sharkskin: Shopify storefront build and merchandising work for a fashion brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -852,7 +852,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Subscriptions"
     ],
-    "summary": "Shopbeachcity: Shopify commerce engagement spanning subscriptions across a food & beverage storefront.",
+    "summary": "Shopbeachcity: Shopify work covering subscriptions for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -867,7 +867,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "CRO"
     ],
-    "summary": "Soldejaneiro: Shopify commerce engagement spanning cro across a shopify commerce storefront.",
+    "summary": "Soldejaneiro: Shopify work covering cro for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -882,7 +882,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Stefaniewolf: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Stefaniewolf: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -897,7 +897,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Stelly: Shopify commerce engagement spanning shopify storefront across a fashion storefront.",
+    "summary": "Stelly: Shopify storefront build and merchandising work for a fashion brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -912,7 +912,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Theme & custom development"
     ],
-    "summary": "Sunflourbakingcompany: Shopify commerce engagement spanning theme & custom development across a food & beverage storefront.",
+    "summary": "Sunflourbakingcompany: Shopify work covering theme & custom development for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -927,7 +927,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Thebrooklyn: Shopify commerce engagement spanning shopify storefront across a pets storefront.",
+    "summary": "Thebrooklyn: Shopify storefront build and merchandising work for a pets brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -942,7 +942,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Thrivemeals: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "Thrivemeals: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -958,7 +958,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Trattoriadavittorio Ordertakeout: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "Trattoriadavittorio Ordertakeout: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -973,7 +973,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Uncommonjames: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Uncommonjames: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -988,7 +988,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Us: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "Us: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1003,7 +1003,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Us: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Us: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1018,7 +1018,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Us: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Us: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1033,7 +1033,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "V Dog: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "V Dog: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1048,7 +1048,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Winepassions: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Winepassions: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1063,7 +1063,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "100percentpure: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "100percentpure: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1078,7 +1078,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Ahead Nutrition: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Ahead Nutrition: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1093,7 +1093,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Alexandragrecco: Shopify commerce engagement spanning shopify storefront across a health & medical storefront.",
+    "summary": "Alexandragrecco: Shopify storefront build and merchandising work for a health & medical brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1108,7 +1108,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Aloyoga: Shopify commerce engagement spanning shopify storefront across a fitness storefront.",
+    "summary": "Aloyoga: Shopify storefront build and merchandising work for a fitness brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1123,7 +1123,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Balibodyco: Shopify commerce engagement spanning shopify storefront across a beauty storefront.",
+    "summary": "Balibodyco: Shopify storefront build and merchandising work for a beauty brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1138,7 +1138,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Beardbrand: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Beardbrand: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1153,7 +1153,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Performance"
     ],
-    "summary": "Beautybakerie: Shopify commerce engagement spanning performance across a beauty storefront.",
+    "summary": "Beautybakerie: Shopify work covering performance for a beauty brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1168,7 +1168,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Carbon38: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Carbon38: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1183,7 +1183,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Ceraudo: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Ceraudo: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1198,7 +1198,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Divaboutiqueonline: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Divaboutiqueonline: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1213,7 +1213,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Envision: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Envision: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1228,7 +1228,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Farmrio: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "Farmrio: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1243,7 +1243,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Figandbloom: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Figandbloom: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1258,7 +1258,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Theme & custom development"
     ],
-    "summary": "Floraly: Shopify commerce engagement spanning theme & custom development across a flowers storefront.",
+    "summary": "Floraly: Shopify work covering theme & custom development for a flowers brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1273,7 +1273,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Hellomolly: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Hellomolly: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1288,7 +1288,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Hermeticaflowers: Shopify commerce engagement spanning shopify storefront across a flowers storefront.",
+    "summary": "Hermeticaflowers: Shopify storefront build and merchandising work for a flowers brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1303,7 +1303,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Huratips: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Huratips: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1318,7 +1318,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Jacoblundart: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Jacoblundart: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1333,7 +1333,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Subscriptions"
     ],
-    "summary": "Kulanikinis: Shopify commerce engagement spanning subscriptions across a food & beverage storefront.",
+    "summary": "Kulanikinis: Shopify work covering subscriptions for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1348,7 +1348,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Livewholier: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Livewholier: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1363,7 +1363,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Lookbookstore: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Lookbookstore: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1378,7 +1378,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Luxyhair: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Luxyhair: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1393,7 +1393,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Lvly: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Lvly: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1408,7 +1408,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Subscriptions"
     ],
-    "summary": "Maccosmetics: Shopify commerce engagement spanning subscriptions across a beauty storefront.",
+    "summary": "Maccosmetics: Shopify work covering subscriptions for a beauty brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1423,7 +1423,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Manateecoffee: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Manateecoffee: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1438,7 +1438,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Missrebel: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Missrebel: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1453,7 +1453,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Nudea: Shopify commerce engagement spanning shopify storefront across a health & medical storefront.",
+    "summary": "Nudea: Shopify storefront build and merchandising work for a health & medical brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1468,7 +1468,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Onnit: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Onnit: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1483,7 +1483,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Ourdogslife: Shopify commerce engagement spanning shopify storefront across a pets storefront.",
+    "summary": "Ourdogslife: Shopify storefront build and merchandising work for a pets brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1498,7 +1498,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Theme & custom development"
     ],
-    "summary": "Pantypostman: Shopify commerce engagement spanning theme & custom development across a shopify commerce storefront.",
+    "summary": "Pantypostman: Shopify work covering theme & custom development for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1513,7 +1513,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Poho: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Poho: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1528,7 +1528,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Ross Simons: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Ross Simons: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1543,7 +1543,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Shopcrush: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "Shopcrush: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1558,7 +1558,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "CRO"
     ],
-    "summary": "Sommerswim: Shopify commerce engagement spanning cro across a shopify commerce storefront.",
+    "summary": "Sommerswim: Shopify work covering cro for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1573,7 +1573,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "T2tea: Shopify commerce engagement spanning shopify storefront across a shopify commerce storefront.",
+    "summary": "T2tea: Shopify storefront build and merchandising work for a shopify commerce brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1588,7 +1588,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Tesalate: Shopify commerce engagement spanning shopify storefront across a food & beverage storefront.",
+    "summary": "Tesalate: Shopify storefront build and merchandising work for a food & beverage brand.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1603,11 +1603,53 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify storefront"
     ],
-    "summary": "Trulybeauty: Shopify commerce engagement spanning shopify storefront across a beauty storefront.",
+    "summary": "Trulybeauty: Shopify storefront build and merchandising work for a beauty brand.",
     "featured": false,
     "source": "URL sheet"
   }
 ];
+
+/** Map each service slug to portfolio capability / keyword signals. */
+const serviceSignals: Record<string, RegExp> = {
+  consulting: /./, // full portfolio proof for advisory pages
+  audits: /cro|performance|seo|speed|conversion|bundle|upsell/i,
+  design: /theme|brand|ugc|motion|gsap|liquid|shopify 2\.0|figma/i,
+  development:
+    /theme|custom|shopify 2\.0|hydrogen|function|app|liquid|headless|storefront/i,
+  migrations: /migration|replatform|wordpress|woocommerce/i,
+  catalogue: /ai|catalogue|vendor|content|metafield|sku|product/i,
+  inventory: /inventory|stock|edge|multi-location|sync/i,
+  "order-management": /order|oms|dropship|fulfill|routing/i,
+  integrations: /integrat|api|vendor|erp|3pl|webhook|klaviyo|recharge|skio/i,
+  cro: /cro|subscription|bundle|performance|seo|loyalty|lifecycle|klaviyo|upsell|conversion|ugc/i,
+  aeo: /ai|seo|content|schema|visibility/i,
+  "agentic-commerce": /ai|feed|catalogue|product|vendor/i,
+  operations: /ai|ops|order|inventory|catalogue|automation/i,
+};
+
+export function getPortfolioForService(serviceSlug: string): PortfolioProject[] {
+  const signal = serviceSignals[serviceSlug] ?? /shopify|storefront|theme|custom/i;
+  const matched = portfolioProjects.filter((p) => {
+    const hay = `${p.capabilities.join(" ")} ${p.categories.join(" ")} ${p.summary} ${p.industry}`;
+    return signal.test(hay);
+  });
+
+  // Guarantee every project lands on development; consulting shows the full set.
+  if (serviceSlug === "development" || serviceSlug === "consulting") {
+    return portfolioProjects;
+  }
+
+  // If a niche service matched too few, fold in featured work so the page isn't empty.
+  if (matched.length < 6) {
+    const featured = portfolioProjects.filter((p) => p.featured);
+    const ids = new Set(matched.map((p) => p.url));
+    for (const f of featured) {
+      if (!ids.has(f.url)) matched.push(f);
+    }
+  }
+
+  return matched;
+}
 
 export const portfolioCategoryFilters = [
   "All",

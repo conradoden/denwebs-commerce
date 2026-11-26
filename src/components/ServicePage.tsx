@@ -1,25 +1,25 @@
-import type { Service } from "@/lib/types";
+import type { CaseStudy, PortfolioProject, Service } from "@/lib/types";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ProcessSteps from "@/components/ProcessSteps";
 import FAQAccordion from "@/components/FAQAccordion";
 import CaseStudyCard from "@/components/CaseStudyCard";
+import PortfolioCard from "@/components/PortfolioCard";
 import CTABand from "@/components/CTABand";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
-import { caseStudies } from "@/content/case-studies";
 
 export default function ServicePage({
   service,
   crumbs,
-  relatedStudies,
+  relatedStudies = [],
+  relatedPortfolio = [],
 }: {
   service: Service;
   crumbs: { label: string; href?: string }[];
-  relatedStudies?: typeof caseStudies;
+  relatedStudies?: CaseStudy[];
+  relatedPortfolio?: PortfolioProject[];
 }) {
-  const related = relatedStudies ?? caseStudies.slice(0, 2);
-
   return (
     <>
       <section className="mx-auto max-w-[88rem] px-5 pt-12 md:pt-16 lg:px-8">
@@ -42,7 +42,6 @@ export default function ServicePage({
               </Button>
             </div>
           </div>
-          {/* Who it's for, sticky meta card */}
           <div className="h-fit rounded-[5px] border border-line bg-paper-dim p-7 lg:sticky lg:top-24">
             <p className="eyebrow">Who it&apos;s for</p>
             <ul className="mt-5 space-y-3.5">
@@ -57,7 +56,6 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* Deliverables */}
       <section className="border-y border-line bg-paper-dim py-16 md:py-20">
         <div className="mx-auto max-w-[88rem] px-5 lg:px-8">
           <SectionHeading index="01" eyebrow="What's included" title="Deliverables." />
@@ -77,7 +75,6 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* Process */}
       <section className="mx-auto max-w-[88rem] px-5 py-16 md:py-20 lg:px-8">
         <SectionHeading index="02" eyebrow="Process" title="How it runs." />
         <div className="mt-12">
@@ -85,12 +82,11 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* Related work */}
-      {related.length > 0 && (
+      {relatedStudies.length > 0 && (
         <section className="mx-auto max-w-[88rem] px-5 pb-16 md:pb-20 lg:px-8">
-          <SectionHeading index="03" eyebrow="Related work" title="It in practice." />
+          <SectionHeading index="03" eyebrow="Case studies" title="Deep dives." />
           <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-            {related.map((s, i) => (
+            {relatedStudies.map((s, i) => (
               <Reveal key={s.slug} delay={i * 90} className="h-full">
                 <CaseStudyCard study={s} />
               </Reveal>
@@ -99,9 +95,30 @@ export default function ServicePage({
         </section>
       )}
 
-      {/* FAQ */}
-      <section className="mx-auto max-w-4xl px-5 pb-20 md:pb-24 lg:px-8">
-        <SectionHeading index="04" eyebrow="FAQ" title="Common questions." />
+      {relatedPortfolio.length > 0 && (
+        <section className="border-t border-line bg-paper-dim py-16 md:py-20">
+          <div className="mx-auto max-w-[88rem] px-5 lg:px-8">
+            <SectionHeading
+              index={relatedStudies.length > 0 ? "04" : "03"}
+              eyebrow="Portfolio"
+              title="Stores we shipped in this practice."
+              copy={`${relatedPortfolio.length} storefronts from the portfolio mapped to this service.`}
+            />
+            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {relatedPortfolio.map((p) => (
+                <PortfolioCard key={`${p.slug}-${p.url}`} project={p} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className="mx-auto max-w-4xl px-5 py-16 md:py-20 lg:px-8">
+        <SectionHeading
+          index={relatedPortfolio.length > 0 ? "05" : relatedStudies.length > 0 ? "04" : "03"}
+          eyebrow="FAQ"
+          title="Common questions."
+        />
         <div className="mt-12">
           <FAQAccordion faqs={service.faqs} />
         </div>

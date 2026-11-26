@@ -38,9 +38,8 @@ export default function WorkIndex() {
             {portfolioProjects.length}+ storefronts across categories.
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-            Every URL from the documented Shopify work history. Filter by
-            category, open live stores, or jump into a full case study when one
-            exists.
+            The portfolio we built and shipped. Filter by category, open live
+            stores, or jump into a full case study when one exists.
           </p>
           <div className="mt-10">
             <PortfolioGrid
