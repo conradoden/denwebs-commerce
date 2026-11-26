@@ -4,13 +4,21 @@ const clients = [
   "TheJewelleryRoom",
   "M Robinson Fine Jewelers",
   "Treasures Jeweler",
-  "…and 80+ more Shopify projects via agency work",
 ];
 
-export default function LogoMarquee({ label = "Selected client storefronts" }: { label?: string }) {
-  const row = [...clients, ...clients];
+export default function LogoMarquee({
+  label,
+  moreClients,
+  ariaLabel,
+}: {
+  label: string;
+  moreClients: string;
+  ariaLabel: string;
+}) {
+  const row = [...clients, moreClients, ...clients, moreClients];
+  const cycle = clients.length + 1;
   return (
-    <section aria-label="Client logos" className="border-b border-line bg-paper py-9">
+    <section aria-label={ariaLabel} className="border-b border-line bg-paper py-9">
       <p className="mb-6 text-center font-mono text-[10.5px] uppercase tracking-[0.2em] text-muted">
         {label}
       </p>
@@ -26,11 +34,11 @@ export default function LogoMarquee({ label = "Selected client storefronts" }: {
             <span
               key={`${name}-${i}`}
               className={`whitespace-nowrap font-display text-xl font-semibold tracking-[-0.01em] transition-colors ${
-                name.startsWith("…")
+                i % cycle === clients.length
                   ? "font-mono text-base font-normal text-accent-deep"
                   : "text-ink/40 hover:text-ink/70"
               }`}
-              aria-hidden={i >= clients.length}
+              aria-hidden={i >= cycle}
             >
               {name}
             </span>

@@ -1,12 +1,11 @@
 // Figures from documented work history (CV project records).
-const stats = [
-  { value: "80+", label: "Shopify projects delivered" },
-  { value: "30+", label: "CMS builds alongside" },
-  { value: "$10k/mo", label: "platform cost eliminated for one client" },
-  { value: "2017", label: "in commerce engineering since" },
-];
-
-export default function StatStrip({ dark = false }: { dark?: boolean }) {
+export default function StatStrip({
+  stats,
+  dark = false,
+}: {
+  stats: { value: string; label: string }[];
+  dark?: boolean;
+}) {
   return (
     <dl
       className={`grid grid-cols-2 md:grid-cols-4 ${dark ? "text-paper" : "text-ink"}`}

@@ -2,13 +2,30 @@
 
 import { useState, type FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
-import { hearAbout, revenueRanges, timelines } from "@/content/site";
+import { fmt } from "@/i18n/config";
+import type { Messages } from "@/i18n/dictionaries";
 
 const inputCls =
   "w-full rounded-[3px] border border-line bg-paper px-4 py-3 text-[15px] text-ink placeholder:text-muted/60 transition-colors focus:border-ink focus:outline-none focus:ring-2 focus:ring-accent/40";
 const labelCls = "mb-1.5 block font-mono text-[11.5px] uppercase tracking-[0.1em] text-ink/75";
 
-export default function ContactForm({ auditMode = false }: { auditMode?: boolean }) {
+type ErrorCode = keyof Messages["form"]["errors"];
+
+function isErrorCode(v: unknown): v is ErrorCode {
+  return v === "invalidRequest" || v === "missingField" || v === "invalidEmail" || v === "deliveryFailed";
+}
+
+export default function ContactForm({
+  form,
+  email,
+  options,
+  auditMode = false,
+}: {
+  form: Messages["form"];
+  email: string;
+  options: { revenueRanges: string[]; timelines: string[]; hearAbout: string[] };
+  auditMode?: boolean;
+}) {
   const params = useSearchParams();
   const intent = params.get("intent") ?? "";
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -18,8 +35,8 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
     e.preventDefault();
     setStatus("sending");
     setErrorMsg("");
-    const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
+    const formEl = e.currentTarget;
+    const data = Object.fromEntries(new FormData(formEl).entries());
     data.intent = intent;
     data.auditMode = String(auditMode);
     try {
@@ -29,14 +46,14 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
         body: JSON.stringify(data),
       });
       if (!res.ok) {
-        const j = await res.json().catch(() => ({}));
-        throw new Error(j.error ?? "Something went wrong.");
+        const j = (await res.json().catch(() => ({}))) as { error?: unknown };
+        throw new Error(isErrorCode(j.error) ? form.errors[j.error] : form.errorGeneric);
       }
       setStatus("sent");
-      form.reset();
+      formEl.reset();
     } catch (err) {
       setStatus("error");
-      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+      setErrorMsg(err instanceof Error ? err.message : form.errorGeneric);
     }
   }
 
@@ -44,15 +61,15 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
     return (
       <div className="rounded-md border border-line bg-paper-dim p-10 text-center" role="status">
         <p className="font-mono text-[12px] uppercase tracking-widest text-accent-deep">
-          Received
+          {form.successEyebrow}
         </p>
         <h3 className="mt-3 font-display text-3xl font-bold tracking-tight">
-          Thanks — we&apos;ve got it.
+          {form.successTitle}
         </h3>
         <p className="mx-auto mt-3 max-w-md text-muted">
-          We reply within one business day. If it&apos;s urgent, email{" "}
-          <a href="mailto:hello@denwebs.com" className="text-ink underline decoration-accent decoration-2 underline-offset-4">
-            hello@denwebs.com
+          {form.successCopy}{" "}
+          <a href={`mailto:${email}`} className="text-ink underline decoration-accent decoration-2 underline-offset-4">
+            {email}
           </a>
           .
         </p>
@@ -65,56 +82,56 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
       {/* Honeypot — hidden from humans */}
       <div className="hidden" aria-hidden="true">
         <label>
-          Leave this field empty
+          {form.honeypot}
           <input name="company_fax" type="text" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
 
       <div>
         <label htmlFor="firstName" className={labelCls}>
-          First name *
+          {form.firstName}
         </label>
         <input id="firstName" name="firstName" required className={inputCls} autoComplete="given-name" />
       </div>
       <div>
         <label htmlFor="lastName" className={labelCls}>
-          Last name *
+          {form.lastName}
         </label>
         <input id="lastName" name="lastName" required className={inputCls} autoComplete="family-name" />
       </div>
       <div>
         <label htmlFor="email" className={labelCls}>
-          Work email *
+          {form.workEmail}
         </label>
         <input id="email" name="email" type="email" required className={inputCls} autoComplete="email" />
       </div>
       <div>
         <label htmlFor="company" className={labelCls}>
-          Company name *
+          {form.company}
         </label>
         <input id="company" name="company" required className={inputCls} autoComplete="organization" />
       </div>
       <div>
         <label htmlFor="website" className={labelCls}>
-          {auditMode ? "Store URL *" : "Website URL *"}
+          {auditMode ? form.storeUrl : form.websiteUrl}
         </label>
         <input
           id="website"
           name="website"
           type="url"
           required
-          placeholder="https://yourstore.com"
+          placeholder={form.websitePlaceholder}
           className={inputCls}
         />
       </div>
 
       {auditMode && (
         <div className="sm:col-span-2">
-          <span className={labelCls}>Audit type *</span>
+          <span className={labelCls}>{form.auditType}</span>
           <div className="flex flex-wrap gap-3">
             {[
-              { value: "store", label: "Shopify store audit" },
-              { value: "ai", label: "AI visibility audit" },
+              { value: "store", label: form.auditStore },
+              { value: "ai", label: form.auditAi },
             ].map((opt) => (
               <label
                 key={opt.value}
@@ -139,13 +156,13 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
         <>
           <div>
             <label htmlFor="revenue" className={labelCls}>
-              Monthly revenue range
+              {form.revenue}
             </label>
             <select id="revenue" name="revenue" className={inputCls} defaultValue="">
               <option value="" disabled>
-                Select…
+                {form.selectPlaceholder}
               </option>
-              {revenueRanges.map((r) => (
+              {options.revenueRanges.map((r) => (
                 <option key={r} value={r}>
                   {r}
                 </option>
@@ -154,13 +171,13 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
           </div>
           <div>
             <label htmlFor="timeline" className={labelCls}>
-              Timeline
+              {form.timeline}
             </label>
             <select id="timeline" name="timeline" className={inputCls} defaultValue="">
               <option value="" disabled>
-                Select…
+                {form.selectPlaceholder}
               </option>
-              {timelines.map((t) => (
+              {options.timelines.map((t) => (
                 <option key={t} value={t}>
                   {t}
                 </option>
@@ -172,7 +189,7 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
 
       <div className="sm:col-span-2">
         <label htmlFor="message" className={labelCls}>
-          How can we help? *
+          {form.message}
         </label>
         <textarea
           id="message"
@@ -182,14 +199,14 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
           className={inputCls}
           placeholder={
             intent === "discovery"
-              ? "What would you like to cover on a discovery call?"
-              : "Tell us about the project, the problem, or what's not working."
+              ? form.messagePlaceholderDiscovery
+              : form.messagePlaceholder
           }
           defaultValue={
             intent === "discovery"
-              ? "I'd like to book a discovery call. "
+              ? form.messageDefaultDiscovery
               : intent === "ai-audit"
-                ? "I'd like an AI visibility audit. "
+                ? form.messageDefaultAiAudit
                 : ""
           }
         />
@@ -197,13 +214,13 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
 
       <div className="sm:col-span-2">
         <label htmlFor="hearAbout" className={labelCls}>
-          How did you hear about us?
+          {form.hearAbout}
         </label>
         <select id="hearAbout" name="hearAbout" className={inputCls} defaultValue="">
           <option value="" disabled>
-            Select…
+            {form.selectPlaceholder}
           </option>
-          {hearAbout.map((h) => (
+          {options.hearAbout.map((h) => (
             <option key={h} value={h}>
               {h}
             </option>
@@ -217,16 +234,14 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
           disabled={status === "sending"}
           className="w-full rounded-[3px] bg-ink px-7 py-4 font-mono text-[13px] uppercase tracking-[0.08em] text-paper transition-colors hover:bg-ink-soft disabled:opacity-60 sm:w-auto"
         >
-          {status === "sending" ? "Sending…" : auditMode ? "Request audit" : "Get a quote →"}
+          {status === "sending" ? form.sending : auditMode ? form.requestAudit : `${form.submitQuote} →`}
         </button>
         {status === "error" && (
           <p className="mt-3 text-sm text-red-700" role="alert">
-            {errorMsg} You can also email hello@denwebs.com.
+            {errorMsg} {fmt(form.errorEmailSuffix, { email })}
           </p>
         )}
-        <p className="mt-3 text-[13px] text-muted">
-          We reply within one business day. No spam, no list — your details go to a human.
-        </p>
+        <p className="mt-3 text-[13px] text-muted">{form.footnote}</p>
       </div>
     </form>
   );

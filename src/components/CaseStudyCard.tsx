@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { CaseStudy } from "@/lib/types";
+import { fmt, localize, type Locale } from "@/i18n/config";
+import type { Messages } from "@/i18n/dictionaries";
 
 const industryAccent: Record<string, string> = {
   Jewelry: "#e3c87f",
@@ -43,11 +45,19 @@ function StorefrontMock({ accent, label }: { accent: string; label: string }) {
   );
 }
 
-export default function CaseStudyCard({ study }: { study: CaseStudy }) {
+export default function CaseStudyCard({
+  study,
+  lang,
+  common,
+}: {
+  study: CaseStudy;
+  lang: Locale;
+  common: Messages["common"];
+}) {
   const accent = industryAccent[study.industry] ?? "#5b8cff";
   return (
     <Link
-      href={`/work/${study.slug}`}
+      href={localize(`/work/${study.slug}`, lang)}
       className="group flex h-full flex-col overflow-hidden rounded-[5px] border border-line bg-paper transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_48px_-24px_rgba(14,18,24,0.35)]"
     >
       <div className="relative aspect-[16/9] overflow-hidden bg-ink">
@@ -55,7 +65,7 @@ export default function CaseStudyCard({ study }: { study: CaseStudy }) {
           <>
             <Image
               src={study.image}
-              alt={study.imageAlt ?? `${study.client} storefront`}
+              alt={study.imageAlt ?? fmt(common.storefrontAlt, { client: study.client })}
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
@@ -73,7 +83,7 @@ export default function CaseStudyCard({ study }: { study: CaseStudy }) {
         )}
         {study.sample && (
           <span className="absolute right-4 top-4 rounded-[3px] border border-paper/25 bg-ink/60 px-2 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-paper/70 backdrop-blur-sm">
-            Sample
+            {common.sample}
           </span>
         )}
       </div>
@@ -93,7 +103,7 @@ export default function CaseStudyCard({ study }: { study: CaseStudy }) {
           ))}
         </ul>
         <span className="mt-auto flex items-center gap-2 pt-6 font-mono text-[12px] uppercase tracking-[0.08em] text-ink">
-          Read case study <span className="arrow-slide">→</span>
+          {common.readCaseStudy} <span className="arrow-slide">→</span>
         </span>
       </div>
     </Link>

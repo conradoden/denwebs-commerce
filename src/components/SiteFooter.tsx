@@ -1,7 +1,19 @@
 import Link from "next/link";
-import { footerNav, site } from "@/content/site";
+import { fmt, localize, type Locale } from "@/i18n/config";
+import type { Messages } from "@/i18n/dictionaries";
+import type { SiteContent } from "@/content";
 
-export default function SiteFooter() {
+export default function SiteFooter({
+  lang,
+  footer,
+  site,
+  footerNav,
+}: {
+  lang: Locale;
+  footer: Messages["footer"];
+  site: SiteContent["site"];
+  footerNav: SiteContent["footerNav"];
+}) {
   return (
     <footer className="border-t border-line-dark bg-ink text-paper">
       <div className="mx-auto max-w-[88rem] px-5 pb-10 pt-16 lg:px-8">
@@ -9,7 +21,7 @@ export default function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
           <div>
             <p className="eyebrow" data-dark="true">
-              Contact
+              {footer.contactEyebrow}
             </p>
             <a
               href={`mailto:${site.email}`}
@@ -18,10 +30,10 @@ export default function SiteFooter() {
               {site.email}
             </a>
             <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-paper/55">
-              We reply within one business day. US / EU · Remote-first.
+              {footer.tagline}
             </p>
           </div>
-          <nav className="grid grid-cols-2 gap-8 sm:grid-cols-4" aria-label="Footer">
+          <nav className="grid grid-cols-2 gap-8 sm:grid-cols-4" aria-label={footer.navAria}>
             {footerNav.map((col) => (
               <div key={col.title}>
                 <p className="eyebrow">{col.title}</p>
@@ -29,7 +41,7 @@ export default function SiteFooter() {
                   {col.links.map((l) => (
                     <li key={l.href}>
                       <Link
-                        href={l.href}
+                        href={localize(l.href, lang)}
                         className="text-sm text-paper/65 transition-colors hover:text-accent"
                       >
                         {l.label}
@@ -50,10 +62,8 @@ export default function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col gap-3 border-t border-line-dark pt-6 text-xs text-paper/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Denwebs. All rights reserved.</p>
-          <p className="font-mono tracking-wide">
-            Shopify commerce, end to end — strategy to AI.
-          </p>
+          <p>{fmt(footer.copyright, { year: new Date().getFullYear() })}</p>
+          <p className="font-mono tracking-wide">{footer.bottomTagline}</p>
         </div>
       </div>
     </footer>

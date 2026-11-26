@@ -1,11 +1,14 @@
 import Link from "next/link";
+import { localize, type Locale } from "@/i18n/config";
 
 export default function Breadcrumbs({
   items,
   dark = false,
+  lang,
 }: {
   items: { label: string; href?: string }[];
   dark?: boolean;
+  lang: Locale;
 }) {
   const linkCls = dark ? "hover:text-paper" : "hover:text-ink";
   const currentCls = dark ? "text-paper" : "text-ink";
@@ -18,7 +21,7 @@ export default function Breadcrumbs({
         }`}
       >
         <li>
-          <Link href="/" className={linkCls}>
+          <Link href={localize("/", lang)} className={linkCls}>
             Denwebs
           </Link>
         </li>
@@ -26,7 +29,7 @@ export default function Breadcrumbs({
           <li key={i} className="flex items-center gap-2.5">
             <span aria-hidden="true" className={sepCls}>/</span>
             {item.href ? (
-              <Link href={item.href} className={linkCls}>
+              <Link href={localize(item.href, lang)} className={linkCls}>
                 {item.label}
               </Link>
             ) : (

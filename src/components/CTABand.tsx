@@ -1,10 +1,18 @@
 import Reveal from "./Reveal";
 import Button from "./Button";
+import type { Locale } from "@/i18n/config";
+import type { Messages } from "@/i18n/dictionaries";
 
 export default function CTABand({
-  title = "Let's talk about your store.",
-  copy = "Tell us what you're building, migrating, or untangling. We reply within one business day.",
+  lang,
+  t,
+  quoteLabel,
+  title,
+  copy,
 }: {
+  lang: Locale;
+  t: Messages["cta"];
+  quoteLabel: string;
   title?: string;
   copy?: string;
 }) {
@@ -16,19 +24,19 @@ export default function CTABand({
           <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-end">
             <div className="max-w-2xl">
               <p className="eyebrow" data-dark="true">
-                Next step
+                {t.eyebrow}
               </p>
               <h2 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-5xl">
-                {title}
+                {title ?? t.title}
               </h2>
-              <p className="mt-5 max-w-xl text-lg leading-relaxed text-paper/65">{copy}</p>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-paper/65">{copy ?? t.copy}</p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Button href="/contact" variant="accent" arrow>
-                Get a quote
+              <Button href="/contact" lang={lang} variant="accent" arrow>
+                {quoteLabel}
               </Button>
-              <Button href="/contact?intent=discovery" variant="outlineLight" arrow>
-                Book a discovery call
+              <Button href="/contact?intent=discovery" lang={lang} variant="outlineLight" arrow>
+                {t.discovery}
               </Button>
             </div>
           </div>

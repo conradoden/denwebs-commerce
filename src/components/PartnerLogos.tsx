@@ -12,13 +12,19 @@ const partners = [
   "ShipBob",
 ];
 
-export default function PartnerLogos({ dark = false }: { dark?: boolean }) {
+export default function PartnerLogos({
+  label,
+  dark = false,
+}: {
+  label: string;
+  dark?: boolean;
+}) {
   return (
     <div>
       <p
         className={`mb-6 font-mono text-[11px] uppercase tracking-widest ${dark ? "text-paper/50" : "text-muted"}`}
       >
-        Platforms & partners we work with
+        {label}
       </p>
       <ul className="flex flex-wrap items-center gap-x-10 gap-y-5">
         {partners.map((p) => (

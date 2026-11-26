@@ -2,19 +2,28 @@
 
 import { useState } from "react";
 import type { CaseStudy } from "@/lib/types";
+import type { Locale } from "@/i18n/config";
+import type { Messages } from "@/i18n/dictionaries";
 import CaseStudyCard from "./CaseStudyCard";
 
 export default function WorkFilter({
   studies,
   filters,
+  lang,
+  common,
+  labels,
 }: {
   studies: CaseStudy[];
   filters: string[];
+  lang: Locale;
+  common: Messages["common"];
+  labels: { empty: string; aria: string };
 }) {
-  const [active, setActive] = useState("All");
+  // filters[0] is the "show all" entry from localized content.
+  const [active, setActive] = useState(filters[0]);
 
   const visible =
-    active === "All"
+    active === filters[0]
       ? studies
       : studies.filter(
           (s) => s.industry === active || s.tags.includes(active)
@@ -22,7 +31,7 @@ export default function WorkFilter({
 
   return (
     <>
-      <div className="mt-12 flex flex-wrap gap-2" role="group" aria-label="Filter case studies">
+      <div className="mt-12 flex flex-wrap gap-2" role="group" aria-label={labels.aria}>
         {filters.map((f) => {
           const isActive = f === active;
           return (
@@ -45,11 +54,11 @@ export default function WorkFilter({
 
       <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
         {visible.map((s) => (
-          <CaseStudyCard key={s.slug} study={s} />
+          <CaseStudyCard key={s.slug} study={s} lang={lang} common={common} />
         ))}
       </div>
       {visible.length === 0 && (
-        <p className="mt-12 text-muted">No case studies in this category yet.</p>
+        <p className="mt-12 text-muted">{labels.empty}</p>
       )}
     </>
   );

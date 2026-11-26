@@ -12,10 +12,16 @@
   --color-line: #dfe2e8;
   --color-line-dark: #272f3d;
 
-  --font-display: var(--font-space-grotesk), ui-sans-serif, sans-serif;
-  --font-serif: var(--font-instrument), ui-serif, Georgia, serif;
-  --font-body: var(--font-archivo), ui-sans-serif, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  /* Japanese system faces — Latin fonts carry no CJK glyphs, and OS fonts
+     are the standard fallback for Japanese text (Hiragino=Apple, Yu Gothic/
+     Meiryo=Windows, Noto Sans JP=Android/Linux). */
+  --font-jp-sans: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI",
+    "Yu Gothic", YuGothic, Meiryo, "Noto Sans JP", sans-serif;
+
+  --font-display: var(--font-space-grotesk), var(--font-jp-sans), ui-sans-serif, sans-serif;
+  --font-serif: var(--font-instrument), var(--font-jp-sans), ui-serif, Georgia, serif;
+  --font-body: var(--font-archivo), var(--font-jp-sans), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-plex-mono), var(--font-jp-sans), ui-monospace, monospace;
 
   --animate-marquee: marquee 42s linear infinite;
 

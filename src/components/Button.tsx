@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { localize, type Locale } from "@/i18n/config";
 
 type Variant = "dark" | "accent" | "outlineDark" | "outlineLight";
 
@@ -14,12 +15,14 @@ const styles: Record<Variant, string> = {
 
 export default function Button({
   href,
+  lang,
   children,
   variant = "dark",
   arrow = false,
   className = "",
 }: {
   href: string;
+  lang: Locale;
   children: ReactNode;
   variant?: Variant;
   arrow?: boolean;
@@ -27,7 +30,7 @@ export default function Button({
 }) {
   return (
     <Link
-      href={href}
+      href={localize(href, lang)}
       className={`group inline-flex items-center gap-2.5 rounded-[3px] px-6 py-3.5 font-mono text-[13px] uppercase tracking-[0.08em] transition-all duration-200 ${styles[variant]} ${className}`}
     >
       {children}

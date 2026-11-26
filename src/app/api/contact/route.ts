@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { site } from "@/content/site";
+import { site } from "@/content/en";
 
 const REQUIRED = ["firstName", "lastName", "email", "company", "website", "message"];
 
@@ -8,7 +8,7 @@ export async function POST(req: Request) {
   try {
     data = await req.json();
   } catch {
-    return NextResponse.json({ error: "Invalid request." }, { status: 400 });
+    return NextResponse.json({ error: "invalidRequest" }, { status: 400 });
   }
 
   // Honeypot — bots fill hidden fields; humans don't.
@@ -19,13 +19,13 @@ export async function POST(req: Request) {
   for (const field of REQUIRED) {
     const v = data[field];
     if (typeof v !== "string" || !v.trim()) {
-      return NextResponse.json({ error: `Missing required field: ${field}` }, { status: 400 });
+      return NextResponse.json({ error: "missingField" }, { status: 400 });
     }
   }
 
   const email = String(data.email);
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return NextResponse.json({ error: "Invalid email address." }, { status: 400 });
+    return NextResponse.json({ error: "invalidEmail" }, { status: 400 });
   }
 
   // Delivery: wire Resend / Formspree / HubSpot here when credentials land.
@@ -53,7 +53,7 @@ export async function POST(req: Request) {
     });
     if (!res.ok) {
       console.error("Resend delivery failed", await res.text());
-      return NextResponse.json({ error: "Delivery failed. Email us directly." }, { status: 502 });
+      return NextResponse.json({ error: "deliveryFailed" }, { status: 502 });
     }
   } else {
     console.log("[contact submission]", JSON.stringify(data));

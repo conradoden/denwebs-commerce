@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
-import { site } from "@/content/site";
-import { services, aiServices } from "@/content/services";
-import { caseStudies } from "@/content/case-studies";
-import { insights } from "@/content/insights";
+import { getContent } from "@/content";
+import { locales } from "@/i18n/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = [
+  const c = getContent("en");
+  const base = c.site.url;
+
+  const staticPaths = [
     "",
     "/work",
     "/services",
@@ -18,40 +19,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/careers",
     "/privacy",
     "/terms",
-  ].map((p) => ({
-    url: `${site.url}${p}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: p === "" ? 1 : 0.8,
-  }));
+  ];
 
-  const serviceRoutes = services.map((s) => ({
-    url: `${site.url}/services/${s.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  const dynamicPaths = [
+    ...c.services.map((s) => `/services/${s.slug}`),
+    ...c.aiServices.map((s) => `/services/ai/${s.slug}`),
+    ...c.caseStudies.map((cs) => `/work/${cs.slug}`),
+    ...c.insights.map((i) => `/insights/${i.slug}`),
+  ];
 
-  const aiRoutes = aiServices.map((s) => ({
-    url: `${site.url}/services/ai/${s.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  const toEntry = (path: string, priority: number, changeFrequency: "monthly" | "yearly") =>
+    locales.map((lang) => ({
+      url: `${base}/${lang}${path}`,
+      lastModified: new Date(),
+      changeFrequency,
+      priority: path === "" && lang === "en" ? 1 : priority,
+      alternates: {
+        languages: Object.fromEntries(
+          locales.map((l) => [l, `${base}/${l}${path}`])
+        ),
+      },
+    }));
 
-  const workRoutes = caseStudies.map((c) => ({
-    url: `${site.url}/work/${c.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  const insightRoutes = insights.map((i) => ({
-    url: `${site.url}/insights/${i.slug}`,
-    lastModified: new Date(i.date),
-    changeFrequency: "yearly" as const,
-    priority: 0.5,
-  }));
-
-  return [...staticRoutes, ...serviceRoutes, ...aiRoutes, ...workRoutes, ...insightRoutes];
+  return [
+    ...staticPaths.flatMap((p) => toEntry(p, 0.8, "monthly")),
+    ...dynamicPaths.flatMap((p) =>
+      toEntry(p, p.startsWith("/insights/") && p !== "/insights" ? 0.5 : 0.7, "monthly")
+    ),
+  ];
 }
