@@ -1,15 +1,15 @@
-# Denwebs — Shopify Agency Website
+# Denwebs | Shopify Agency Website
 
 Marketing site for Denwebs, a Shopify-focused commerce agency
 (strategy → build → operations → AI). Built from
-`Denwebs-Agency-Website-Build-Guide` — see that doc for IA, copy, and
+`Denwebs-Agency-Website-Build-Guide`; see that doc for IA, copy, and
 design intent.
 
 ## Stack
 
 - Next.js (App Router) + TypeScript + Tailwind CSS v4
 - Content-driven: services, case studies, and articles live as typed
-  modules in `src/content/` — no CMS required for v1
+  modules in `src/content/` (no CMS required for v1)
 - Forms post to `app/api/contact` (Resend-ready, honeypot + validation)
 - SEO/AEO: sitemap, robots, `llms.txt`, OG image route, JSON-LD
 
@@ -34,7 +34,7 @@ delivery (Resend) and analytics (Plausible).
 | Nav, footer, form options | `src/content/site.ts` |
 | Design tokens | `src/app/globals.css` (`@theme`) |
 
-## Before launch — placeholder checklist
+## Before launch: placeholder checklist
 
 - [ ] Replace sample case studies / client names / stats with verified data
 - [ ] Set `RESEND_API_KEY` + `CONTACT_TO` for form delivery

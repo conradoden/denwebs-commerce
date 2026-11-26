@@ -1,8 +1,8 @@
 # Denwebs
 
 > Denwebs is a Shopify agency that plans, builds, and runs the full commerce
-> stack — strategy, design, development, catalogue/inventory/order operations,
-> and AI (AEO, agentic commerce, automation) — so brands sell more with a
+> stack: strategy, design, development, catalogue/inventory/order operations,
+> and AI (AEO, agentic commerce, automation), so brands sell more with a
 > system that stays coherent.
 
 ## Services
