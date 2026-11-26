@@ -32,8 +32,8 @@ const serif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Denwebs — Shopify Agency for Commerce & AI",
-    template: "%s — Denwebs",
+    default: "Denwebs | Shopify Agency for Commerce & AI",
+    template: "%s | Denwebs",
   },
   description: site.description,
   openGraph: {

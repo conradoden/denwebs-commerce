@@ -2,7 +2,7 @@ import type { CaseStudy } from "@/lib/types";
 
 // Case studies drawn from real Shopify work history.
 // Sources: Conrado CV projects (Useryze engagements + TheJewelleryRoom).
-// Keep claims to what's documented — don't inflate metrics.
+// Keep claims to what's documented, don't inflate metrics.
 export const caseStudies: CaseStudy[] = [
   {
     slug: "marc-robinson-jewelers",
@@ -10,7 +10,7 @@ export const caseStudies: CaseStudy[] = [
     industry: "Jewelry",
     tags: ["Jewelry", "AI", "Custom Apps"],
     title:
-      "A 4,000-product jewelry store built from scratch — with AI doing the data work",
+      "A 4,000-product jewelry store built from scratch, with AI doing the data work",
     services: ["Development", "Catalogue", "AI", "Integrations"],
     platform: "Shopify",
     url: "https://marcrobinsonjewelers.com",
@@ -21,12 +21,12 @@ export const caseStudies: CaseStudy[] = [
     ],
     heroMetric: "4,000+",
     metrics: [
-      { value: "4,000+", label: "products live at launch — fine jewelry to pre-owned luxury watches" },
+      { value: "4,000+", label: "products live at launch, fine jewelry to pre-owned luxury watches" },
       { value: "AI", label: "product content & imagery pipeline across the full catalogue" },
       { value: "Custom", label: "Ring Builder for semi-mount and custom ring orders" },
     ],
     challenge:
-      "A fine jeweler with thousands of SKUs — fine jewelry, pre-owned luxury watches, custom rings — needed a real online store, not a brochure site. Product data lived inside vendor systems, and hand-writing four thousand product pages wasn't an option.",
+      "A fine jeweler with thousands of SKUs, fine jewelry, pre-owned luxury watches, custom rings, needed a real online store, not a brochure site. Product data lived inside vendor systems, and hand-writing four thousand product pages wasn't an option.",
     approach:
       "Built the Shopify store from scratch around the catalogue: a vendor-API product pipeline feeding live inventory, supervised AI drafting product content and imagery, and a custom Ring Builder for semi-mount and bespoke orders. Multi-location inventory and a store locator tied the physical business to the site.",
     built: [
@@ -38,7 +38,7 @@ export const caseStudies: CaseStudy[] = [
       "Multi-location store locator",
     ],
     resultsNote:
-      "A catalogue that would have taken months to write went live feed-ready — and the Ring Builder turned custom-order inquiries into a self-serve flow.",
+      "A catalogue that would have taken months to write went live feed-ready, and the Ring Builder turned custom-order inquiries into a self-serve flow.",
     sample: false,
   },
   {
@@ -51,7 +51,7 @@ export const caseStudies: CaseStudy[] = [
     platform: "Shopify + custom app (Laravel)",
     url: "https://thejewelleryroom.com",
     image: "/images/work/thejewelleryroom-flatlay.jpg",
-    imageAlt: "TheJewelleryRoom product photography — gift box with fine jewelry",
+    imageAlt: "TheJewelleryRoom product photography, gift box with fine jewelry",
     gallery: [
       { src: "/images/work/thejewelleryroom-model.jpg", alt: "Editorial jewelry photography for TheJewelleryRoom" },
     ],
@@ -62,9 +62,9 @@ export const caseStudies: CaseStudy[] = [
       { value: "DKK M+", label: "in monthly revenue managed through the store" },
     ],
     challenge:
-      "TheJewelleryRoom ran a Copenhagen designer marketplace on Shopify — 50+ independent jewelry designers shipping through one storefront. Jetti Onport handled the dropship order routing at roughly $10k/month, and the fit was never right for how the marketplace actually operated.",
+      "TheJewelleryRoom ran a Copenhagen designer marketplace on Shopify, 50+ independent jewelry designers shipping through one storefront. Jetti Onport handled the dropship order routing at roughly $10k/month, and the fit was never right for how the marketplace actually operated.",
     approach:
-      "As lead developer, designed and built a custom order-management Shopify app — Laravel on Heroku — shaped exactly around the marketplace's dropship flows: order splitting, designer routing, and fulfillment status syncing back to Shopify. Replaced the third-party platform outright rather than bending the operation to fit it.",
+      "As lead developer, designed and built a custom order-management Shopify app, Laravel on Heroku, shaped exactly around the marketplace's dropship flows: order splitting, designer routing, and fulfillment status syncing back to Shopify. Replaced the third-party platform outright rather than bending the operation to fit it.",
     built: [
       "Custom embedded Shopify order-management app (Laravel / Heroku)",
       "Dropship order routing across 50+ designer accounts",
@@ -72,7 +72,7 @@ export const caseStudies: CaseStudy[] = [
       "Marketplace operations tooling replacing Jetti Onport",
     ],
     resultsNote:
-      "A five-figure monthly platform line went to zero, dropshipping operations got smoother, and the marketplace ran on tooling built for its actual flow — not the other way around.",
+      "A five-figure monthly platform line went to zero, dropshipping operations got smoother, and the marketplace ran on tooling built for its actual flow, not the other way around.",
     sample: false,
   },
   {
@@ -92,11 +92,11 @@ export const caseStudies: CaseStudy[] = [
     heroMetric: "100%",
     metrics: [
       { value: "100%", label: "of catalogue content drafted by supervised AI pipelines" },
-      { value: "Custom", label: "Ring Builder — semi-mount through fully bespoke" },
+      { value: "Custom", label: "Ring Builder, semi-mount through fully bespoke" },
       { value: "Lead", label: "capture + appointment flows built into the storefront" },
     ],
     challenge:
-      "A boutique fine jeweler sells high-consideration products — engagement rings, timepieces, custom work — where the website's job is to earn the appointment, not just the click. The storefront needed luxury feel, a real ring-configuration tool, and a content pipeline the small team could sustain.",
+      "A boutique fine jeweler sells high-consideration products, engagement rings, timepieces, custom work, where the website's job is to earn the appointment, not just the click. The storefront needed luxury feel, a real ring-configuration tool, and a content pipeline the small team could sustain.",
     approach:
       "Built a boutique Shopify storefront with a custom Ring Builder for semi-mount and bespoke configurations, a vendor + AI content pipeline keeping the catalogue fresh without headcount, Edge inventory sync, and appointment and lead-capture flows designed around how fine jewelry actually sells.",
     built: [
@@ -107,7 +107,7 @@ export const caseStudies: CaseStudy[] = [
       "Appointment booking and lead-capture flows",
     ],
     resultsNote:
-      "The store does the work a showroom visit used to do first — customers configure, compare, and book, and the catalogue stays current without a content team.",
+      "The store does the work a showroom visit used to do first, customers configure, compare, and book, and the catalogue stays current without a content team.",
     sample: false,
   },
   {
@@ -126,12 +126,12 @@ export const caseStudies: CaseStudy[] = [
     ],
     heroMetric: "3",
     metrics: [
-      { value: "3", label: "systems unified — storefront, vendor API, AI content pipeline" },
+      { value: "3", label: "systems unified: storefront, vendor API, AI content pipeline" },
       { value: "Live", label: "Edge inventory sync against vendor stock" },
-      { value: "Mobile", label: "-first storefront designed for how buyers actually browse" },
+      { value: "Mobile-first", label: "storefront designed for how buyers actually browse" },
     ],
     challenge:
-      "An Austin jeweler needed an online storefront where none existed — but the harder problem was operational: products arriving through a vendor API, inventory that changes daily, and no internal team to write or maintain product content.",
+      "An Austin jeweler needed an online storefront where none existed, but the harder problem was operational: products arriving through a vendor API, inventory that changes daily, and no internal team to write or maintain product content.",
     approach:
       "Built a mobile-first Shopify store wired directly to the vendor's product API, with supervised AI generating product content and imagery at pipeline scale and Edge inventory sync keeping availability honest. The managed online funnel carried traffic through to inquiry and sale.",
     built: [
@@ -139,10 +139,10 @@ export const caseStudies: CaseStudy[] = [
       "Vendor API product pipeline (catalogue + media)",
       "Supervised AI product content and imagery",
       "Edge inventory synchronization",
-      "Managed online funnel — traffic to inquiry",
+      "Managed online funnel, traffic to inquiry",
     ],
     resultsNote:
-      "The store stays stocked, described, and accurate without manual catalogue labor — the pipeline does the work the team never had.",
+      "The store stays stocked, described, and accurate without manual catalogue labor, the pipeline does the work the team never had.",
     sample: false,
   },
 ];

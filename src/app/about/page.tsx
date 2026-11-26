@@ -9,7 +9,7 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Denwebs is a Shopify agency built like an operator — consultants, builders, and commerce ops under one roof.",
+    "Denwebs is a Shopify agency built like an operator, consultants, builders, and commerce ops under one roof.",
 };
 
 const principles = [
@@ -23,11 +23,11 @@ const principles = [
   },
   {
     title: "Honest scope",
-    body: "Fixed-scope projects, measured retainers, and straight answers — including when the right answer is 'don't rebuild that.'",
+    body: "Fixed-scope projects, measured retainers, and straight answers, including when the right answer is 'don't rebuild that.'",
   },
   {
     title: "AI, supervised",
-    body: "We use AI where it compounds — enrichment, forecasting, triage — with humans approving anything that touches customers or money.",
+    body: "We use AI where it compounds, enrichment, forecasting, triage, with humans approving anything that touches customers or money.",
   },
   {
     title: "Own the outcome",
@@ -46,8 +46,8 @@ export default function About() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
           Denwebs started from a simple observation: most Shopify agencies can
           design a beautiful store, and most can&apos;t keep it running. We built
-          the agency around the whole system — strategy, build, and the
-          operational layer in between — with AI as a core practice.
+          the agency around the whole system, strategy, build, and the
+          operational layer in between, with AI as a core practice.
         </p>
       </section>
 
@@ -71,7 +71,7 @@ export default function About() {
       </section>
 
       <section className="mx-auto max-w-[88rem] px-5 py-16 md:py-24 lg:px-8">
-        <SectionHeading index="02" eyebrow="The numbers" title="Denwebs at a glance." copy="Documented work history — 80+ Shopify projects across agency and client-side roles since 2017." />
+        <SectionHeading index="02" eyebrow="The numbers" title="Denwebs at a glance." copy="Documented work history, 80+ Shopify projects across agency and client-side roles since 2017." />
         <div className="mt-12">
           <StatStrip />
         </div>
@@ -87,7 +87,7 @@ export default function About() {
               Want to build commerce systems that hold?
             </h2>
             <p className="mt-3 max-w-xl text-muted">
-              We hire operators who ship — developers, designers, and commerce
+              We hire operators who ship, developers, designers, and commerce
               people who&apos;ve actually run stores.
             </p>
           </div>

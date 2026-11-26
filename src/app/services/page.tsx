@@ -17,31 +17,31 @@ const engagementModes = [
   {
     name: "Launch",
     promise: "Research, design, build, migrate.",
-    copy: "A new store, a redesign, or a replatform — scoped as a project with a defined end. You get a store that works and a team that knows how to run it.",
+    copy: "A new store, a redesign, or a replatform, scoped as a project with a defined end. You get a store that works and a team that knows how to run it.",
     items: ["Shopify builds & redesigns", "Platform migrations", "Design systems & UX", "Integration architecture"],
   },
   {
     name: "Operate",
     promise: "Catalogue, inventory, OMS, integrations, support.",
-    copy: "The ongoing operational layer — the work most agencies leave behind. Retainers that keep product data clean, stock accurate, and orders flowing.",
+    copy: "The ongoing operational layer, the work most agencies leave behind. Retainers that keep product data clean, stock accurate, and orders flowing.",
     items: ["Catalogue & feed management", "Inventory & allocation rules", "Order routing & returns", "Release management & support"],
   },
   {
     name: "Grow",
     promise: "CRO, lifecycle, AI visibility, retainers.",
-    copy: "Compounding optimization — experimentation, AI search visibility, and continuous improvement measured in revenue, not deliverables.",
+    copy: "Compounding optimization, experimentation, AI search visibility, and continuous improvement measured in revenue, not deliverables.",
     items: ["CRO programs", "AI / AEO visibility", "Analytics & measurement", "Advisory & fractional counsel"],
   },
 ];
 
 const engagementFaqs = [
   {
-    q: "Project, retainer, or advisory — which do we need?",
-    a: "Projects fit defined outcomes: a migration, a redesign, an audit implementation. Retainers fit ongoing operations or optimization. Advisory fits teams that execute in-house but want senior direction. Many clients run one of each — we'll recommend the lightest model that covers your need.",
+    q: "Project, retainer, or advisory, which do we need?",
+    a: "Projects fit defined outcomes: a migration, a redesign, an audit implementation. Retainers fit ongoing operations or optimization. Advisory fits teams that execute in-house but want senior direction. Many clients run one of each, we'll recommend the lightest model that covers your need.",
   },
   {
     q: "How are projects scoped and priced?",
-    a: "Fixed scope, fixed price for defined builds. We don't do open-ended hourly for projects — you'll know cost, timeline, and what's included before signing.",
+    a: "Fixed scope, fixed price for defined builds. We don't do open-ended hourly for projects, you'll know cost, timeline, and what's included before signing.",
   },
   {
     q: "What does an Operate retainer cover?",
@@ -49,7 +49,7 @@ const engagementFaqs = [
   },
   {
     q: "Can we start small?",
-    a: "Yes — an audit is the most common entry point. It's fixed-scope, gives you a prioritized findings list you own, and creates a natural basis for deciding what to do next.",
+    a: "Yes, an audit is the most common entry point. It's fixed-scope, gives you a prioritized findings list you own, and creates a natural basis for deciding what to do next.",
   },
   {
     q: "Do you work with our existing partners?",
@@ -65,13 +65,13 @@ export default function ServicesHub() {
       <section className="mx-auto max-w-[88rem] px-5 pb-16 pt-16 md:pt-24 lg:px-8">
         <p className="eyebrow">Services</p>
         <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
-          Launch it. Operate it. Grow it — with{" "}
+          Launch it. Operate it. Grow it, with{" "}
           <span className="accent-serif font-normal">AI in the loop</span>.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
           Denwebs covers the whole commerce lifecycle: strategy and audits,
           design and builds, catalogue and operations, growth and AI. Pick the
-          layer that hurts — or hand us the system.
+          layer that hurts, or hand us the system.
         </p>
         <div className="mt-9 flex flex-wrap gap-3">
           <Button href="/contact" variant="dark" arrow>

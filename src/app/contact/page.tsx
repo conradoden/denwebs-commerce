@@ -19,7 +19,7 @@ export default function Contact() {
             Tell us what <span className="accent-serif font-normal">needs to change</span>.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted">
-            Migration, rebuild, operations, AI — a few sentences is enough to
+            Migration, rebuild, operations, or AI. A few sentences is enough to
             start. A senior person reads every submission.
           </p>
           <div className="mt-10 space-y-6 border-t border-line pt-8">

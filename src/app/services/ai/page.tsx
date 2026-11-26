@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const offerings = [
   {
     title: "AI Search Optimization (AEO / GEO)",
-    copy: "Get cited inside ChatGPT, Perplexity, Gemini, and Google AI Overviews. Entity clarity, structured data, and answer-first content — measured with recurring visibility tracking.",
+    copy: "Get cited inside ChatGPT, Perplexity, Gemini, and Google AI Overviews. Entity clarity, structured data, and answer-first content, measured with recurring visibility tracking.",
     href: "/services/ai/aeo",
     items: ["AI visibility baseline & tracking", "Entity & schema strategy", "Answer-first content program"],
   },
@@ -29,7 +29,7 @@ const offerings = [
   },
   {
     title: "AI for operations",
-    copy: "Applied where operations actually bleed — catalogue enrichment, inventory forecasting assists, and order triage. Machines draft, humans approve, audit trails stay permanent.",
+    copy: "Applied where operations actually bleed, catalogue enrichment, inventory forecasting assists, and order triage. Machines draft, humans approve, audit trails stay permanent.",
     href: "/services/ai/operations",
     items: ["Supervised enrichment pipelines", "Forecasting assists", "Order triage automation"],
   },
@@ -41,13 +41,13 @@ const deliverables = [
   "Answer-first content program targeting buyer questions",
   "Product feed and attribute readiness for AI shopping surfaces",
   "Supervised AI ops pipelines: enrichment, forecasting, triage",
-  "Recurring measurement — citation tracking, not vibes",
+  "Recurring measurement, citation tracking, not vibes",
 ];
 
 const aiFaqs = [
   {
     q: "What's the difference between AEO and SEO?",
-    a: "SEO optimizes for ranked links; AEO optimizes for cited answers. AI assistants assemble responses from sources they can parse and trust — entity clarity, structured data, and answer-formatted content matter more than keyword position.",
+    a: "SEO optimizes for ranked links; AEO optimizes for cited answers. AI assistants assemble responses from sources they can parse and trust, entity clarity, structured data, and answer-formatted content matter more than keyword position.",
   },
   {
     q: "Is AI search actually sending traffic and sales?",
@@ -63,7 +63,7 @@ const aiFaqs = [
   },
   {
     q: "Where do we start?",
-    a: "With an AI visibility audit — a fixed-scope engagement showing how AI describes your brand and products today, plus the prioritized gaps. From there, most clients run a scoped implementation or retainer.",
+    a: "With an AI visibility audit, a fixed-scope engagement showing how AI describes your brand and products today, plus the prioritized gaps. From there, most clients run a scoped implementation or retainer.",
   },
 ];
 
@@ -86,13 +86,13 @@ export default function AIHub() {
             AI practice
           </p>
           <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
-            Be the brand AI <span className="accent-serif font-normal">recommends</span> —{" "}
+            Be the brand AI <span className="accent-serif font-normal">recommends</span>,{" "}
             and the store <span className="text-accent">AI can sell</span>.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper/70 md:text-xl">
             AI search and AI shopping are reshaping product discovery.
             Unstructured catalogues and thin content get ignored. Denwebs makes
-            Shopify brands visible to machines — and operational with them.
+            Shopify brands visible to machines, and operational with them.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <Button href="/contact?intent=ai-audit" variant="accent" arrow>
@@ -112,11 +112,11 @@ export default function AIHub() {
             index="01"
             eyebrow="The shift"
             title="Discovery is moving to answers."
-            copy="Buyers increasingly ask assistants instead of searching lists. Those assistants recommend brands they can understand — and skip the ones they can't parse."
+            copy="Buyers increasingly ask assistants instead of searching lists. Those assistants recommend brands they can understand, and skip the ones they can't parse."
           />
           <div className="space-y-4">
             {[
-              "Your PDP converts humans but confuses machines — incomplete attributes, no schema, vague policies.",
+              "Your PDP converts humans but confuses machines, incomplete attributes, no schema, vague policies.",
               "Competitors with cleaner data get cited in AI answers for your category.",
               "AI agents can't evaluate your products for shoppers, so you're absent from agentic purchase flows.",
               "Meanwhile your ops team hand-enriches products and hand-triages orders that AI could draft.",
@@ -226,7 +226,7 @@ export default function AIHub() {
 
       <CTABand
         title="Find out how AI sees your brand."
-        copy="The AI visibility audit shows exactly how ChatGPT, Perplexity, Gemini, and AI Overviews describe and rank you today — and what to fix first."
+        copy="The AI visibility audit shows exactly how ChatGPT, Perplexity, Gemini, and AI Overviews describe and rank you today, and what to fix first."
       />
     </>
   );

@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Free Shopify & AI Visibility Audit",
   description:
-    "Request a focused audit of your storefront or AI search presence. High-level findings call — no obligation.",
+    "Request a focused audit of your storefront or AI search presence. High-level findings call, no obligation.",
 };
 
 const whatYouGet = [
@@ -15,7 +15,7 @@ const whatYouGet = [
       "UX / conversion friction in templates, cart, and checkout-adjacent flows",
       "Theme, performance, and Core Web Vitals snapshot",
       "App and integration surface review",
-      "Prioritized findings — fix-first order, not a wish list",
+      "Prioritized findings, fix-first order, not a wish list",
     ],
   },
   {
@@ -36,11 +36,11 @@ export default function Audit() {
         <div className="max-w-3xl">
           <p className="eyebrow">Free audit</p>
           <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
-            See what we&apos;d fix <span className="accent-serif font-normal">first</span> — free.
+            See what we&apos;d fix <span className="accent-serif font-normal">first</span>, free.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted md:text-xl">
             Pick a track, send your store URL, and get a high-level findings
-            call. It&apos;s a focused look, not a free rebuild — deep audits are
+            call. It&apos;s a focused look, not a free rebuild, deep audits are
             a scoped engagement if you want the full picture.
           </p>
         </div>

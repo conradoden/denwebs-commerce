@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { footerNav, site } from "@/content/site";
+import DenwebsLogo from "@/components/DenwebsLogo";
 
 export default function SiteFooter() {
   return (
     <footer className="border-t border-line-dark bg-ink text-paper">
       <div className="mx-auto max-w-[88rem] px-5 pb-10 pt-16 lg:px-8">
-        {/* Top row — contact prompt + nav columns */}
+        {/* Top row, contact prompt + nav columns */}
         <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
           <div>
             <p className="eyebrow" data-dark="true">
@@ -42,19 +43,15 @@ export default function SiteFooter() {
           </nav>
         </div>
 
-        {/* Oversized wordmark */}
-        <div className="mt-16 overflow-hidden border-t border-line-dark pt-12" aria-hidden="true">
-          <p className="select-none whitespace-nowrap text-center font-display text-[clamp(4rem,14vw,12rem)] font-bold leading-[0.9] tracking-[-0.04em] text-paper/[0.13]">
-            Denwebs<span className="text-accent/25">.</span>
+        <div className="mt-16 flex flex-col gap-8 border-t border-line-dark pt-10 sm:flex-row sm:items-center sm:justify-between">
+          <DenwebsLogo href="/" dark />
+          <p className="text-xs text-paper/40">
+            © {new Date().getFullYear()} Denwebs. All rights reserved.
           </p>
         </div>
-
-        <div className="mt-10 flex flex-col gap-3 border-t border-line-dark pt-6 text-xs text-paper/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Denwebs. All rights reserved.</p>
-          <p className="font-mono tracking-wide">
-            Shopify commerce, end to end — strategy to AI.
-          </p>
-        </div>
+        <p className="mt-6 font-mono text-xs tracking-wide text-paper/35">
+          Shopify commerce, end to end. Strategy to AI.
+        </p>
       </div>
     </footer>
   );

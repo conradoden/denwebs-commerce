@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join Denwebs — a Shopify agency for operators who ship. Remote-first, US / EU.",
+    "Join Denwebs, a Shopify agency for operators who ship. Remote-first, US / EU.",
 };
 
 export default function Careers() {
@@ -26,7 +26,7 @@ export default function Careers() {
           <h2 className="font-display text-2xl font-bold tracking-[-0.01em]">Open roles</h2>
           <p className="mt-3 text-muted">
             We hire deliberately rather than continuously. If no role is listed
-            below, send a note anyway — operators who can point at real work
+            below, send a note anyway, operators who can point at real work
             always get a reply.
           </p>
           <ul className="mt-8">

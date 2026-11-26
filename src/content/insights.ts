@@ -9,8 +9,8 @@ export const insightCategories = [
   "Unified commerce",
 ];
 
-// Starter articles — outlines expanded into working drafts. Replace or
-// extend on a 2–4 post/month cadence.
+// Starter articles, outlines expanded into working drafts. Replace or
+// extend on a 2-4 post/month cadence.
 export const insights: Insight[] = [
   {
     slug: "aeo-shopify-products-ai-search",
@@ -22,11 +22,11 @@ export const insights: Insight[] = [
     readTime: "8 min",
     body: [
       {
-        text: "When a buyer asks ChatGPT or Perplexity for a product recommendation, the assistant doesn't crawl your homepage — it assembles an answer from sources it can parse and trust. Whether your products appear in that answer is decided by work that looks nothing like traditional keyword SEO.",
+        text: "When a buyer asks ChatGPT or Perplexity for a product recommendation, the assistant doesn't crawl your homepage, it assembles an answer from sources it can parse and trust. Whether your products appear in that answer is decided by work that looks nothing like traditional keyword SEO.",
       },
       {
         heading: "Machines read structure, not design",
-        text: "Your PDP may convert beautifully for humans while being nearly opaque to AI. Product schema, complete attributes, clean taxonomy, and policies written in plain language are what assistants use to understand — and recommend — what you sell.",
+        text: "Your PDP may convert beautifully for humans while being nearly opaque to AI. Product schema, complete attributes, clean taxonomy, and policies written in plain language are what assistants use to understand, and recommend, what you sell.",
       },
       {
         heading: "Entities before keywords",
@@ -34,11 +34,11 @@ export const insights: Insight[] = [
       },
       {
         heading: "Answer-first content wins citations",
-        text: "Content that directly answers the questions buyers ask AI — comparisons, use-case fit, compatibility — earns citations. Thin collection descriptions and marketing-speak don't. A small library of genuinely useful answer content outperforms a large blog of filler.",
+        text: "Content that directly answers the questions buyers ask AI, comparisons, use-case fit, compatibility, earns citations. Thin collection descriptions and marketing-speak don't. A small library of genuinely useful answer content outperforms a large blog of filler.",
       },
       {
         heading: "Measure visibility like a channel",
-        text: "Track a fixed set of category and product queries across ChatGPT, Perplexity, Gemini, and AI Overviews on a recurring basis. Record who gets cited and which sources are referenced. Without a baseline you're guessing — with one, AEO becomes a manageable program.",
+        text: "Track a fixed set of category and product queries across ChatGPT, Perplexity, Gemini, and AI Overviews on a recurring basis. Record who gets cited and which sources are referenced. Without a baseline you're guessing, with one, AEO becomes a manageable program.",
       },
       {
         text: "This is the foundation of our AI Search Optimization work at Denwebs. If you want to know how your brand currently surfaces, the AI visibility audit is the fastest way to find out.",
@@ -55,10 +55,10 @@ export const insights: Insight[] = [
     readTime: "10 min",
     body: [
       {
-        text: "Every migration guide mentions 301 redirects. Almost none mention that redirects are the last 10% of SEO preservation — the first 90% is knowing exactly what exists on your current platform before anything moves.",
+        text: "Every migration guide mentions 301 redirects. Almost none mention that redirects are the last 10% of SEO preservation, the first 90% is knowing exactly what exists on your current platform before anything moves.",
       },
       {
-        heading: "Inventory every URL — including the ones you forgot",
+        heading: "Inventory every URL, including the ones you forgot",
         text: "Crawl the current site, export platform URL reports, and merge with analytics landing pages and Search Console data. Legacy PDFs, old collection paths, paginated URLs, and app-generated routes all need a decision: redirect, canonicalize, or deliberately drop.",
       },
       {
@@ -67,14 +67,14 @@ export const insights: Insight[] = [
       },
       {
         heading: "Rehearse the cutover",
-        text: "Dry-run redirects against a staging store. Validate a statistically meaningful sample — not ten URLs, hundreds. The cutover runbook should assign every check an owner and every failure a rollback trigger.",
+        text: "Dry-run redirects against a staging store. Validate a statistically meaningful sample, not ten URLs, hundreds. The cutover runbook should assign every check an owner and every failure a rollback trigger.",
       },
       {
         heading: "Watch rankings like a launch metric",
         text: "For the first four weeks post-migration, monitor priority queries daily and Search Console coverage continuously. Small redirect bugs found in week one are cheap. Found in month two, they've already cost you a season.",
       },
       {
-        text: "Done this way, most migrations stabilize within weeks — and the performance gains from a modern Shopify build often lift rankings beyond their old baseline. This is how we run migrations at Denwebs: like operations, not events.",
+        text: "Done this way, most migrations stabilize within weeks, and the performance gains from a modern Shopify build often lift rankings beyond their old baseline. This is how we run migrations at Denwebs: like operations, not events.",
       },
     ],
   },
@@ -92,14 +92,14 @@ export const insights: Insight[] = [
       },
       {
         heading: "Design the model before touching the data",
-        text: "Taxonomy, attributes, variant logic, and metafields should be designed around how customers shop your category — not around whatever shape the data arrived in. The model is the asset; the data is an instance of it.",
+        text: "Taxonomy, attributes, variant logic, and metafields should be designed around how customers shop your category, not around whatever shape the data arrived in. The model is the asset; the data is an instance of it.",
       },
       {
         heading: "Enrichment is a pipeline, not a project",
-        text: "One-time cleanup decays the day it finishes. Sustainable catalogues run enrichment as a recurring workflow — new products onboarded to spec, seasonal attributes refreshed, gaps flagged automatically.",
+        text: "One-time cleanup decays the day it finishes. Sustainable catalogues run enrichment as a recurring workflow, new products onboarded to spec, seasonal attributes refreshed, gaps flagged automatically.",
       },
       {
-        heading: "AI belongs in the pipeline — supervised",
+        heading: "AI belongs in the pipeline, supervised",
         text: "LLMs are genuinely good at drafting attributes, normalizing values, and writing first-pass copy at catalogue scale. They're not good unsupervised. The pattern that works: machines draft, merchandisers approve, audit logs stay permanent.",
       },
       {
@@ -107,7 +107,7 @@ export const insights: Insight[] = [
         text: "Google Shopping, Meta, marketplaces, retail partners, and AI shopping agents all consume the same product truth. When that truth lives in one governed model instead of six spreadsheets, channel expansion stops being a data project every time.",
       },
       {
-        text: "This is the operational layer most agencies skip and where Denwebs lives. If your catalogue has outgrown your spreadsheets, it's fixable — and the fix compounds.",
+        text: "This is the operational layer most agencies skip and where Denwebs lives. If your catalogue has outgrown your spreadsheets, it's fixable, and the fix compounds.",
       },
     ],
   },

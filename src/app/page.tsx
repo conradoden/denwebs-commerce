@@ -30,7 +30,7 @@ const websiteSchema = {
 const pillars = [
   {
     title: "Consulting & audits",
-    copy: "Honest diagnosis before dollars — strategy, platform calls, and prioritized fix lists.",
+    copy: "Honest diagnosis before dollars, strategy, platform calls, and prioritized fix lists.",
     href: "/services/consulting",
   },
   {
@@ -40,7 +40,7 @@ const pillars = [
   },
   {
     title: "Catalogue & inventory",
-    copy: "Product data and stock engineered like infrastructure — clean, unified, feed-ready.",
+    copy: "Product data and stock engineered like infrastructure, clean, unified, feed-ready.",
     href: "/services/catalogue",
   },
   {
@@ -50,11 +50,11 @@ const pillars = [
   },
   {
     title: "Growth / CRO",
-    copy: "Disciplined experimentation that compounds — not random app installs.",
+    copy: "Disciplined experimentation that compounds, not random app installs.",
     href: "/services/cro",
   },
   {
-    title: "AI — AEO, agentic, ops",
+    title: "AI, AEO, agentic, ops",
     copy: "Be the brand AI recommends, the store AI can sell, and the operation AI assists.",
     href: "/services/ai",
   },
@@ -63,7 +63,7 @@ const pillars = [
 const whyPoints = [
   {
     title: "Human-led",
-    body: "Senior operators on every engagement. You talk to the people doing the work — not an account layer.",
+    body: "Senior operators on every engagement. You talk to the people doing the work, not an account layer.",
   },
   {
     title: "Tech-backed",
@@ -71,7 +71,7 @@ const whyPoints = [
   },
   {
     title: "Operator mindset",
-    body: "We've run catalogues, inventory, and order flows — so we design for the Monday after launch, not just launch day.",
+    body: "We've run catalogues, inventory, and order flows, so we design for the Monday after launch, not just launch day.",
   },
   {
     title: "Proven process",
@@ -81,12 +81,12 @@ const whyPoints = [
 
 const process = [
   { title: "Audit", body: "We map your stack, catalogue, data flows, and AI visibility to find where revenue leaks." },
-  { title: "Plan", body: "A sequenced roadmap — effort, impact, dependencies — agreed before any build starts." },
+  { title: "Plan", body: "A sequenced roadmap, effort, impact, dependencies, agreed before any build starts." },
   { title: "Build", body: "Design, development, migrations, and integrations executed with staging previews throughout." },
-  { title: "Operate & optimize", body: "Retainers for catalogue, inventory, OMS, CRO, and AI visibility — the work that compounds." },
+  { title: "Operate & optimize", body: "Retainers for catalogue, inventory, OMS, CRO, and AI visibility, the work that compounds." },
 ];
 
-// Composed ops-dashboard mock for the hero — abstract UI, not a fake screenshot.
+// Composed ops-dashboard mock for the hero, abstract UI, not a fake screenshot.
 function OpsDashboard() {
   return (
     <div className="overflow-hidden rounded-[6px] border border-paper/12 bg-ink-soft/90 shadow-[0_40px_80px_-40px_rgba(0,0,0,0.6)] backdrop-blur-sm">
@@ -95,7 +95,7 @@ function OpsDashboard() {
         <span className="h-2.5 w-2.5 rounded-full bg-paper/20" />
         <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
         <span className="ml-3 font-mono text-[11px] tracking-wide text-paper/40">
-          denwebs / commerce-ops — live
+          denwebs / commerce-ops, live
         </span>
         <span className="ml-auto flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-accent">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
@@ -166,12 +166,12 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([orgSchema, websiteSchema]) }}
       />
-      {/* Hero — full-bleed, brand-level Denwebs */}
+      {/* Hero, full-bleed, brand-level Denwebs */}
       <section className="hero-atmosphere relative overflow-hidden text-paper">
         <div className="hero-grid absolute inset-0" aria-hidden="true" />
         <div className="relative mx-auto max-w-[88rem] px-5 pb-20 pt-16 md:pb-28 md:pt-24 lg:px-8">
           <p className="eyebrow" data-dark="true">
-            Denwebs — Shopify agency
+            Denwebs | Shopify agency
           </p>
           <h1 className="mt-7 max-w-5xl font-display text-[2.9rem] font-bold leading-[1.02] tracking-[-0.03em] sm:text-6xl md:text-7xl lg:text-[5.25rem]">
             Shopify commerce that works{" "}
@@ -179,7 +179,7 @@ export default function Home() {
             <span className="text-accent">system</span>.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-paper/70 md:text-xl">
-            Strategy, design, development, catalogue &amp; operations, and AI —
+            Strategy, design, development, catalogue &amp; operations, and AI,
             connected so your store sells and scales.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
@@ -206,7 +206,7 @@ export default function Home() {
             index="01"
             eyebrow="Work"
             title="Proof, not adjectives."
-            copy="Every engagement judged by metrics that matter — rankings kept, hours returned, systems that hold under load."
+            copy="Every engagement judged by metrics that matter, rankings kept, hours returned, systems that hold under load."
           />
           <Link
             href="/work"
@@ -230,8 +230,8 @@ export default function Home() {
           <SectionHeading
             index="02"
             eyebrow="What we do"
-            title="The full commerce stack — one agency."
-            copy="Most agencies design and leave. We plan, build, and run the whole system — including the operational layer pure design shops can't touch."
+            title="The full commerce stack, one agency."
+            copy="Most agencies design and leave. We plan, build, and run the whole system, including the operational layer pure design shops can't touch."
           />
           <div className="mt-14 grid gap-px overflow-hidden rounded-[5px] border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
             {pillars.map((p, i) => (
@@ -265,7 +265,7 @@ export default function Home() {
           index="03"
           eyebrow="Why Denwebs"
           title="Where commerce comes together."
-          copy="Consultant, auditor, builder, and operator — one team accountable for the whole system, with AI as a core practice rather than a footnote."
+          copy="Consultant, auditor, builder, and operator. One team accountable for the whole system, with AI as a core practice rather than a footnote."
         />
         <div className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {whyPoints.map((w, i) => (
@@ -297,16 +297,16 @@ export default function Home() {
           <div className="grid items-center gap-14 lg:grid-cols-2">
             <Reveal>
               <p className="eyebrow" data-dark="true">
-                05 — AI practice
+                05. AI practice
               </p>
               <h2 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-5xl">
-                Be the brand AI <span className="accent-serif font-normal">recommends</span> — and the
+                Be the brand AI <span className="accent-serif font-normal">recommends</span>, and the
                 store AI can sell.
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-paper/65">
                 AI assistants already shape how buyers discover products. We make
                 your catalogue machine-readable, your content citable, and your
-                operations AI-assisted — supervised, always.
+                operations AI-assisted, supervised, always.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Button href="/services/ai" variant="accent" arrow>
@@ -322,7 +322,7 @@ export default function Home() {
                 {[
                   {
                     t: "AI Search Optimization (AEO / GEO)",
-                    d: "Visibility inside ChatGPT, Perplexity, Gemini, and AI Overviews — measured, not guessed.",
+                    d: "Visibility inside ChatGPT, Perplexity, Gemini, and AI Overviews. Measured, not guessed.",
                     href: "/services/ai/aeo",
                   },
                   {
@@ -332,7 +332,7 @@ export default function Home() {
                   },
                   {
                     t: "AI for store operations",
-                    d: "Enrichment pipelines, forecasting assists, order triage — machines draft, humans approve.",
+                    d: "Enrichment pipelines, forecasting assists, order triage, machines draft, humans approve.",
                     href: "/services/ai/operations",
                   },
                 ].map((o, i) => (

@@ -21,7 +21,7 @@ export async function generateMetadata({
   const study = getCaseStudy(slug);
   if (!study) return {};
   return {
-    title: `${study.client} — ${study.title}`,
+    title: `${study.client}, ${study.title}`,
     description: `${study.title}. ${study.industry} case study on ${study.platform}.`,
   };
 }
@@ -117,17 +117,17 @@ export default async function CaseStudyPage({
       <section className="mx-auto max-w-[88rem] px-5 py-16 md:py-20 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-2">
           <Reveal>
-            <h2 className="eyebrow">01 — The challenge</h2>
+            <h2 className="eyebrow">01. The challenge</h2>
             <p className="mt-5 text-lg leading-relaxed text-ink/85 md:text-xl">{study.challenge}</p>
           </Reveal>
           <Reveal delay={100}>
-            <h2 className="eyebrow">02 — The approach</h2>
+            <h2 className="eyebrow">02. The approach</h2>
             <p className="mt-5 text-lg leading-relaxed text-ink/85 md:text-xl">{study.approach}</p>
           </Reveal>
         </div>
 
         <div className="mt-16 rounded-[5px] border border-line bg-paper-dim p-8 md:p-12">
-          <h2 className="eyebrow">03 — What we built</h2>
+          <h2 className="eyebrow">03. What we built</h2>
           <ul className="mt-8 grid gap-x-12 gap-y-0 md:grid-cols-2">
             {study.built.map((b, i) => (
               <li key={b} className="flex items-baseline gap-4 border-b border-line py-4 text-[15px] text-ink/85 last:border-0 md:last:border-b">
@@ -141,17 +141,17 @@ export default async function CaseStudyPage({
         </div>
 
         <Reveal className="mt-16 max-w-3xl">
-          <h2 className="eyebrow">04 — The result</h2>
+          <h2 className="eyebrow">04. The result</h2>
           <p className="mt-5 font-serif text-2xl italic leading-relaxed text-ink md:text-3xl">
             {study.resultsNote}
           </p>
           {study.sample ? (
             <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
-              Sample study — replace with verified client results.
+              Sample study, replace with verified client results.
             </p>
           ) : (
             <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.12em] text-muted">
-              Real engagement — metrics as documented in project records.
+              Real engagement, metrics as documented in project records.
             </p>
           )}
         </Reveal>

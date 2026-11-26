@@ -7,13 +7,13 @@ import Reveal from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Technology Partners",
   description:
-    "The platforms and tools Denwebs builds and integrates for Shopify brands — ecommerce, lifecycle, search, ERP, and 3PL.",
+    "The platforms and tools Denwebs builds and integrates for Shopify brands, ecommerce, lifecycle, search, ERP, and 3PL.",
 };
 
 const partnerGroups = [
   {
     name: "Commerce platform",
-    copy: "Shopify and Shopify Plus are home base — Online Store 2.0, POS, B2B, Functions, and Hydrogen where warranted.",
+    copy: "Shopify and Shopify Plus are home base, Online Store 2.0, POS, B2B, Functions, and Hydrogen where warranted.",
     items: ["Shopify", "Shopify Plus", "Shopify POS", "Hydrogen"],
   },
   {
@@ -23,12 +23,12 @@ const partnerGroups = [
   },
   {
     name: "Discovery & merchandising",
-    copy: "Search, reviews, and merchandising layers — plus the structured data that feeds AI surfaces.",
+    copy: "Search, reviews, and merchandising layers, plus the structured data that feeds AI surfaces.",
     items: ["Algolia", "Searchspring", "Reviews platforms", "Feed tooling"],
   },
   {
     name: "Back-office & operations",
-    copy: "ERP, PIM, and fulfillment — integrated with explicit data ownership and monitoring, with implementation partners where needed.",
+    copy: "ERP, PIM, and fulfillment, integrated with explicit data ownership and monitoring, with implementation partners where needed.",
     items: ["NetSuite", "SAP", "Dynamics", "PIMs", "3PLs / ShipBob", "iPaaS middleware"],
   },
 ];
@@ -43,7 +43,7 @@ export default function Partners() {
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
           We recommend tools by fit, not referral fees. This is the ecosystem we
-          build, integrate, and operate in every day — capability, not badges.
+          build, integrate, and operate in every day, capability, not badges.
         </p>
       </section>
 
@@ -82,7 +82,7 @@ export default function Partners() {
 
       <CTABand
         title="Integrating something unusual?"
-        copy="Custom ERPs, legacy systems, niche tools — if it touches your commerce stack, we've probably connected stranger."
+        copy="Custom ERPs, legacy systems, niche tools, if it touches your commerce stack, we've probably connected stranger."
       />
     </>
   );

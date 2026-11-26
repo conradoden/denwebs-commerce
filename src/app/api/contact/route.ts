@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
-  // Honeypot — bots fill hidden fields; humans don't.
+  // Honeypot, bots fill hidden fields; humans don't.
   if (data.company_fax) {
     return NextResponse.json({ ok: true }); // silent accept, no email sent
   }
@@ -32,11 +32,11 @@ export async function POST(req: Request) {
   // Set RESEND_API_KEY + CONTACT_TO to enable Resend; otherwise the
   // submission is logged server-side (visible in hosting logs).
   if (process.env.RESEND_API_KEY) {
-    const to = process.env.CONTACT_TO ?? site.email;
+    const to = process.env.CONTACT_TO ?? "ct@denwebs.com";
     const body = Object.entries(data)
-      .filter(([k, v]) => k !== "company_fax" && v)
-      .map(([k, v]) => `${k}: ${Array.isArray(v) ? v.join(", ") : v}`)
-      .join("\n");
+.filter(([k, v]) => k !== "company_fax" && v)
+.map(([k, v]) => `${k}: ${Array.isArray(v) ? v.join(", ") : v}`)
+.join("\n");
     const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
       body: JSON.stringify({
         from: `Denwebs Site <noreply@${new URL(site.url).hostname}>`,
         to,
-        subject: `[Denwebs] ${data.auditMode === "true" ? "Audit request" : "Project inquiry"} — ${data.company}`,
+        subject: `[Denwebs] ${data.auditMode === "true" ? "Audit request" : "Project inquiry"}, ${data.company}`,
         text: body,
         reply_to: email,
       }),

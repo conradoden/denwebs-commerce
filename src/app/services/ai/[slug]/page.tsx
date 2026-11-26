@@ -17,7 +17,7 @@ export async function generateMetadata({
   const service = aiServices.find((s) => s.slug === slug);
   if (!service) return {};
   return {
-    title: `${service.title} — AI for Shopify`,
+    title: `${service.title} | AI for Shopify`,
     description: service.promise,
   };
 }

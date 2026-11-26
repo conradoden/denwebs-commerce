@@ -47,7 +47,7 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
           Received
         </p>
         <h3 className="mt-3 font-display text-3xl font-bold tracking-tight">
-          Thanks — we&apos;ve got it.
+          Thanks, we&apos;ve got it.
         </h3>
         <p className="mx-auto mt-3 max-w-md text-muted">
           We reply within one business day. If it&apos;s urgent, email{" "}
@@ -62,7 +62,7 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
 
   return (
     <form onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2" noValidate={false}>
-      {/* Honeypot — hidden from humans */}
+      {/* Honeypot, hidden from humans */}
       <div className="hidden" aria-hidden="true">
         <label>
           Leave this field empty
@@ -225,7 +225,7 @@ export default function ContactForm({ auditMode = false }: { auditMode?: boolean
           </p>
         )}
         <p className="mt-3 text-[13px] text-muted">
-          We reply within one business day. No spam, no list — your details go to a human.
+          We reply within one business day. No spam and no list. Your details go to a human.
         </p>
       </div>
     </form>

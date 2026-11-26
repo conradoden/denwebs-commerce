@@ -42,7 +42,7 @@ export default function ServicePage({
               </Button>
             </div>
           </div>
-          {/* Who it's for — sticky meta card */}
+          {/* Who it's for, sticky meta card */}
           <div className="h-fit rounded-[5px] border border-line bg-paper-dim p-7 lg:sticky lg:top-24">
             <p className="eyebrow">Who it&apos;s for</p>
             <ul className="mt-5 space-y-3.5">

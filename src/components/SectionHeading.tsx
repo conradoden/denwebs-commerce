@@ -13,7 +13,7 @@ export default function SectionHeading({
   dark?: boolean;
   className?: string;
 }) {
-  const label = index ? `${index} — ${eyebrow ?? ""}` : eyebrow;
+  const label = index ? `${index}. ${eyebrow ?? ""}` : eyebrow;
   return (
     <div className={`max-w-3xl ${className}`}>
       {label && (

@@ -1,4 +1,4 @@
-// Partner ecosystem names — capability row, not a certification claim.
+// Partner ecosystem names, capability row, not a certification claim.
 // Do not add badges/tiers (e.g. Shopify Platinum) unless verified.
 const partners = [
   "Shopify",

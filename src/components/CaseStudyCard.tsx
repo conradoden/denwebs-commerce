@@ -12,7 +12,7 @@ const industryAccent: Record<string, string> = {
   B2B: "#8ec9c2",
 };
 
-// Composed storefront mock — abstract browser UI, not a fake screenshot.
+// Composed storefront mock, abstract browser UI, not a fake screenshot.
 function StorefrontMock({ accent, label }: { accent: string; label: string }) {
   return (
     <div className="absolute inset-0 flex flex-col bg-ink p-4 transition-transform duration-500 group-hover:scale-[1.02]">

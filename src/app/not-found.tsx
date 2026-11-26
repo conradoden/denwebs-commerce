@@ -10,7 +10,7 @@ export default function NotFound() {
           This page went out of stock.
         </h1>
         <p className="mt-5 max-w-xl text-lg text-paper/70">
-          The URL doesn&apos;t resolve — it may have moved or never existed.
+          The URL doesn&apos;t resolve, it may have moved or never existed.
           Here&apos;s the way back to things that do.
         </p>
         <div className="mt-9 flex flex-wrap gap-3">

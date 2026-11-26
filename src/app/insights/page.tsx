@@ -7,7 +7,7 @@ import { insights, insightCategories } from "@/content/insights";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Notes on Shopify, migrations, commerce operations, CRO, and AI search — from the operators doing the work.",
+    "Notes on Shopify, migrations, commerce operations, CRO, and AI search, from the operators doing the work.",
 };
 
 export default function InsightsIndex() {
@@ -19,8 +19,8 @@ export default function InsightsIndex() {
           The operator&apos;s <span className="accent-serif font-normal">notebook</span>.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-          What we learn running commerce systems — migrations, catalogues, and
-          the AI shift — written to be useful, not to rank.
+          What we learn running commerce systems, migrations, catalogues, and
+          the AI shift, written to be useful, not to rank.
         </p>
 
         <InsightsFilter posts={insights} categories={insightCategories} />
@@ -28,7 +28,7 @@ export default function InsightsIndex() {
         <div className="mt-16">
           <SectionHeading
             eyebrow="Cadence"
-            title="New notes 2–4× a month."
+            title="New notes 2-4× a month."
             copy="Shopify · Migrations · Operations · CRO · AI / AEO · Unified commerce."
           />
         </div>

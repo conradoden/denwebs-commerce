@@ -17,7 +17,7 @@ export async function generateMetadata({
   const service = getService(slug);
   if (!service) return {};
   return {
-    title: `${service.title} — Shopify Services`,
+    title: `${service.title} | Shopify Services`,
     description: service.promise,
   };
 }

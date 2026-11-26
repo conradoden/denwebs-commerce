@@ -2,12 +2,12 @@ export const site = {
   name: "Denwebs",
   url: "https://ecommerce.denwebs.com",
   email: "hello@denwebs.com",
-  phone: "", // TBD — hidden until real number is confirmed
+  phone: "", // TBD, hidden until real number is confirmed
   description:
     "Strategy, design, development, catalogue, inventory, OMS, and AI optimization for ambitious Shopify brands.",
 };
 
-// Mega-menu structure — every link must resolve to a real route.
+// Mega-menu structure, every link must resolve to a real route.
 export const megaMenu = [
   {
     title: "Strategy & Advisory",
@@ -97,13 +97,13 @@ export const projectTypes = [
 
 export const revenueRanges = [
   "Under $50k / month",
-  "$50k–250k / month",
-  "$250k–1M / month",
+  "$50k-250k / month",
+  "$250k-1M / month",
   "$1M+ / month",
   "Prefer not to say",
 ];
 
-export const timelines = ["ASAP", "1–3 months", "3–6 months", "Exploring"];
+export const timelines = ["ASAP", "1-3 months", "3-6 months", "Exploring"];
 
 export const hearAbout = [
   "Search",

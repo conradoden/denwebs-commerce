@@ -13,7 +13,7 @@ export default function Terms() {
         Terms of Service
       </h1>
       <p className="mt-3 font-mono text-[12px] uppercase tracking-wide text-muted">
-        Placeholder — replace with counsel-reviewed terms before launch.
+        Placeholder, replace with counsel-reviewed terms before launch.
       </p>
       <div className="mt-10 space-y-8 text-[15px] leading-relaxed text-ink/85">
         <section>
