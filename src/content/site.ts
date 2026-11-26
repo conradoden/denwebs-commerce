@@ -1,6 +1,6 @@
 export const site = {
   name: "Denwebs",
-  url: "https://www.denwebs.com",
+  url: "https://ecommerce.denwebs.com",
   email: "hello@denwebs.com",
   phone: "", // TBD — hidden until real number is confirmed
   description:
