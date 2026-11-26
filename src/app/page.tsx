@@ -86,78 +86,21 @@ const process = [
   { title: "Operate & optimize", body: "Retainers for catalogue, inventory, OMS, CRO, and AI visibility, the work that compounds." },
 ];
 
-// Composed ops-dashboard mock for the hero, abstract UI, not a fake screenshot.
-function OpsDashboard() {
-  return (
-    <div className="overflow-hidden rounded-[6px] border border-paper/12 bg-ink-soft/90 shadow-[0_40px_80px_-40px_rgba(0,0,0,0.6)] backdrop-blur-sm">
-      <div className="flex items-center gap-2 border-b border-paper/10 px-5 py-3.5">
-        <span className="h-2.5 w-2.5 rounded-full bg-paper/20" />
-        <span className="h-2.5 w-2.5 rounded-full bg-paper/20" />
-        <span className="h-2.5 w-2.5 rounded-full bg-accent/70" />
-        <span className="ml-3 font-mono text-[11px] tracking-wide text-paper/40">
-          denwebs / commerce-ops, live
-        </span>
-        <span className="ml-auto flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-accent">
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-          Synced
-        </span>
-      </div>
-      <div className="grid gap-px bg-paper/8 p-px sm:grid-cols-[1.1fr_1fr_1fr]">
-        {/* Revenue cell with sparkline */}
-        <div className="bg-ink-soft p-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/45">
-            Storefront
-          </p>
-          <p className="mt-2.5 font-display text-2xl font-bold text-paper">$1.24M</p>
-          <p className="mt-0.5 text-[12px] text-paper/45">trailing 30d revenue</p>
-          <div className="mt-4 flex h-10 items-end gap-1" aria-hidden="true">
-            {[35, 50, 40, 62, 55, 70, 58, 78, 85, 72, 92, 100].map((h, i) => (
-              <div
-                key={i}
-                className="flex-1 rounded-t-[2px] bg-accent/80"
-                style={{ height: `${h}%`, opacity: 0.35 + (i / 12) * 0.65 }}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="bg-ink-soft p-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/45">
-            Operations
-          </p>
-          <ul className="mt-3 space-y-2.5">
-            {[
-              ["Catalogue", "12,408 SKUs · clean"],
-              ["Inventory", "11 locations · synced"],
-              ["Orders", "routing · 3PL live"],
-            ].map(([k, v]) => (
-              <li key={k} className="flex items-baseline justify-between gap-3 border-b border-paper/8 pb-2 text-[12px]">
-                <span className="text-paper/70">{k}</span>
-                <span className="font-mono text-[11px] text-paper/45">{v}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="bg-ink-soft p-6">
-          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-paper/45">
-            AI layer
-          </p>
-          <ul className="mt-3 space-y-2.5">
-            {[
-              ["AEO citations", "+38% q/q"],
-              ["Agentic feeds", "4 surfaces live"],
-              ["Ops automation", "human-approved"],
-            ].map(([k, v]) => (
-              <li key={k} className="flex items-baseline justify-between gap-3 border-b border-paper/8 pb-2 text-[12px]">
-                <span className="text-paper/70">{k}</span>
-                <span className="font-mono text-[11px] text-accent">{v}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
+const heroProof = [
+  { value: "100+", label: "Shopify storefronts shipped" },
+  { value: "CRO + AI", label: "growth practices in-house" },
+  { value: "$10k/mo", label: "OMS cost cut for one client" },
+  { value: "Senior", label: "operators on every engagement" },
+];
+
+const heroServices = [
+  "Strategy & audits",
+  "Theme & custom apps",
+  "Catalogue & inventory",
+  "OMS & integrations",
+  "CRO & lifecycle",
+  "AI / AEO",
+];
 
 export default function Home() {
   return (
@@ -166,34 +109,78 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([orgSchema, websiteSchema]) }}
       />
-      {/* Hero, full-bleed, brand-level Denwebs */}
+      {/* Hero: Shopify ecommerce consultant positioning */}
       <section className="hero-atmosphere relative overflow-hidden text-paper">
         <div className="hero-grid absolute inset-0" aria-hidden="true" />
-        <div className="relative mx-auto max-w-[88rem] px-5 pb-20 pt-16 md:pb-28 md:pt-24 lg:px-8">
-          <p className="eyebrow" data-dark="true">
-            Denwebs | Shopify agency
-          </p>
-          <h1 className="mt-7 max-w-5xl font-display text-[2.9rem] font-bold leading-[1.02] tracking-[-0.03em] sm:text-6xl md:text-7xl lg:text-[5.25rem]">
-            Shopify commerce that works{" "}
-            <span className="accent-serif font-normal">as a</span>{" "}
-            <span className="text-accent">system</span>.
-          </h1>
-          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-paper/70 md:text-xl">
-            Strategy, design, development, catalogue &amp; operations, and AI,
-            connected so your store sells and scales.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Button href="/contact" variant="accent" arrow>
-              Get a quote
-            </Button>
-            <Button href="/work" variant="outlineLight" arrow>
-              See our work
-            </Button>
-          </div>
+        <div className="relative mx-auto max-w-[88rem] px-5 pb-16 pt-16 md:pb-24 md:pt-24 lg:px-8">
+          <div className="grid items-end gap-12 lg:grid-cols-[1.35fr_1fr] lg:gap-16">
+            <div>
+              <p className="eyebrow" data-dark="true">
+                Shopify ecommerce consultants
+              </p>
+              <h1 className="mt-6 max-w-3xl font-display text-[2.65rem] font-bold leading-[1.04] tracking-[-0.03em] sm:text-5xl md:text-6xl lg:text-[4.25rem]">
+                The Shopify partner that connects{" "}
+                <span className="accent-serif font-normal">strategy</span>, build,{" "}
+                <span className="text-accent">and growth</span>.
+              </h1>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper/70 md:text-xl">
+                Senior operators for audits, theme builds, catalogue ops, CRO,
+                lifecycle, and AI visibility, so your store sells more and runs
+                cleaner after launch day.
+              </p>
+              <div className="mt-9 flex flex-wrap gap-3">
+                <Button href="/contact?intent=discovery#book" variant="accent" arrow>
+                  Book a discovery call
+                </Button>
+                <Button href="/work" variant="outlineLight" arrow>
+                  See client work
+                </Button>
+              </div>
+              <ul className="mt-10 flex flex-wrap gap-2">
+                {heroServices.map((s) => (
+                  <li
+                    key={s}
+                    className="rounded-[3px] border border-paper/15 bg-paper/[0.04] px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em] text-paper/65"
+                  >
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          <Reveal className="mt-16 md:mt-20" delay={150}>
-            <OpsDashboard />
-          </Reveal>
+            <Reveal delay={120}>
+              <div className="overflow-hidden rounded-[6px] border border-paper/12 bg-ink-soft/90 shadow-[0_40px_80px_-40px_rgba(0,0,0,0.55)] backdrop-blur-sm">
+                <div className="border-b border-paper/10 px-5 py-3.5">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-paper/45">
+                    Engagement snapshot
+                  </p>
+                </div>
+                <dl className="grid grid-cols-2">
+                  {heroProof.map((item, i) => (
+                    <div
+                      key={item.label}
+                      className={`p-5 md:p-6 ${i % 2 === 0 ? "border-r border-paper/10" : ""} ${
+                        i < 2 ? "border-b border-paper/10" : ""
+                      }`}
+                    >
+                      <dt className="font-mono text-[10px] uppercase tracking-[0.14em] text-paper/45">
+                        {item.label}
+                      </dt>
+                      <dd className="mt-2 font-display text-2xl font-bold tracking-[-0.02em] text-paper md:text-3xl">
+                        {item.value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+                <div className="border-t border-paper/10 px-5 py-4">
+                  <p className="text-[13px] leading-relaxed text-paper/55">
+                    Built like a commerce consultancy: diagnose first, ship what
+                    compounds, stay for the operational layer.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
