@@ -812,30 +812,6 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "slug": "houseofkhalsa",
-    "client": "Houseofkhalsa",
-    "url": "https://houseofkhalsa.com",
-    "industry": "Pets",
-    "categories": [
-      "Marketing",
-      "CRM",
-      "Pets"
-    ],
-    "capabilities": [
-      "Marketing",
-      "SEO",
-      "Campaign pages",
-      "Tracking & pixels"
-    ],
-    "summary": "Houseofkhalsa: marketing support for a pets brand, SEO foundations, campaign landing pages, and tracking hygiene.",
-    "featured": false,
-    "source": "URL sheet",
-    "services": [
-      "Marketing",
-      "CRM"
-    ]
-  },
-  {
     "slug": "kikikickz",
     "client": "Kikikickz",
     "url": "https://kikikickz.com",
