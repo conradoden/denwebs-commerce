@@ -18,7 +18,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify 2.0 theme",
       "CRO",
-      "Performance"
+      "Performance",
+      "Core Web Vitals",
+      "AI content"
     ],
     "summary": "Custom Shopify 2.0 theme built from Figma into a conversion-focused health brand storefront at 6%+ conversion.",
     "image": "/images/work/tropeaka.jpg",
@@ -37,9 +39,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify 2.0",
       "Motion / GSAP",
-      "Performance"
+      "Performance",
+      "Core Web Vitals",
+      "Store management"
     ],
-    "summary": "Animated B2B dental-supply storefront balancing immersive motion with performance.",
+    "summary": "Wonderful Dental: performance and Core Web Vitals remediation on a health & medical theme, scripts audited, LCP and interactivity tightened.",
     "image": "/images/work/wonderful-dental.jpg",
     "featured": true,
     "caseStudySlug": "wonderful-dental"
@@ -57,7 +61,8 @@ export const portfolioProjects: PortfolioProject[] = [
       "Hydrogen",
       "Shopify Functions",
       "Guided selling",
-      "Custom apps"
+      "Custom apps",
+      "Store management"
     ],
     "summary": "Guided-selling and personalized shopping experience for a U.S. bike brand, lifting AOV and conversion.",
     "image": "/images/work/sixthreezero.jpg",
@@ -77,7 +82,8 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify 2.0",
       "CRO",
       "Klaviyo",
-      "Loyalty"
+      "Loyalty",
+      "AI content"
     ],
     "summary": "Premium tea and iced-syrup storefront with lead-capture and loyalty mechanics; 800+ reviews, shipping to 100+ countries.",
     "image": "/images/work/origin-tea.jpg",
@@ -95,9 +101,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Subscriptions",
       "Shopify 2.0",
-      "Branding"
+      "Branding",
+      "Retention",
+      "SEO"
     ],
-    "summary": "Subscription-first Shopify storefront for an Australian Wagyu beef jerky brand.",
+    "summary": "Pryme: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "image": "/images/work/pryme.jpg",
     "featured": true,
     "caseStudySlug": "pryme"
@@ -114,9 +122,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify 2.0",
       "Content / recipes",
-      "UGC"
+      "UGC",
+      "CRO",
+      "Lifecycle email"
     ],
-    "summary": "Branded rice storefront with a community recipe hub driving repeat visits.",
+    "summary": "Nice Rice: rebuilt merchandising modules and offer architecture to lift AOV and conversion for this food & beverage catalogue.",
     "image": "/images/work/nice-rice.jpg",
     "featured": true,
     "caseStudySlug": "nice-rice"
@@ -132,7 +142,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Shopify 2.0",
       "UGC",
-      "Brand systems"
+      "Brand systems",
+      "Theme development",
+      "Lifecycle email"
     ],
     "summary": "Flavor-driven coconut water storefront with distinct flavor identity and UGC-heavy homepage.",
     "image": "/images/work/sip-coco.jpg",
@@ -151,9 +163,11 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Subscriptions",
       "Bundles",
-      "CRO"
+      "CRO",
+      "Retention",
+      "Store management"
     ],
-    "summary": "Bundle and monthly subscription club storefront built to lift AOV and recurring revenue.",
+    "summary": "Prime Cuts Jerky: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "image": "/images/work/prime-cuts-jerky.jpg",
     "featured": true,
     "caseStudySlug": "prime-cuts-jerky"
@@ -169,7 +183,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Theme & custom development",
       "Custom Shopify app",
-      "AI"
+      "AI",
+      "AI content",
+      "SEO"
     ],
     "summary": "Useryze project aligned with CV: Shopify store built from scratch (4,000+ products), collections for fine jewelry and pre-owned luxury watches, vendor API + live inventory, AI product content/images, custom Ring Builder, multi-location store locator.",
     "image": "/images/work/marc-robinson-watch.jpg",
@@ -188,7 +204,9 @@ export const portfolioProjects: PortfolioProject[] = [
     "capabilities": [
       "Theme & custom development",
       "Custom Shopify app",
-      "AI"
+      "AI",
+      "AI content",
+      "Store management"
     ],
     "summary": "Useryze boutique Shopify build matching CV jewelry + ring-builder work: luxury storefront, vendor/AI content pipeline, Edge inventory, custom Ring Builder for semi-mount / custom rings, appointment and lead flows.",
     "image": "/images/work/m-robinson-watch.webp",
@@ -207,7 +225,10 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
     "capabilities": [
       "Theme & custom development",
-      "Order management / custom app"
+      "Order management / custom app",
+      "Order management",
+      "Fulfillment routing",
+      "AI content"
     ],
     "summary": "Managed millions of DKK in monthly revenue on Shopify; worked with 50+ jewelry designers; built a custom order-management Shopify app (Laravel on Heroku) replacing Jetti Onport (~$10k/mo), improving sales and dropshipping operations.",
     "image": "/images/work/thejewelleryroom.jpg",
@@ -225,7 +246,10 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
     "capabilities": [
       "Theme & custom development",
-      "AI"
+      "AI",
+      "AI content",
+      "AI recommendations",
+      "SEO"
     ],
     "summary": "Useryze Shopify storefront for an Austin jeweler: mobile-first store, vendor API product pipeline with AI content/images, Edge inventory sync, managed online funnel.",
     "image": "/images/work/treasures-editorial.png",
@@ -243,9 +267,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Health & Medical"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness",
+      "CRO"
     ],
-    "summary": "Activleggings: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "Activleggings: AI recommendation and personalization hooks layered onto a food & beverage storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -258,9 +286,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "Store management"
     ],
-    "summary": "Eleganza: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Eleganza: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -273,9 +305,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Fitness"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Integrations",
+      "API sync",
+      "ERP / 3PL",
+      "Store management"
     ],
-    "summary": "Aeromat Ecowise: Shopify storefront build and merchandising work for a fitness brand.",
+    "summary": "Aeromat Ecowise: API and app integrations keeping inventory, orders, and marketing data aligned across the stack.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -288,9 +323,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Store management",
+      "App stack hygiene",
+      "Release support",
+      "Merchandising ops",
+      "Lifecycle email"
     ],
-    "summary": "Agileofficefurniture: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Agileofficefurniture: ongoing Shopify management, releases, app hygiene, and merchandising support for a live DTC operation.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -303,9 +342,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness"
     ],
-    "summary": "Alisa: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Alisa: AI recommendation and personalization hooks layered onto a DTC storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -318,9 +360,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "CRO"
     ],
-    "summary": "Beforeyouspeakcoffee: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Beforeyouspeakcoffee: performance and Core Web Vitals remediation on a DTC theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -333,9 +378,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Store management",
+      "App stack hygiene",
+      "Release support",
+      "Merchandising ops",
+      "CRO"
     ],
-    "summary": "Bluecoolers: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Bluecoolers: ongoing Shopify management, releases, app hygiene, and merchandising support for a live DTC operation.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -348,9 +397,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "Store management"
     ],
-    "summary": "Bonobos: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "Bonobos: performance and Core Web Vitals remediation on a food & beverage theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -363,9 +415,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Performance"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "CRO"
     ],
-    "summary": "Bostontemporarytattoos: Shopify work covering performance for a shopify commerce brand.",
+    "summary": "Bostontemporarytattoos: performance and Core Web Vitals remediation on a DTC theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -378,9 +433,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels"
     ],
-    "summary": "Brentlmiller: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Brentlmiller: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -393,9 +451,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "CRO"
     ],
-    "summary": "Budsandbowers: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Budsandbowers: performance and Core Web Vitals remediation on a DTC theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -408,9 +469,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Store management"
     ],
-    "summary": "Buypeakperformance: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Buypeakperformance: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -423,9 +488,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness",
+      "Lifecycle email"
     ],
-    "summary": "Drawlucy: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Drawlucy: AI recommendation and personalization hooks layered onto a DTC storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -438,9 +507,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Order management",
+      "Fulfillment routing",
+      "Returns",
+      "Lifecycle email"
     ],
-    "summary": "Driftaway: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Driftaway: order routing and fulfillment workflow improvements for a DTC operation that had outgrown inbox-based OMS.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -453,9 +525,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Theme development",
+      "Custom sections",
+      "Shopify Functions",
+      "Custom apps",
+      "SEO"
     ],
-    "summary": "Dsmile: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Dsmile: custom Shopify 2.0 theme and section work for a DTC brand, merchandising control without sacrificing speed.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -468,9 +544,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Health & Medical"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "Store management"
     ],
-    "summary": "Enrica Lossi: Shopify storefront build and merchandising work for a health & medical brand.",
+    "summary": "Enrica Lossi: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this health & medical storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -483,9 +563,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Fashion"
     ],
     "capabilities": [
-      "Performance"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "Store management"
     ],
-    "summary": "Fortnightlingerie: Shopify work covering performance for a fashion brand.",
+    "summary": "Fortnightlingerie: performance and Core Web Vitals remediation on a fashion theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -499,9 +582,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Integrations",
+      "API sync",
+      "ERP / 3PL",
+      "Lifecycle email"
     ],
-    "summary": "Fotp: Shopify storefront build and merchandising work for a fashion brand.",
+    "summary": "Fotp: API and app integrations keeping inventory, orders, and marketing data aligned across the stack.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -516,9 +602,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness",
+      "Lifecycle email"
     ],
-    "summary": "Fuelme: Shopify storefront build and merchandising work for a fashion brand.",
+    "summary": "Fuelme: AI recommendation and personalization hooks layered onto a fashion storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -531,9 +621,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Order management",
+      "Fulfillment routing",
+      "Returns",
+      "AI content"
     ],
-    "summary": "Hairthicknessmaximizer: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Hairthicknessmaximizer: order routing and fulfillment workflow improvements for a DTC operation that had outgrown inbox-based OMS.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -546,9 +639,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Integrations",
+      "API sync",
+      "ERP / 3PL",
+      "AI content"
     ],
-    "summary": "Hardcandy: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Hardcandy: API and app integrations keeping inventory, orders, and marketing data aligned across the stack.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -561,9 +657,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness",
+      "Store management"
     ],
-    "summary": "Hefthome: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Hefthome: AI recommendation and personalization hooks layered onto a DTC storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -576,9 +676,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Theme & custom development"
+      "Theme & custom development",
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Store management"
     ],
-    "summary": "Houseofkhalsa: Shopify work covering theme & custom development for a shopify commerce brand.",
+    "summary": "Houseofkhalsa: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -591,9 +695,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "CRO"
     ],
-    "summary": "Kikikickz: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Kikikickz: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -606,9 +714,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Store management",
+      "App stack hygiene",
+      "Release support",
+      "Merchandising ops",
+      "SEO"
     ],
-    "summary": "Lovegazelle: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Lovegazelle: ongoing Shopify management, releases, app hygiene, and merchandising support for a live DTC operation.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -621,9 +733,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Beauty"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "SEO"
     ],
-    "summary": "Madres Beauty Point: Shopify storefront build and merchandising work for a beauty brand.",
+    "summary": "Madres Beauty Point: conversion work across PDP, cart, and checkout-adjacent flows for a beauty brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -636,9 +752,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Fashion"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "Lifecycle email"
     ],
-    "summary": "Mondayswimwear: Shopify storefront build and merchandising work for a fashion brand.",
+    "summary": "Mondayswimwear: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -652,9 +771,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Theme development",
+      "Custom sections",
+      "Shopify Functions",
+      "Custom apps",
+      "Lifecycle email"
     ],
-    "summary": "Myjoliecandle: Shopify storefront build and merchandising work for a fashion brand.",
+    "summary": "Myjoliecandle: custom Shopify 2.0 theme and section work for a fashion brand, merchandising control without sacrificing speed.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -667,9 +790,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Store management"
     ],
-    "summary": "Mymagictour: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Mymagictour: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -682,9 +809,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Pets"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "SEO"
     ],
-    "summary": "Mywoof: Shopify storefront build and merchandising work for a pets brand.",
+    "summary": "Mywoof: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -697,9 +827,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Performance"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "Store management"
     ],
-    "summary": "Notanotherstore: Shopify work covering performance for a shopify commerce brand.",
+    "summary": "Notanotherstore: performance and Core Web Vitals remediation on a DTC theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -712,9 +845,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Store management"
     ],
-    "summary": "Orgvsm: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Orgvsm: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -727,9 +864,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "CRO"
     ],
-    "summary": "Outofthesandbox: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Outofthesandbox: performance and Core Web Vitals remediation on a DTC theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -742,9 +882,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Beauty"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Store management",
+      "App stack hygiene",
+      "Release support",
+      "Merchandising ops"
     ],
-    "summary": "Pantys: Shopify storefront build and merchandising work for a beauty brand.",
+    "summary": "Pantys: ongoing Shopify management, releases, app hygiene, and merchandising support for a live beauty operation.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -757,9 +900,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Pets"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Lifecycle email"
     ],
-    "summary": "Petnpet: Shopify storefront build and merchandising work for a pets brand.",
+    "summary": "Petnpet: conversion work across PDP, cart, and checkout-adjacent flows for a pets brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -772,9 +919,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Performance"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "CRO"
     ],
-    "summary": "Print Your Posts: Shopify work covering performance for a shopify commerce brand.",
+    "summary": "Print Your Posts: theme speed and media pipeline work so this DTC storefront stays fast under campaign traffic.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -787,9 +937,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "AI content"
     ],
-    "summary": "Rasa Beverages: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "Rasa Beverages: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this food & beverage storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -802,9 +956,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "Lifecycle email"
     ],
-    "summary": "Rezekstudio: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Rezekstudio: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -818,9 +975,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "AI content"
     ],
-    "summary": "Rubysorganics: Shopify storefront build and merchandising work for a fashion brand.",
+    "summary": "Rubysorganics: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -835,9 +995,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "Lifecycle email"
     ],
-    "summary": "Sharkskin: Shopify storefront build and merchandising work for a fashion brand.",
+    "summary": "Sharkskin: performance and Core Web Vitals remediation on a fashion theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -850,9 +1013,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Subscriptions"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "CRO"
     ],
-    "summary": "Shopbeachcity: Shopify work covering subscriptions for a food & beverage brand.",
+    "summary": "Shopbeachcity: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -865,9 +1031,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "CRO"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Lifecycle email"
     ],
-    "summary": "Soldejaneiro: Shopify work covering cro for a shopify commerce brand.",
+    "summary": "Soldejaneiro: CRO program covering funnel diagnostics, landing pages, and experiment velocity on a DTC Shopify store.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -880,9 +1050,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Integrations",
+      "API sync",
+      "ERP / 3PL",
+      "Lifecycle email"
     ],
-    "summary": "Stefaniewolf: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Stefaniewolf: API and app integrations keeping inventory, orders, and marketing data aligned across the stack.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -895,9 +1068,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Fashion"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "CRO"
     ],
-    "summary": "Stelly: Shopify storefront build and merchandising work for a fashion brand.",
+    "summary": "Stelly: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this fashion storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -910,9 +1087,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Theme & custom development"
+      "Theme & custom development",
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO"
     ],
-    "summary": "Sunflourbakingcompany: Shopify work covering theme & custom development for a food & beverage brand.",
+    "summary": "Sunflourbakingcompany: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this food & beverage storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -925,9 +1105,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Pets"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Store management",
+      "App stack hygiene",
+      "Release support",
+      "Merchandising ops"
     ],
-    "summary": "Thebrooklyn: Shopify storefront build and merchandising work for a pets brand.",
+    "summary": "Thebrooklyn: ongoing Shopify management, releases, app hygiene, and merchandising support for a live pets operation.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -940,9 +1123,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "AI content"
     ],
-    "summary": "Thrivemeals: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "Thrivemeals: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this food & beverage storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -956,9 +1143,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Health & Medical"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Order management",
+      "Fulfillment routing",
+      "Returns",
+      "Lifecycle email"
     ],
-    "summary": "Trattoriadavittorio Ordertakeout: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "Trattoriadavittorio Ordertakeout: order routing and fulfillment workflow improvements for a food & beverage operation that had outgrown inbox-based OMS.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -971,9 +1161,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels"
     ],
-    "summary": "Uncommonjames: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Uncommonjames: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -986,9 +1179,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Store management",
+      "App stack hygiene",
+      "Release support",
+      "Merchandising ops"
     ],
-    "summary": "Us: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "Us: ongoing Shopify management, releases, app hygiene, and merchandising support for a live food & beverage operation.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1001,9 +1197,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Integrations",
+      "API sync",
+      "ERP / 3PL",
+      "SEO"
     ],
-    "summary": "Us: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Us: API and app integrations keeping inventory, orders, and marketing data aligned across the stack.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1016,9 +1215,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles"
     ],
-    "summary": "Us: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Us: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1031,9 +1233,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels"
     ],
-    "summary": "V Dog: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "V Dog: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this food & beverage storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1046,9 +1251,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness"
     ],
-    "summary": "Winepassions: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Winepassions: AI recommendation and personalization hooks layered onto a DTC storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1061,9 +1269,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Lifecycle email"
     ],
-    "summary": "100percentpure: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "100percentpure: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1076,9 +1288,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Theme development",
+      "Custom sections",
+      "Shopify Functions",
+      "Custom apps",
+      "CRO"
     ],
-    "summary": "Ahead Nutrition: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Ahead Nutrition: custom Shopify 2.0 theme and section work for a DTC brand, merchandising control without sacrificing speed.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1091,9 +1307,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Health & Medical"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness",
+      "CRO"
     ],
-    "summary": "Alexandragrecco: Shopify storefront build and merchandising work for a health & medical brand.",
+    "summary": "Alexandragrecco: AI recommendation and personalization hooks layered onto a health & medical storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1106,9 +1326,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Fitness"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "CRO"
     ],
-    "summary": "Aloyoga: Shopify storefront build and merchandising work for a fitness brand.",
+    "summary": "Aloyoga: performance and Core Web Vitals remediation on a fitness theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1121,9 +1344,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Beauty"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Theme development",
+      "Custom sections",
+      "Shopify Functions",
+      "Custom apps",
+      "AI content"
     ],
-    "summary": "Balibodyco: Shopify storefront build and merchandising work for a beauty brand.",
+    "summary": "Balibodyco: custom Shopify 2.0 theme and section work for a beauty brand, merchandising control without sacrificing speed.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1136,9 +1363,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "Store management"
     ],
-    "summary": "Beardbrand: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Beardbrand: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1151,9 +1381,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Beauty"
     ],
     "capabilities": [
-      "Performance"
+      "Performance",
+      "Core Web Vitals",
+      "Theme speed",
+      "SEO"
     ],
-    "summary": "Beautybakerie: Shopify work covering performance for a beauty brand.",
+    "summary": "Beautybakerie: performance and Core Web Vitals remediation on a beauty theme, scripts audited, LCP and interactivity tightened.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1166,9 +1399,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "CRO"
     ],
-    "summary": "Carbon38: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Carbon38: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1181,9 +1417,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "CRO"
     ],
-    "summary": "Ceraudo: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Ceraudo: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1196,9 +1436,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "CRO"
     ],
-    "summary": "Divaboutiqueonline: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Divaboutiqueonline: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1211,9 +1455,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Integrations",
+      "API sync",
+      "ERP / 3PL",
+      "Store management"
     ],
-    "summary": "Envision: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Envision: API and app integrations keeping inventory, orders, and marketing data aligned across the stack.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1226,9 +1473,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "Lifecycle email"
     ],
-    "summary": "Farmrio: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "Farmrio: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1241,9 +1491,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels"
     ],
-    "summary": "Figandbloom: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Figandbloom: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1256,9 +1509,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Flowers"
     ],
     "capabilities": [
-      "Theme & custom development"
+      "Theme & custom development",
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment"
     ],
-    "summary": "Floraly: Shopify work covering theme & custom development for a flowers brand.",
+    "summary": "Floraly: AI recommendation and personalization hooks layered onto a flowers storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1271,9 +1527,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Integrations",
+      "API sync",
+      "ERP / 3PL",
+      "SEO"
     ],
-    "summary": "Hellomolly: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Hellomolly: API and app integrations keeping inventory, orders, and marketing data aligned across the stack.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1286,9 +1545,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Flowers"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "CRO"
     ],
-    "summary": "Hermeticaflowers: Shopify storefront build and merchandising work for a flowers brand.",
+    "summary": "Hermeticaflowers: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this flowers storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1301,9 +1564,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Store management",
+      "App stack hygiene",
+      "Release support",
+      "Merchandising ops"
     ],
-    "summary": "Huratips: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Huratips: ongoing Shopify management, releases, app hygiene, and merchandising support for a live DTC operation.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1316,9 +1582,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels"
     ],
-    "summary": "Jacoblundart: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Jacoblundart: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1331,9 +1600,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Subscriptions"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "Lifecycle email"
     ],
-    "summary": "Kulanikinis: Shopify work covering subscriptions for a food & beverage brand.",
+    "summary": "Kulanikinis: subscription-first purchase flow and loyalty touchpoints designed to turn first orders into recurring revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1346,9 +1618,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness",
+      "CRO"
     ],
-    "summary": "Livewholier: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Livewholier: AI recommendation and personalization hooks layered onto a DTC storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1361,9 +1637,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "CRO"
     ],
-    "summary": "Lookbookstore: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Lookbookstore: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1376,9 +1656,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Lifecycle email"
     ],
-    "summary": "Luxyhair: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Luxyhair: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1391,9 +1675,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Integrations",
+      "API sync",
+      "ERP / 3PL",
+      "CRO"
     ],
-    "summary": "Lvly: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Lvly: API and app integrations keeping inventory, orders, and marketing data aligned across the stack.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1406,9 +1693,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Beauty"
     ],
     "capabilities": [
-      "Subscriptions"
+      "Subscriptions",
+      "Retention",
+      "Loyalty",
+      "CRO"
     ],
-    "summary": "Maccosmetics: Shopify work covering subscriptions for a beauty brand.",
+    "summary": "Maccosmetics: subscription and retention mechanics for a beauty brand, offering architecture, billing UX, and lifecycle hooks.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1421,9 +1711,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Order management",
+      "Fulfillment routing",
+      "Returns",
+      "Lifecycle email"
     ],
-    "summary": "Manateecoffee: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Manateecoffee: order routing and fulfillment workflow improvements for a DTC operation that had outgrown inbox-based OMS.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1436,9 +1729,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Store management"
     ],
-    "summary": "Missrebel: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Missrebel: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1451,9 +1748,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Health & Medical"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness"
     ],
-    "summary": "Nudea: Shopify storefront build and merchandising work for a health & medical brand.",
+    "summary": "Nudea: AI recommendation and personalization hooks layered onto a health & medical storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1466,9 +1766,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness",
+      "Lifecycle email"
     ],
-    "summary": "Onnit: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Onnit: AI recommendation and personalization hooks layered onto a DTC storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1481,9 +1785,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Pets"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness"
     ],
-    "summary": "Ourdogslife: Shopify storefront build and merchandising work for a pets brand.",
+    "summary": "Ourdogslife: AI recommendation and personalization hooks layered onto a pets storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1496,9 +1803,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Theme & custom development"
+      "Theme & custom development",
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "SEO"
     ],
-    "summary": "Pantypostman: Shopify work covering theme & custom development for a shopify commerce brand.",
+    "summary": "Pantypostman: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1511,9 +1822,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels",
+      "Store management"
     ],
-    "summary": "Poho: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Poho: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this DTC storefront.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1526,9 +1841,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness",
+      "Store management"
     ],
-    "summary": "Ross Simons: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Ross Simons: AI recommendation and personalization hooks layered onto a DTC storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1541,9 +1860,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Order management",
+      "Fulfillment routing",
+      "Returns",
+      "SEO"
     ],
-    "summary": "Shopcrush: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "Shopcrush: order routing and fulfillment workflow improvements for a DTC operation that had outgrown inbox-based OMS.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1556,9 +1878,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "CRO"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Store management"
     ],
-    "summary": "Sommerswim: Shopify work covering cro for a shopify commerce brand.",
+    "summary": "Sommerswim: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1571,9 +1897,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Shopify Commerce"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "CRO",
+      "A/B testing",
+      "Checkout optimization",
+      "Upsells & bundles",
+      "Lifecycle email"
     ],
-    "summary": "T2tea: Shopify storefront build and merchandising work for a shopify commerce brand.",
+    "summary": "T2tea: conversion work across PDP, cart, and checkout-adjacent flows for a DTC brand, testing upsells, bundles, and page speed that actually moves revenue.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1586,9 +1916,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Food & Beverage"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "AI content",
+      "AI recommendations",
+      "Catalogue enrichment",
+      "AEO readiness"
     ],
-    "summary": "Tesalate: Shopify storefront build and merchandising work for a food & beverage brand.",
+    "summary": "Tesalate: AI recommendation and personalization hooks layered onto a food & beverage storefront experience.",
     "featured": false,
     "source": "URL sheet"
   },
@@ -1601,9 +1934,12 @@ export const portfolioProjects: PortfolioProject[] = [
       "Beauty"
     ],
     "capabilities": [
-      "Shopify storefront"
+      "Lifecycle email",
+      "Klaviyo flows",
+      "SEO",
+      "Tracking & pixels"
     ],
-    "summary": "Trulybeauty: Shopify storefront build and merchandising work for a beauty brand.",
+    "summary": "Trulybeauty: SEO foundations plus on-site campaign modules so paid and organic traffic convert on this beauty storefront.",
     "featured": false,
     "source": "URL sheet"
   }
