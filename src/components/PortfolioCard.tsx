@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import type { PortfolioProject } from "@/lib/types";
 
 const industryAccent: Record<string, string> = {
@@ -15,8 +18,13 @@ const industryAccent: Record<string, string> = {
   Pets: "#c4a484",
   B2B: "#8ec9c2",
   CRO: "#5b8cff",
-  "Shopify Commerce": "#94a3b8",
-  Dropshipping: "#a78bfa",
+  Marketing: "#6b8cae",
+  Consulting: "#7a8a9a",
+  AI: "#6a9cff",
+  CRM: "#8ec9c2",
+  Operations: "#94a3b8",
+  Development: "#94a3b8",
+  DTC: "#94a3b8",
 };
 
 function screenshotUrl(url: string) {
@@ -28,24 +36,41 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
     ? `/work/${project.caseStudySlug}`
     : project.url;
   const external = !project.caseStudySlug;
-  const accent = industryAccent[project.industry] ?? "#5b8cff";
+  const accent =
+    industryAccent[project.services?.[0] || ""] ||
+    industryAccent[project.industry] ||
+    "#5b8cff";
+  const [imgFailed, setImgFailed] = useState(false);
   const imgSrc = project.image ?? screenshotUrl(project.url);
+  const primaryService = project.services?.[0] || project.categories[0] || project.industry;
 
   const inner = (
     <>
       <div className="relative aspect-[16/10] overflow-hidden bg-paper-dim">
-        <Image
-          src={imgSrc}
-          alt={`${project.client} storefront`}
-          fill
-          sizes="(max-width: 768px) 100vw, 25vw"
-          unoptimized={!project.image}
-          className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
-        />
-        <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-ink/55 to-transparent"
-          aria-hidden="true"
-        />
+        {!imgFailed ? (
+          <Image
+            src={imgSrc}
+            alt={`${project.client} project`}
+            fill
+            sizes="(max-width: 768px) 100vw, 25vw"
+            unoptimized={!project.image}
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+            onError={() => setImgFailed(true)}
+          />
+        ) : (
+          <div className="absolute inset-0 flex flex-col justify-between bg-gradient-to-br from-paper-dim to-line/40 p-4">
+            <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
+              {primaryService}
+            </span>
+            <span className="font-display text-xl font-bold text-ink">{project.client}</span>
+          </div>
+        )}
+        {!imgFailed && (
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-ink/55 to-transparent"
+            aria-hidden="true"
+          />
+        )}
         <span
           className="absolute bottom-3 left-3 rounded-[3px] px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.12em] text-ink"
           style={{ background: accent }}
@@ -55,18 +80,20 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
       </div>
       <div className="flex flex-1 flex-col p-5">
         <p className="eyebrow">
-          {project.client} · {project.industry}
+          {primaryService} · {project.industry}
         </p>
         <p className="mt-2 text-[14px] leading-snug text-ink/85">{project.summary}</p>
         <ul className="mt-4 flex flex-wrap gap-1.5">
-          {project.capabilities.slice(0, 4).map((c) => (
-            <li
-              key={c}
-              className="rounded-[2px] border border-line bg-paper-dim px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-muted"
-            >
-              {c}
-            </li>
-          ))}
+          {(project.services?.length ? project.services : project.capabilities)
+            .slice(0, 4)
+            .map((c) => (
+              <li
+                key={c}
+                className="rounded-[2px] border border-line bg-paper-dim px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-muted"
+              >
+                {c}
+              </li>
+            ))}
         </ul>
         <span className="mt-auto flex items-center gap-2 pt-5 font-mono text-[11px] uppercase tracking-[0.08em] text-ink">
           {external ? "Visit live store" : "Read case study"}{" "}

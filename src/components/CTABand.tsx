@@ -18,7 +18,7 @@ export default function CTABand({
               <p className="eyebrow" data-dark="true">
                 Next step
               </p>
-              <h2 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-5xl">
+              <h2 className="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
                 {title}
               </h2>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-paper/65">{copy}</p>

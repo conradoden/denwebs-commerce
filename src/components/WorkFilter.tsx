@@ -37,6 +37,7 @@ export default function WorkFilter({
       (p) =>
         p.industry === active ||
         p.categories.includes(active) ||
+        (p.services || []).includes(active) ||
         p.capabilities.some((c) => c.toLowerCase() === active.toLowerCase()),
     );
   }, [active, portfolio]);

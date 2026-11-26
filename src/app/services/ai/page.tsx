@@ -85,7 +85,7 @@ export default function AIHub() {
           <p className="eyebrow mt-6" data-dark="true">
             AI practice
           </p>
-          <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
+          <h1 className="mt-5 max-w-4xl font-display text-5xl font-bold leading-[1.02] tracking-[-0.03em] md:text-7xl">
             Be the brand AI <span className="accent-serif font-normal">recommends</span>,{" "}
             and the store <span className="text-accent">AI can sell</span>.
           </h1>

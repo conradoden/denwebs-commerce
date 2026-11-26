@@ -27,7 +27,7 @@ export default function ServicePage({
         <div className="grid gap-10 pb-16 md:pb-20 lg:grid-cols-[1.6fr_1fr]">
           <div>
             <p className="eyebrow">{service.group}</p>
-            <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
+            <h1 className="mt-5 font-display text-5xl font-bold leading-[1.03] tracking-[-0.03em] md:text-7xl">
               {service.title}
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">

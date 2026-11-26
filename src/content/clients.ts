@@ -1,34 +1,104 @@
 export type ClientLogo = {
   name: string;
   href: string;
-  /** Local logo asset under /public */
   logo: string;
-  /** Optional wider mark for marquee sizing */
   wide?: boolean;
 };
 
-/** Featured client brands shown on the homepage logo strip. */
+/**
+ * Homepage marquee: only clear brand marks (color).
+ * Skips lifestyle/OG photos and tiny unreadable favicons.
+ */
 export const clientLogos: ClientLogo[] = [
   {
-    name: "Tropeaka",
-    href: "https://tropeaka.com",
-    logo: "/images/clients/tropeaka.png",
-  },
-  {
-    name: "Sixthreezero",
-    href: "https://www.sixthreezero.com",
-    logo: "/images/clients/sixthreezero.png",
-  },
-  {
-    name: "Wonderful Dental",
-    href: "https://wonderfuldental.com",
-    logo: "/images/clients/wonderful-dental.svg",
+    name: "Sip Coco",
+    href: "https://sipcoco.com.au",
+    logo: "/images/clients/sip-coco.png",
     wide: true,
   },
   {
-    name: "Origin Tea",
-    href: "https://origintea.com",
-    logo: "/images/clients/origin-tea.png",
+    name: "MAC Cosmetics",
+    href: "https://www.maccosmetics.com",
+    logo: "/images/clients/maccosmetics.svg",
+    wide: true,
+  },
+  {
+    name: "Ceraudo",
+    href: "https://www.ceraudo.com",
+    logo: "/images/clients/ceraudo.png",
+    wide: true,
+  },
+  {
+    name: "Luxy Hair",
+    href: "https://www.luxyhair.com",
+    logo: "/images/clients/luxyhair.png",
+    wide: true,
+  },
+  {
+    name: "Driftaway Coffee",
+    href: "https://driftaway.coffee",
+    logo: "/images/clients/driftaway.png",
+    wide: true,
+  },
+  {
+    name: "Drawlucy",
+    href: "https://drawlucy.com",
+    logo: "/images/clients/drawlucy.jpg",
+    wide: true,
+  },
+  {
+    name: "Farm Rio",
+    href: "https://www.farmrio.com",
+    logo: "/images/clients/farmrio.svg",
+    wide: true,
+  },
+  {
+    name: "Hello Molly",
+    href: "https://www.hellomolly.com",
+    logo: "/images/clients/hellomolly.webp",
+    wide: true,
+  },
+  {
+    name: "Beauty Bakerie",
+    href: "https://www.beautybakerie.com",
+    logo: "/images/clients/beautybakerie.png",
+    wide: true,
+  },
+  {
+    name: "Sommer Swim",
+    href: "https://www.sommerswim.com",
+    logo: "/images/clients/sommerswim.png",
+    wide: true,
+  },
+  {
+    name: "Floraly",
+    href: "https://www.floraly.com.au",
+    logo: "/images/clients/floraly.png",
+    wide: true,
+  },
+  {
+    name: "Hermetica Flowers",
+    href: "https://www.hermeticaflowers.com.au",
+    logo: "/images/clients/hermeticaflowers.png",
+    wide: true,
+  },
+  {
+    name: "Buy Peak Performance",
+    href: "https://buypeakperformance.com",
+    logo: "/images/clients/buypeakperformance.png",
+    wide: true,
+  },
+  {
+    name: "Before You Speak Coffee",
+    href: "https://beforeyouspeakcoffee.com",
+    logo: "/images/clients/beforeyouspeakcoffee.jpg",
+    wide: true,
+  },
+  {
+    name: "Bali Body",
+    href: "https://www.balibodyco.com",
+    logo: "/images/clients/balibodyco.jpg",
+    wide: true,
   },
   {
     name: "TheJewelleryRoom",
@@ -37,42 +107,27 @@ export const clientLogos: ClientLogo[] = [
     wide: true,
   },
   {
-    name: "Marc Robinson Jewelers",
-    href: "https://marcrobinsonjewelers.com",
-    logo: "/images/clients/marc-robinson.png",
-  },
-  {
-    name: "M Robinson Fine Jewelers",
-    href: "https://mrobinsonjewelers.com",
-    logo: "/images/clients/m-robinson.png",
-  },
-  {
-    name: "Treasures Jeweler",
-    href: "https://treasuresjeweler.com",
-    logo: "/images/clients/treasures.png",
-  },
-  {
-    name: "Pryme",
-    href: "https://prymesnacks.com.au",
-    logo: "/images/clients/pryme.svg",
+    name: "Origin Tea",
+    href: "https://origintea.com",
+    logo: "/images/clients/origin-tea.png",
     wide: true,
   },
   {
     name: "Nice Rice",
     href: "https://nicerice.com.au",
-    logo: "/images/clients/nice-rice.svg",
+    logo: "/images/clients/nice-rice.png",
     wide: true,
   },
   {
-    name: "Sip Coco",
-    href: "https://sipcoco.com.au",
-    logo: "/images/clients/sip-coco.svg",
+    name: "Tropeaka",
+    href: "https://tropeaka.com",
+    logo: "/images/clients/tropeaka.png",
     wide: true,
   },
   {
-    name: "Prime Cuts Jerky",
-    href: "https://primecutsjerky.com",
-    logo: "/images/clients/prime-cuts.svg",
+    name: "Sixthreezero",
+    href: "https://www.sixthreezero.com",
+    logo: "/images/clients/sixthreezero.png",
     wide: true,
   },
 ];

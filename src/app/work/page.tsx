@@ -18,13 +18,13 @@ export default function WorkIndex() {
     <>
       <section className="mx-auto max-w-[88rem] px-5 pb-16 pt-16 md:pt-24 lg:px-8">
         <p className="eyebrow">Work</p>
-        <h1 className="mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.03] tracking-[-0.02em] md:text-6xl">
+        <h1 className="mt-5 max-w-4xl font-display text-5xl font-bold leading-[1.02] tracking-[-0.03em] md:text-7xl">
           The portfolio we <span className="accent-serif font-normal">built and shipped</span>.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-          {portfolioProjects.length} projects across industries and practices:
-          theme builds, CRO, AI, marketing, subscriptions, OMS, and ongoing
-          store management. Filter a category to see the full split.
+          {portfolioProjects.length} live projects across CRO, marketing,
+          consulting, AI, CRM, and operations. Filter by service to see solid
+          depth in each practice, not only theme builds.
         </p>
 
         <WorkFilter

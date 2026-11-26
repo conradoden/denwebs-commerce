@@ -47,6 +47,8 @@ export type PortfolioProject = {
   featured?: boolean;
   caseStudySlug?: string;
   source?: string;
+  /** Service pillars this project demonstrates (CRO, Marketing, AI, CRM, …). */
+  services?: string[];
 };
 
 export type Insight = {

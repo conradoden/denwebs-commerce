@@ -22,7 +22,7 @@ export default function SectionHeading({
         </p>
       )}
       <h2
-        className={`mt-5 font-display text-3xl font-bold leading-[1.08] tracking-[-0.02em] md:text-[2.75rem] ${
+        className={`mt-5 font-display text-4xl font-bold leading-[1.06] tracking-[-0.02em] md:text-5xl lg:text-[3.25rem] ${
           dark ? "text-paper" : "text-ink"
         }`}
       >

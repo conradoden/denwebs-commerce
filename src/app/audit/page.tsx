@@ -35,7 +35,7 @@ export default function Audit() {
       <section className="mx-auto max-w-[88rem] px-5 py-16 md:py-24 lg:px-8">
         <div className="max-w-3xl">
           <p className="eyebrow">Free audit</p>
-          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
+          <h1 className="mt-5 font-display text-5xl font-bold leading-[1.03] tracking-[-0.03em] md:text-7xl">
             See what we&apos;d fix <span className="accent-serif font-normal">first</span>, free.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted md:text-xl">

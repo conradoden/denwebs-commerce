@@ -118,7 +118,7 @@ export default function Home() {
               <p className="eyebrow" data-dark="true">
                 Shopify ecommerce consultants
               </p>
-              <h1 className="mt-6 max-w-3xl font-display text-[2.65rem] font-bold leading-[1.04] tracking-[-0.03em] sm:text-5xl md:text-6xl lg:text-[4.25rem]">
+              <h1 className="mt-6 max-w-3xl font-display text-[3rem] font-bold leading-[1.02] tracking-[-0.03em] sm:text-5xl md:text-6xl lg:text-[4.75rem]">
                 The Shopify partner that connects{" "}
                 <span className="accent-serif font-normal">strategy</span>, build,{" "}
                 <span className="text-accent">and growth</span>.

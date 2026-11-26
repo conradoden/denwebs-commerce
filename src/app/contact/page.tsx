@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="grid gap-12 lg:grid-cols-[1fr_1.6fr]">
         <div>
           <p className="eyebrow">Contact</p>
-          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-5xl">
+          <h1 className="mt-5 font-display text-5xl font-bold leading-[1.03] tracking-[-0.03em] md:text-6xl lg:text-7xl">
             Tell us what <span className="accent-serif font-normal">needs to change</span>.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted">
